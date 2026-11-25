@@ -1,0 +1,13 @@
+Missing scripts=0; missing materials=0
+Service Lane Collection: bags=4 prefab=Assets/Alley/Prefabs/Garbage/Service Lane Collection.prefab
+  Tied Bag base=0.008000001 depth=0.4494476 size=(0.52, 0.44, 0.45)
+  Small Bag base=0.008000001 depth=0.3644371 size=(0.39, 0.41, 0.36)
+  Full Bag base=0.007999986 depth=0.4903297 size=(0.57, 0.40, 0.49)
+  Tied Bag base=0.008000001 depth=0.4951782 size=(0.56, 0.46, 0.50)
+Residential Collection: bags=2 prefab=Assets/Alley/Prefabs/Garbage/Residential Collection.prefab
+  Small Bag base=0.163 depth=0.2782097 size=(0.26, 0.30, 0.28)
+  Full Bag base=0.163 depth=0.4262466 size=(0.38, 0.28, 0.43)
+Cleanup check: pole/balcony slab intersections=0
+Street controller path ends=(0.00, -0.01, 46.00) grounded=True
+Collection aisle ends=(8.19, 0.08, 24.50) grounded=True
+Bake running=False

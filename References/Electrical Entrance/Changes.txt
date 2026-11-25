@@ -1,0 +1,7 @@
+Electrical entrance wall repair
+- Replaced fragmented wall above doorway with one continuous plaster header.
+- Closed narrow seam next to the office doorway.
+- Recessed transverse electrical-room wall ends behind the corridor facing to eliminate coplanar surface flicker.
+- Fitted the top door seal to close the bright header slit.
+- Preserved door location and interaction; updated Apartment and shared Electrical Room / Entrance Interior prefabs in place.
+Validation: 324/324 header collision rays hit the continuous wall; zero overlapping coplanar front-face pairs. Play Mode interaction opened the door and the player walked through. Shared preview header and recessed wall verified. Before, front-after and oblique-after captures included.

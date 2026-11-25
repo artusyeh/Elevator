@@ -1,0 +1,19 @@
+Elevator controls and travel
+
+Apartment.unity now has a working six-floor elevator. The player can aim at a button and press E or left-click it. With the cursor released, direct pointer clicks also work. E no longer toggles doors based on proximity. No control or interaction text has been restored.
+
+Floor selections illuminate amber until arrival. The cabin and all six landings have physical red seven-segment floor displays with up/down arrows. Floor readouts follow cabin height, rather than a separate timer. Floor call buttons, door-open and door-close buttons are connected. The emergency button has tactile/visual feedback only; no alarm audio system was added.
+
+The cabin travels between the existing floor heights, carries the CharacterController, eases into and out of movement and opens at the destination after stopping. Other landing doors stay closed. The doorway occupancy check prevents departure while the player is straddling the opening. Stairs remain locked. Travel requests are queued.
+
+Restrained camera vibration operates only while riding the moving cabin; it fades at starts/stops and restores the normal camera position. Vibration can be disabled on the Elevator Controls component. Travel speed is editable there as well.
+
+Corrected the existing control panel to face into the cabin. Shortened its adjacent handrail for clearance. Added inner cabin sliding doors, removed the upper-floor shaft floor/ceiling blockers and cleared static/lightmap flags from the moving cabin. Cabin lights are realtime. The reusable Elevator Cabin prefab includes the updated controls/doors; the six-floor controller and landing references live in the Apartment scene. The Alley entrance preview remains a visual preview.
+
+Validation in Unity Play Mode: all six cabin button ray targets and all six landing call buttons pass. Selected button lights, upward/downward floor/direction display, door interlock, doorway occupancy, arrival light cancellation and upper-floor exit pass. Travel up to floor 6 and back down with active CharacterController gravity preserves rider position. Maximum measured vibration offset was 0.0055 metres. Console had no errors. See Checks.txt. The first manual upper-floor exit check ran before synchronizing transformed door colliders; the repeated synchronized check passes.
+
+Controls.png shows selection 6 while passing floor 3 upward. Elevator Descending.png shows selection 1 while passing floor 5 downward. Elevator Arrival.png shows the cabin at floor 6. All images use the player camera.
+
+All geometry/materials reused or created locally in editable Unity objects. No purchases, services, render-pipeline changes or unrelated scene layout changes. The scene was saved in Edit Mode at its original ground-floor starting state.
+
+Interaction repair: removed the controller's proximity-based E shortcut and routed E through the same aimed ray interaction as mouse clicks. The door-open button now interrupts pending departure for two seconds; door-close clears that hold. Moving-door safety and the doorway occupancy check remain active. Extended the control-panel backing behind its lower buttons, added open/close arrow symbols and an alarm marker, and mounted number labels on their button caps with enough surface clearance to remain visible. Updated the cabin prefab. All six aimed floor targets, door open/close, a plain-wall negative interaction, travel interlock and arrival at floor 6 pass. See Interaction Repair Checks.txt and Panel Repaired.png.

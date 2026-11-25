@@ -1,0 +1,7 @@
+Lobby: lights off=True covered fixture emission off=True lights restored=True
+Stairwell: lights off=True covered fixture emission off=True lights restored=True
+Second Floor: lights off=True covered fixture emission off=True lights restored=True
+Third Floor: lights off=True covered fixture emission off=True lights restored=True
+Fourth Floor: lights off=True covered fixture emission off=True lights restored=True
+Fifth Floor: lights off=True covered fixture emission off=True lights restored=True
+Sixth Floor: lights off=True covered fixture emission off=True lights restored=True

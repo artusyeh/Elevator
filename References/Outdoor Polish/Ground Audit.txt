@@ -1,0 +1,1 @@
+Walkable ground samples: 376, unsupported: 0

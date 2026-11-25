@@ -1,0 +1,8 @@
+Synchronous manual-tick test: Physics.SyncTransforms called after animated doors settle (normal frames perform the physics update).
+Floor 1: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=0.080
+Floor 2: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=2.980
+Floor 3: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=5.880
+Floor 4: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=8.780
+Floor 5: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=11.680
+Floor 6: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=14.580
+Floor 1: arrived=True; doors=1.00; rider height=0.080; exit across join=True; reentered=True; walking height=0.080

@@ -1,0 +1,11 @@
+Door and CRT screen correction — 24 November 2026
+
+Apartment scene saved in Assets/Scenes/Apartment.unity.
+
+Stairwells: refitted all six closed doors with recessed leaves, proper perimeter seals, fitted frames and thin thresholds. Wall infills terminate at the existing wall edges instead of overlapping their visible faces. The door paint is distinct from the heavily rusted shared equipment material. Replaced English text meshes with a non-emissive Japanese enamel plaque: 階段 / 施錠中. Stairwell Door prefab updated while preserving its asset GUID.
+
+Screens: removed the offset flat display surfaces. Extracted the original scanned CRT glass geometry (162 triangles) into CRT Glass Display.asset and mapped the existing CCTV captures onto it. All four display objects follow their model transforms and sit just above the original curved glass. The original bezels, dials, speakers, casing and textures remain intact.
+
+Verified screen fit from front and side views, and collision blocking at 42 approaches across six floors. Refreshed baked lighting and existing local reflections. No paid assets, new services or render pipeline changes.
+
+Review images: Stair Door Repaired.png, Stair Door Side.png, Stair Plaque Detail.png, Monitor Screens Repaired.png, Monitor Screens Side.png.

@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &451577326500417027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920506119892514556}
+  m_Layer: 0
+  m_Name: Potted Foliage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &920506119892514556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451577326500417027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 271919519764356812}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &309820531189872935
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 920506119892514556}
+    m_Modifications:
+    - target: {fileID: -8840850582105801806, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_Name
+      value: Foliage and Pot
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.046081513
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000052958727
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09161931
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7171326748685988334, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e2e9510a06b39649b4ef7cc089c105e, type: 2}
+    - target: {fileID: -4072146095440375679, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 827824a0f9b3b2f47809f2aecc750b18, type: 2}
+    - target: {fileID: -794016189777965096, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 827824a0f9b3b2f47809f2aecc750b18, type: 2}
+    - target: {fileID: 919132149155446097, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_Name
+      value: Assembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862741370998714856, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_Name
+      value: Foliage and Pot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838711556102149233, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+      propertyPath: m_Name
+      value: Foliage and Pot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+--- !u!4 &271919519764356812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 531a9aa1be91aa94d96013c99a5012e2, type: 3}
+  m_PrefabInstance: {fileID: 309820531189872935}
+  m_PrefabAsset: {fileID: 0}

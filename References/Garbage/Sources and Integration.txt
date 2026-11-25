@@ -1,0 +1,22 @@
+Garbage collection areas — source notes
+
+Bag shell geometry and normal map: Trashbag by Benny Weimer, Poly Haven. CC0.
+https://polyhaven.com/a/trashbag
+https://polyhaven.com/license
+Existing downloaded scan reused; three shape/fullness variants authored in Blender. Black/dirty albedo discarded in favor of original clean translucent polyethylene materials. Internal paper and packaging, ties, cord meshes and weights are project-authored. No paid services or assets.
+Recycling crate: Poly Haven plastic_crate_02, CC0, already present in project.
+Notice: original fictional Japanese collection schedule from Assets/Alley/Textures/Notices/Collection Schedule.png. Editable texture and separate mounted object, not a real ward's official schedule.
+
+Authenticity references, viewed only:
+https://www.city.shibuya.tokyo.jp/contents/living-in-shibuya/en/daily/garbage.html
+https://tabunka.tokyo-tsunagari.or.jp/guide_eng/info/01.html
+https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/201/8eigo2tiku.pdf
+These support transparent/semi-transparent bags and shared collection points with protective nets. No reference photographs were reused as textures.
+
+Main point: existing service lane, four modest bags beneath blue lightweight mesh; recycling crate, weighted hem and wall notice. Existing drainage channel remains clear.
+Secondary point: two small bags beneath green mesh on a small curbside concrete collection pad, with a wall notice. No large dumpster.
+
+Both collections and nets are reusable prefabs. Bags have separate plastic shells and editable contents; the Blender source files are in References/Garbage. Nets are actual thin cord geometry and are conformed to the bag mesh surfaces with clearance, not flat transparent sheets. Existing street, building footprints, vending machines and gameplay remain unchanged by this pass.
+Only the collection point's small local light was updated; global lighting/post-processing unchanged. Final screenshots and validation are saved alongside this file.
+
+The local collection lamp uses the original Residential Light mesh from the preceding fixture pass, with restrained neutral 4100 K light. The old nearby glowing block was disabled. Global exposure and bloom were not modified.

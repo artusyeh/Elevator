@@ -1,0 +1,32 @@
+Floor 1 click target=True
+Floor 2 click target=True
+Floor 3 click target=True
+Floor 4 click target=True
+Floor 5 click target=True
+Floor 6 click target=True
+Floor 6 clicked=True lamp=True queued=True
+Transit floor=2 direction=1 y=2.669249 eye shake=0.001136321
+Arrived 6=True y=14.5 rider relative=(0.00, 0.08, 0.95) doors open=0.9919992 earlyOpen=False
+Returned 2=True y=2.9 rider relative=(0.00, 0.08, 0.95)
+
+Doorway obstruction holds doors open=True
+Up with gravity: floor=6 rider local=(0.00, 0.08, 0.95) early opening=False shake max metres=0.005465049
+Ascending floor samples=162,84,69,68,84,177
+Arrival clears selected lamp=True
+Floor 6 exit local=(0.00, 0.08, 0.45) walkable=False
+Landing call clickable=False
+Descending display=5 direction=-1
+Down with gravity: floor=1 rider local=(0.00, 0.08, 0.95)
+
+Final synced collider checks:
+Floor 6 exit=(0.00, 0.08, -2.13) walkable=True
+Call Button Interaction clicked=True first=Button Interaction pos=(3.01, 15.63, 9.86) cap=(3.04, 15.63, 9.86)
+Call Button Interaction clicked=True first=Button Interaction pos=(3.01, 15.76, 9.86) cap=(3.04, 15.76, 9.86)
+
+Landing 1 reachable click=True
+Landing 2 reachable click=True
+Landing 3 reachable click=True
+Landing 4 reachable click=True
+Landing 5 reachable click=True
+Landing 6 reachable click=True
+All seven displays digit 4/down state=True

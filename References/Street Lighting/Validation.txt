@@ -1,0 +1,6 @@
+Remaining glowing-block fixtures: 0
+Detailed street-pole heads: 6
+Far porch fixtures replaced: 2
+Apartment canopy fixture added: 1
+Baked indirect lighting updated; reflection probes refreshed.
+All fixtures remain editable prefab instances with soft shadows. Walking layout and architecture unchanged.

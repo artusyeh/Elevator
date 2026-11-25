@@ -1,0 +1,17 @@
+Electrical room label mounting and paper finish
+
+Moved all 15 branch/main supply labels from their unsupported position roughly 47 mm in front of the recessed face to a 0.6 mm mounting offset. Labels remain beside their corresponding switches, with their original hierarchy and functional circuit references. The paper faces are supported over their entire area. No switches, controls, room geometry or lighting were moved.
+
+High-voltage warning is now directly against the west wall, without the old metal backing. Caretaker notes fit the rear wall at the same minimal mounting offset. The exterior room identification print also uses the matching aged paper finish and retains its existing door mounting.
+
+Created distinct yellowed paper textures with softened typewriter lettering, subtle edge darkening, sparse age spots and fine paper normals. The Japanese warning and caretaker wording are preserved. Materials are matte URP Lit, non-metallic and non-emissive. Existing shared label textures elsewhere in the project were left unchanged.
+
+Updated Apartment scene, Electrical Room, Distribution Panel and Entrance Interior prefabs, preserving their GUIDs and references. The actual Alley scene was loaded additively and inspected: all 15 labels inherit the fitted paper treatment, and the wall warning is updated.
+
+Validation: 85/85 centre and corner mesh-support ray samples passed at 0.600 mm; all 15 switch lever/lamp references remain valid; no Unity Console errors. See Checks.txt. Screenshots were captured before and after, with player camera pose/FOV restored afterward. No manual steps required.
+
+Editable source: Assets/Building/Editor/ElectricalLabelRepair.cs
+Texture source: References/Electrical Labels/MakePaper.py
+Texture assets: Assets/Building/Textures/Electrical Labels
+
+Further paper aging: all 18 electrical labels/notices now have real alpha-cut torn edges, missing corners, edge notches, localized handling smears, embedded dirt and dust speckles, uneven yellowing and crease marks. Darkened ink preserves readability. Applied the same distinct treatment to all 30 mailbox number inserts by updating their existing materials in place; apartment numbers, physical inserts, holders and mailbox bodies remain unchanged. Shared materials update both scene appearances. Source generator is MakePaper.py. Screenshot: Mailbox Paper After.png.

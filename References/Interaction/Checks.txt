@@ -1,0 +1,17 @@
+Near button focus=True prompt=[E] Press intermediate morph=0.4352819
+Out of range blocked=True
+Wall blocks focus=True
+Menu hidden and noninteractive=True
+Cutscene hidden=True
+Document hidden=True
+Released cursor hidden=True
+Idle dot disabled=True
+Indicator preserved=True
+Centered anchor=(0.00, 0.00) size at 1080p=3.5 opacity=0.4 UI instances=1
+
+Transition 0 target=True used=True scene=Apartment UI=1 scanners=1
+Transition 1 target=True used=True scene=Apartment UI=1 scanners=1
+
+Confirmed load: Alley entrance focus=True UI count=1 requested return=True
+Vector mesh vertices=260 expected center=(0.00, 0.00)
+Confirmed after return: scene=Apartment UI=1 scanner=1

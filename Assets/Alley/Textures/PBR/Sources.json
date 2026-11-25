@@ -1,0 +1,478 @@
+[
+  {
+    "category": "Concrete",
+    "asset": "concrete_wall_006",
+    "source": "https://polyhaven.com/a/concrete_wall_006",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dario Barresi": "Processing",
+      "Charlotte Baglioni": "Photography"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/concrete_wall_006/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_006/concrete_wall_006_diff_2k.jpg",
+        "sha256": "daee26f5b5dae37e3fb2947c64f4045fd4e6d3b89884eb0d878ba6414746e8e8"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/concrete_wall_006/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_006/concrete_wall_006_nor_gl_2k.jpg",
+        "sha256": "22bd9c17a6dfe3441f671cba1b40e2329767c79b6472004d1633aeac368d5210"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/concrete_wall_006/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_006/concrete_wall_006_arm_2k.jpg",
+        "sha256": "f1a60edecc22e1f6d0937ce4b65203e54a4b5d9abc720e5587d834a474ec6fe8"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/concrete_wall_006/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_006/concrete_wall_006_rough_2k.jpg",
+        "sha256": "4c463e871c50def9252c38a81e06624ff2fcd8c9ffcdd54534524efacba286ed"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/concrete_wall_006/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_006/concrete_wall_006_ao_2k.jpg",
+        "sha256": "cb4313e90c5f6a59b6d49d26b4355693774d96d53e70825f73d7907703f0dc7a"
+      }
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ]
+  },
+  {
+    "category": "Plaster",
+    "asset": "painted_plaster_wall",
+    "source": "https://polyhaven.com/a/painted_plaster_wall",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/painted_plaster_wall/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_diff_2k.jpg",
+        "sha256": "6fd812ed8dd5be1873c29aeef38ce9bf1fb30a22c6d4b3a12db725e98c26a1be"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/painted_plaster_wall/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_nor_gl_2k.jpg",
+        "sha256": "2d601a46ed5ce2af866741c53cafa3cba472620c272e633b6484d4de16a80eb1"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/painted_plaster_wall/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_arm_2k.jpg",
+        "sha256": "8d6a2e391e87130aabb1dc6fea23e6ebcc80aca6559a0aa82e57b75729055be5"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/painted_plaster_wall/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_rough_2k.jpg",
+        "sha256": "35aad595469533cc3b7cc209cc6c7e065d660211f02c867f4492d3b371b1fee1"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/painted_plaster_wall/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_ao_2k.jpg",
+        "sha256": "3d89b5ea1f9d93d611ab0015d887b620ec9c6623e19effadba84ee9345c4c6fc"
+      }
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ]
+  },
+  {
+    "category": "Tiles",
+    "asset": "square_tiled_wall",
+    "source": "https://polyhaven.com/a/square_tiled_wall",
+    "license": "CC0-1.0",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/square_tiled_wall/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_tiled_wall/square_tiled_wall_diff_2k.jpg",
+        "sha256": "4738c360c14c7b04f5dee07ef5ba724ab6ed8aeb0627ba0491468a79ba006314"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/square_tiled_wall/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_tiled_wall/square_tiled_wall_nor_gl_2k.jpg",
+        "sha256": "12967d41753ccc96129692fc9746a6a09a8978e9cc2ab0e4f82f854eac9e8f63"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/square_tiled_wall/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_tiled_wall/square_tiled_wall_arm_2k.jpg",
+        "sha256": "69844f105f9f5e71053af3ae342fa4ee323a7debdb4c7f9a8eccf6811cb04090"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/square_tiled_wall/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_tiled_wall/square_tiled_wall_rough_2k.jpg",
+        "sha256": "ff4b5ac825c0b29dc7e8f6a2046edbec449e16a130cec6e286a940c87b9ddf39"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/square_tiled_wall/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_tiled_wall/square_tiled_wall_ao_2k.jpg",
+        "sha256": "7334b1c20a04cb561581167c5db6f3e9a3ae63eeb0d1abc4d8ab391ec621c43b"
+      }
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ]
+  },
+  {
+    "category": "Blocks",
+    "asset": "concrete_block_wall",
+    "source": "https://polyhaven.com/a/concrete_block_wall",
+    "license": "CC0-1.0",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/concrete_block_wall/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_block_wall/concrete_block_wall_diff_2k.jpg",
+        "sha256": "c9159f6bb8713e00bc844ddf9f4007dc85008fa59e0f5d1ea559da632749cdd1"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/concrete_block_wall/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_block_wall/concrete_block_wall_nor_gl_2k.jpg",
+        "sha256": "e7f6a5e8a83ac939590eca3a6be4e74dff3d803ddbf472598437bda13f59b951"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/concrete_block_wall/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_block_wall/concrete_block_wall_arm_2k.jpg",
+        "sha256": "5f5b68651c2af23722e95addec815b17b42e9fe8b41134f854e7609a9883e7f2"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/concrete_block_wall/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_block_wall/concrete_block_wall_rough_2k.jpg",
+        "sha256": "0b4e9163cc341bf2c86a2fd32d80b6000e2054df114a211a6bae2b3ded77c118"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/concrete_block_wall/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_block_wall/concrete_block_wall_ao_2k.jpg",
+        "sha256": "fba985b971a6388d334006e3d2d4ef81ab92da26982fa4fae5ff56ddb25dc16c"
+      }
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ]
+  },
+  {
+    "category": "Asphalt",
+    "asset": "asphalt_02",
+    "source": "https://polyhaven.com/a/asphalt_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/asphalt_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_diff_2k.jpg",
+        "sha256": "28f5ba8690553f192c0e5e1a5ff40f34765b4b93f4cc7059b1a3e9c795b6c28c"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/asphalt_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_nor_gl_2k.jpg",
+        "sha256": "ffe49db71a0fd34c1e259625df66a302a237597d6ef655307987ec4e45bc6f21"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/asphalt_02/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_arm_2k.jpg",
+        "sha256": "ed70e88640e4ed51cf1c3e57cb20db26983599b20b867c2526439e3a2c849fea"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/asphalt_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_rough_2k.jpg",
+        "sha256": "b9a516b61b7040a9245ac206642d5f767ad9589a0169c4a1668221429e8a998c"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/asphalt_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_ao_2k.jpg",
+        "sha256": "5fe1737cbbcd55f2fec3632d6170762e5733f24bbc7a7816afb22a23c710b11f"
+      }
+    },
+    "dimensions_mm": [
+      3000.000238418579,
+      3000
+    ]
+  },
+  {
+    "category": "Corrugated",
+    "asset": "corrugated_iron",
+    "source": "https://polyhaven.com/a/corrugated_iron",
+    "license": "CC0-1.0",
+    "authors": {
+      "Jenelle van Heerden": "Processing",
+      "Dimitrios Savva": "Photography"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/corrugated_iron/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron/corrugated_iron_diff_2k.jpg",
+        "sha256": "d904c2f294c0c8f0f198e115517fcdd6fc3a314d28c10e69881eac2890f028df"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/corrugated_iron/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron/corrugated_iron_nor_gl_2k.jpg",
+        "sha256": "86a2c9e5111ef0354961c355f863868e9705f4ff2f5e3e46220ac1e1425fd892"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/corrugated_iron/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron/corrugated_iron_arm_2k.jpg",
+        "sha256": "d4b47e0b74a05ad82cfd939f0a7e660aab2a7f736f25eb8af48000d57a89ec9f"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/corrugated_iron/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron/corrugated_iron_rough_2k.jpg",
+        "sha256": "5da4c3d958657b404e1d5ab1284662fe2000fabc8025030c805a5e1906f2f2b2"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/corrugated_iron/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron/corrugated_iron_ao_2k.jpg",
+        "sha256": "5e9e3faff9db8d649da7782a86ca79ad5d3bf20c01d4c6c091601b495da9d5f7"
+      },
+      "Metal": {
+        "path": "Assets/Alley/Textures/PBR/corrugated_iron/Metal.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron/corrugated_iron_metal_2k.jpg",
+        "sha256": "96cb8fce6715c455becf9e57cb0b19d5c5d6517412831559dd008c0e87584bba"
+      }
+    },
+    "dimensions_mm": [
+      1120.0000047683716,
+      1120.0000047683716
+    ]
+  },
+  {
+    "category": "Steel",
+    "asset": "rusty_metal_02",
+    "source": "https://polyhaven.com/a/rusty_metal_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/rusty_metal_02/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_metal_02/rusty_metal_02_diff_2k.jpg",
+        "sha256": "4c887dd400ed8a5964377c65e20654262307d6888443eae85feb80cc6e72287a"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/rusty_metal_02/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_metal_02/rusty_metal_02_nor_gl_2k.jpg",
+        "sha256": "a7aa9c3e4b6859c723c8e9dc5b96d7ed6eed863271358a91641c727555da75ce"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/rusty_metal_02/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_metal_02/rusty_metal_02_arm_2k.jpg",
+        "sha256": "500189e41e84d017937608171370b18e862d2c6d808c2b98963b8e23642b1cd4"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/rusty_metal_02/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_metal_02/rusty_metal_02_rough_2k.jpg",
+        "sha256": "1d0748dfe7754d8b18c1dea5a2dff2da30848787d35abeb916c34b804decca3a"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/rusty_metal_02/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rusty_metal_02/rusty_metal_02_ao_2k.jpg",
+        "sha256": "84d6f92cfadd4880dc65f32ab8d00c4b614397f4a04c0a4f9a5a5b2971fa8879"
+      }
+    },
+    "dimensions_mm": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "category": "Painted Metal",
+    "asset": "painted_metal_shutter",
+    "source": "https://polyhaven.com/a/painted_metal_shutter",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dario Barresi": "Baking",
+      "Rico Cilliers": "Processing ",
+      "Charlotte Baglioni": "Photography"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/painted_metal_shutter/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_diff_2k.jpg",
+        "sha256": "0aa6835b7da52960dd371897f1777166210ca07386a2872eb162ab8398595997"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/painted_metal_shutter/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_nor_gl_2k.jpg",
+        "sha256": "2757f76146b522c9a0e5c057bd8fcac6600861def33a814c63b8b8e1f6a1d97f"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/painted_metal_shutter/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_arm_2k.jpg",
+        "sha256": "86f1b5e96df17d30114007b17ba272b7c8771fc212223257cb2621aa9ce39ce1"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/painted_metal_shutter/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_rough_2k.jpg",
+        "sha256": "69baaf22e4be633912567d8518a607b5bcfdca68f5cb049d3c956e81700b8008"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/painted_metal_shutter/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_ao_2k.jpg",
+        "sha256": "7a4b761fb1e2adad899695d49cbb4bd7a9bc2d4a3f29b44cd9ff29b325b22ee7"
+      }
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ]
+  },
+  {
+    "category": "Wood",
+    "asset": "weathered_brown_planks",
+    "source": "https://polyhaven.com/a/weathered_brown_planks",
+    "license": "CC0-1.0",
+    "authors": {
+      "Dimitrios Savva": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/weathered_brown_planks/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_brown_planks/weathered_brown_planks_diff_2k.jpg",
+        "sha256": "070ebc4c56a6729ca73a791f7cd3bab7670eb03bfa9ac0218864a554228bcc30"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/weathered_brown_planks/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_brown_planks/weathered_brown_planks_nor_gl_2k.jpg",
+        "sha256": "1c4882afd62de8da66b6e0730894e1a08db1e0cdd2370bd8bce77a6935d8812b"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/weathered_brown_planks/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_brown_planks/weathered_brown_planks_arm_2k.jpg",
+        "sha256": "61fbdcbd05b7fd66f11f691833dbca6fe458038e97695cfd4b8a96c4e0425311"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/weathered_brown_planks/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_brown_planks/weathered_brown_planks_rough_2k.jpg",
+        "sha256": "6897855d0e2758b612fd8cf478aed01b4992d856987a8b4951e5758a48003df2"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/weathered_brown_planks/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_brown_planks/weathered_brown_planks_ao_2k.jpg",
+        "sha256": "69d2aa676f199365dd63253b36db7e1ac78eafbb835055528856c9c3d16d3e5f"
+      }
+    },
+    "dimensions_mm": [
+      1799.9999523162842,
+      1799.9999523162842
+    ]
+  },
+  {
+    "category": "Plastic",
+    "asset": "weathered_pvc_tank",
+    "source": "https://polyhaven.com/a/weathered_pvc_tank",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/weathered_pvc_tank/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_pvc_tank/weathered_pvc_tank_diff_2k.jpg",
+        "sha256": "061fbffe353a58feb4a14f5bd838367ec414d2ee3105da9be68b8d65985bb940"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/weathered_pvc_tank/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_pvc_tank/weathered_pvc_tank_nor_gl_2k.jpg",
+        "sha256": "9c9f7205074f180f645a8e4a6c69a6f3cbfab4b3a8623797355c24e20f6c1fbf"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/weathered_pvc_tank/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_pvc_tank/weathered_pvc_tank_arm_2k.jpg",
+        "sha256": "21790a3cce3bf1f271c525478a6d07aea380179b50815cb02dba693ae10ae194"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/weathered_pvc_tank/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_pvc_tank/weathered_pvc_tank_rough_2k.jpg",
+        "sha256": "047e1f6481f0b9f183b83185facf78289143c7e8a853eacce8d5d8c65b7325e3"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/weathered_pvc_tank/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/weathered_pvc_tank/weathered_pvc_tank_ao_2k.jpg",
+        "sha256": "a60fc897004e26547d95180d97699fdf032dc10e33c9fbd8d0971291209cc325"
+      }
+    },
+    "dimensions_mm": [
+      985.4300022125244,
+      985.433042049408
+    ]
+  },
+  {
+    "category": "Rubber",
+    "asset": "rubber_tiles",
+    "source": "https://polyhaven.com/a/rubber_tiles",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "maps": {
+      "Diffuse": {
+        "path": "Assets/Alley/Textures/PBR/rubber_tiles/Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rubber_tiles/rubber_tiles_diff_2k.jpg",
+        "sha256": "a14ed9c9b8235a71ce2d7d0d5d0d949a07b8e895d2b78cb3589a6c755bd95215"
+      },
+      "nor_gl": {
+        "path": "Assets/Alley/Textures/PBR/rubber_tiles/nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rubber_tiles/rubber_tiles_nor_gl_2k.jpg",
+        "sha256": "27b1e34b797cf4f8ccbfa8fba1736b0ec6d9e0e14522c095b68fe16d483f2aa5"
+      },
+      "arm": {
+        "path": "Assets/Alley/Textures/PBR/rubber_tiles/arm.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rubber_tiles/rubber_tiles_arm_2k.jpg",
+        "sha256": "45e82627303e16525b1c52266608ceb8db1468339fe214d715219468affaa6ef"
+      },
+      "Rough": {
+        "path": "Assets/Alley/Textures/PBR/rubber_tiles/Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rubber_tiles/rubber_tiles_rough_2k.jpg",
+        "sha256": "5679ff2440d15093bd60df56460199f3b31cdee14bb7bf1983be3af8b8fa60c2"
+      },
+      "AO": {
+        "path": "Assets/Alley/Textures/PBR/rubber_tiles/AO.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rubber_tiles/rubber_tiles_ao_2k.jpg",
+        "sha256": "c835737880d737ce1dc9263ebdf80e525d2efba60ff85d9ae6feec4123d28eff"
+      }
+    },
+    "dimensions_mm": [
+      1999.9996423721313,
+      1999.9996423721313
+    ]
+  },
+  {
+    "category": "Ceramic",
+    "asset": "rounded_square_tiled_wall",
+    "source": "https://polyhaven.com/a/rounded_square_tiled_wall",
+    "license": "CC0-1.0",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "dimensions_mm": [
+      2000,
+      2000
+    ]
+  },
+  {
+    "category": "Cardboard",
+    "asset": "Cardboard002",
+    "source": "https://ambientcg.com/view?id=Cardboard002",
+    "license": "CC0-1.0"
+  },
+  {
+    "category": "Glass",
+    "asset": "Window Reflection",
+    "source": "Original Unity URP material parameters; no downloaded image",
+    "license": "Project-authored",
+    "notes": "Thin alpha-blended reflective layer over the existing curtain surface. Not modeled interior refraction."
+  }
+]

@@ -1,0 +1,2 @@
+Scene=Assets/Scenes/Alley.unity; missing scripts=0; center-route floor holes=0; controllers=1; cameras=1; player=(0.20, 0.15, 2.00); renderers=3604; original mesh transforms changed=0; maps=1; probes=117
+Post-detail controller check: delta=(0.00, 0.00, 4.40); grounded=True

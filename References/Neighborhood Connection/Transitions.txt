@@ -1,0 +1,2 @@
+Scene Apartment position (-0.45, 0.08, 0.48) yaw 7.000001 height 1.65
+Scene Alley position (21.55, 0.08, 63.52) yaw 7.000001 eye height 1.65

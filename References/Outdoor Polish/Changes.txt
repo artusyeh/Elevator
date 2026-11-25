@@ -1,0 +1,13 @@
+OUTDOOR POLISH
+
+Modified the shared Side Streets prefab in place, retaining its GUID and its use in both scenes. Added staggered architectural rows behind and beside the primary houses, extended continuous ground, formed small service courts, and enclosed both service bends with buildings. No black masking planes were used. The added architecture uses the existing editable mesh/frame workflow and free project materials.
+
+Replaced the repetitive house at the end of the main sightline with Corner Apartments: lower main volume, taller stair tower, setback upper storey, balconies, handrails, window frames/sills/curtains, entrance canopy, intercom, ACs and brackets, vertical drainage pipes, electrical cabinet and roof tank. Tokyo Tower remains image-based and visible above the roofline from the original spawn and midstreet.
+
+Side street houses now have street-facing entries and lights, condensers and brackets, framed windows, a mixture of illuminated and unlit curtains, meters, cables, gutters, plants and household supplies. Corrected the south-west houses to face the left branch. Added spill from existing lamp fixtures to reveal shadowed architecture while retaining darker intervals.
+
+TokyoNight.shader now uses layered directional noise for thin clouds, a deeper zenith gradient, restrained horizon haze/light pollution and varied scattered stars. The original photographed tower composite is preserved. Both scenes use the same sky material and source neighborhood prefabs. No render pipeline change, paid assets, interior expansion or horror mechanics.
+
+Verification: visually reviewed all nine requested viewpoints plus both service bends, first as full captures and as a review sheet, then recaptured after corrections. Original spawn-to-door CharacterController route passed all 8 checkpoints; both side branch tests passed. Ground ray sampling: 376 points, 0 unsupported. Horizontal sightlines: 8 positions x 72 bearings = 576 rays, none escaped neighborhood geometry within 150m. These are sampled checks, not a guarantee about every possible camera position. Missing mesh/material counts and final sky shader errors are zero. Existing reflection probes refreshed.
+
+Remaining quality limits: distant facade modules still repeat in the background; some AC meshes and small utility pieces remain simpler than scanned props. The original main-alley fixtures, shop, vending machines and props were retained. Detailed review images and audit logs are in this folder. Source scenes and shared prefab were backed up before this pass.

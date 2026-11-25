@@ -1,0 +1,1554 @@
+{
+  "models": [
+    {
+      "asset": "potted_plant_01",
+      "source": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "materials": [
+        {
+          "name": "potted_plant_01_pot",
+          "color": "textures/potted_plant_01_pot_diff_2k.jpg",
+          "normal": "textures/potted_plant_01_pot_nor_gl_2k.jpg",
+          "arm": "textures/potted_plant_01_pot_rough_2k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/potted_plant_01_pot_rough_2k_Unity.png"
+        },
+        {
+          "name": "potted_plant_01_leaves",
+          "color": "textures/potted_plant_01_leaves_diff_2k.jpg",
+          "normal": "textures/potted_plant_01_leaves_nor_gl_2k.jpg",
+          "arm": "textures/potted_plant_01_leaves_rough_2k.jpg",
+          "alpha": "MASK",
+          "doubleSided": true,
+          "unityMask": "textures/potted_plant_01_leaves_rough_2k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "potted_plant_02",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "license": "CC0-1.0",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "materials": [
+        {
+          "name": "potted_plant_02_pot",
+          "color": "textures/potted_plant_02_pot_diff_2k.jpg",
+          "normal": "textures/potted_plant_02_pot_nor_gl_2k.jpg",
+          "arm": "textures/potted_plant_02_pot_rough_2k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/potted_plant_02_pot_rough_2k_Unity.png"
+        },
+        {
+          "name": "potted_plant_02_leaves",
+          "color": "textures/potted_plant_02_leaves_diff_2k.jpg",
+          "normal": "textures/potted_plant_02_leaves_nor_gl_2k.jpg",
+          "arm": "textures/potted_plant_02_leaves_rough_2k.jpg",
+          "alpha": "MASK",
+          "doubleSided": true,
+          "unityMask": "textures/potted_plant_02_leaves_rough_2k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "potted_plant_04",
+      "source": "https://polyhaven.com/a/potted_plant_04",
+      "license": "CC0-1.0",
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "materials": [
+        {
+          "name": "potted_plant_04",
+          "color": "textures/potted_plant_04_diff_2k.jpg",
+          "normal": "textures/potted_plant_04_nor_gl_2k.jpg",
+          "arm": "textures/potted_plant_04_arm_2k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/potted_plant_04_arm_2k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "trashbag",
+      "source": "https://polyhaven.com/a/trashbag",
+      "license": "CC0-1.0",
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "materials": [
+        {
+          "name": "trashbag",
+          "color": "textures/trashbag_diff_1k.jpg",
+          "normal": "textures/trashbag_nor_gl_1k.jpg",
+          "arm": "textures/trashbag_arm_1k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/trashbag_arm_1k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "plastic_crate_01",
+      "source": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "materials": [
+        {
+          "name": "plastic_crate_01",
+          "color": "textures/plastic_crate_01_diff_1k.jpg",
+          "normal": "textures/plastic_crate_01_nor_gl_1k.jpg",
+          "arm": "textures/plastic_crate_01_arm_1k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/plastic_crate_01_arm_1k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "plastic_crate_02",
+      "source": "https://polyhaven.com/a/plastic_crate_02",
+      "license": "CC0-1.0",
+      "authors": {
+        "Fabi_G": "All"
+      },
+      "materials": [
+        {
+          "name": "plastic_crate_02",
+          "color": "textures/plastic_crate_02_diff_1k.jpg",
+          "normal": "textures/plastic_crate_02_nor_gl_1k.jpg",
+          "arm": "textures/plastic_crate_02_arm_1k.jpg",
+          "alpha": "BLEND",
+          "doubleSided": false,
+          "unityMask": "textures/plastic_crate_02_arm_1k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "cardboard_box_01",
+      "source": "https://polyhaven.com/a/cardboard_box_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "Rahul Chaudhary": "All"
+      },
+      "materials": [
+        {
+          "name": "cardboard_box_01",
+          "color": "textures/cardboard_box_01_diff_1k.jpg",
+          "normal": "textures/cardboard_box_01_nor_gl_1k.jpg",
+          "arm": "textures/cardboard_box_01_arm_1k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/cardboard_box_01_arm_1k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "utility_box_01",
+      "source": "https://polyhaven.com/a/utility_box_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "materials": [
+        {
+          "name": "utility_box_01",
+          "color": "textures/utility_box_01_diff_1k.jpg",
+          "normal": "textures/utility_box_01_nor_gl_1k.jpg",
+          "arm": "textures/utility_box_01_arm_1k.jpg",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "unityMask": "textures/utility_box_01_arm_1k_Unity.png"
+        }
+      ]
+    },
+    {
+      "asset": "city-bicycle",
+      "source": "https://tevy.dev/models/city-bicycle",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.625,
+        "y": 1.148,
+        "z": 1.871
+      },
+      "materials": [
+        {
+          "name": "city-bicycle_body0",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        },
+        {
+          "name": "anod",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.03500000014901161,
+            0.03500000014901161,
+            0.03999999910593033,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "alloy.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.6200000047683716,
+            0.6200000047683716,
+            0.6299999952316284,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.30000001192092896
+        },
+        {
+          "name": "amber.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8500000238418579,
+            0.4000000059604645,
+            0.019999999552965164,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.11999999731779099
+        },
+        {
+          "name": "chrome.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8799999952316284,
+            0.8799999952316284,
+            0.8799999952316284,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.07999999821186066
+        },
+        {
+          "name": "redrefl",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.550000011920929,
+            0.019999999552965164,
+            0.019999999552965164,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.11999999731779099
+        },
+        {
+          "name": "red.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.4000000059604645,
+            0.009999999776482582,
+            0.009999999776482582,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.10000000149011612
+        },
+        {
+          "name": "reflect",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.949999988079071,
+            0.949999988079071,
+            0.949999988079071,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.15000000596046448
+        },
+        {
+          "name": "lamp.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8500000238418579,
+            0.8500000238418579,
+            0.8500000238418579,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.05999999865889549
+        },
+        {
+          "name": "spoke",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.7200000286102295,
+            0.7200000286102295,
+            0.7300000190734863,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.2199999988079071
+        }
+      ]
+    },
+    {
+      "asset": "cargo-bicycle",
+      "source": "https://tevy.dev/models/cargo-bicycle",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.647,
+        "y": 1.171,
+        "z": 2.875
+      },
+      "materials": [
+        {
+          "name": "cargo-bicycle_body0",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        },
+        {
+          "name": "anod",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.03500000014901161,
+            0.03500000014901161,
+            0.03999999910593033,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "alloy.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.6200000047683716,
+            0.6200000047683716,
+            0.6299999952316284,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.30000001192092896
+        },
+        {
+          "name": "amber.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8500000238418579,
+            0.4000000059604645,
+            0.019999999552965164,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.11999999731779099
+        },
+        {
+          "name": "chrome.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8799999952316284,
+            0.8799999952316284,
+            0.8799999952316284,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.07999999821186066
+        },
+        {
+          "name": "red.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.4000000059604645,
+            0.009999999776482582,
+            0.009999999776482582,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.10000000149011612
+        },
+        {
+          "name": "lamp.001",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8500000238418579,
+            0.8500000238418579,
+            0.8500000238418579,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.05999999865889549
+        },
+        {
+          "name": "reflect",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.949999988079071,
+            0.949999988079071,
+            0.949999988079071,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.15000000596046448
+        },
+        {
+          "name": "spoke",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.7200000286102295,
+            0.7200000286102295,
+            0.7300000190734863,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.2199999988079071
+        }
+      ]
+    },
+    {
+      "asset": "waste-bin",
+      "source": "https://tevy.dev/models/waste-bin",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.43,
+        "y": 1.235,
+        "z": 0.498
+      },
+      "materials": [
+        {
+          "name": "waste_bin",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "metal-bucket",
+      "source": "https://tevy.dev/models/metal-bucket",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.342,
+        "y": 0.299,
+        "z": 0.333
+      },
+      "materials": [
+        {
+          "name": "bucket_0",
+          "color": "Image2.png",
+          "normal": "Image0.png",
+          "arm": "Image1.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "traffic-cone",
+      "source": "https://tevy.dev/models/traffic-cone",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.38,
+        "y": 0.75,
+        "z": 0.38
+      },
+      "materials": [
+        {
+          "name": "traffic_cone",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "green-plastic-watering-can",
+      "source": "https://tevy.dev/models/green-plastic-watering-can",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.655,
+        "y": 0.392,
+        "z": 0.2
+      },
+      "materials": [
+        {
+          "name": "alley_pots",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "drink-crate-stack",
+      "source": "https://tevy.dev/models/drink-crate-stack",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 3.309,
+        "y": 1.2,
+        "z": 0.613
+      },
+      "materials": [
+        {
+          "name": "drink_crates",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "a-frame-chalkboard-sign",
+      "source": "https://tevy.dev/models/a-frame-chalkboard-sign",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.624,
+        "y": 0.991,
+        "z": 0.471
+      },
+      "materials": [
+        {
+          "name": "floor_menu_board_0",
+          "color": "Image2.png",
+          "normal": "Image0.png",
+          "arm": "Image1.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "wash-bottle",
+      "source": "https://tevy.dev/models/wash-bottle",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.074,
+        "y": 0.231,
+        "z": 0.123
+      },
+      "materials": [
+        {
+          "name": "lab_wash_bottle",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        },
+        {
+          "name": "lab_wash_bottle_liquid_clear",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.8999999761581421,
+            0.949999988079071,
+            0.9700000286102295,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.029999999329447746
+        },
+        {
+          "name": "lab_wash_bottle_frost",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.9300000071525574,
+            0.9399999976158142,
+            0.9300000071525574,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.5
+        }
+      ]
+    },
+    {
+      "asset": "foam-box-herb-planter",
+      "source": "https://tevy.dev/models/foam-box-herb-planter",
+      "license": "CC0-1.0",
+      "dimensions": {
+        "x": 0.576,
+        "y": 0.388,
+        "z": 0.457
+      },
+      "materials": [
+        {
+          "name": "alley_pots",
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask0.png"
+        },
+        {
+          "name": "alley_leaves",
+          "color": "Image4.png",
+          "normal": "Image3.png",
+          "arm": "Image5.png",
+          "alpha": "MASK",
+          "doubleSided": true,
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "unityMask": "Mask1.png"
+        }
+      ]
+    },
+    {
+      "asset": "commuter-bicycle",
+      "source": "https://www.innerscene.com/tools/library/3d-parts/city-bicycle-58a2a324",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.27000001072883606,
+            0.3100000023841858,
+            0.3499999940395355,
+            1
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "black",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.017999999225139618,
+            0.023000000044703484,
+            0.028999999165534973,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "blue",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.02500000037252903,
+            0.12999999523162842,
+            0.2800000011920929,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "chrome",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.6499999761581421,
+            0.699999988079071,
+            0.7599999904632568,
+            1
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "white",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.800000011920929,
+            0.8199999928474426,
+            0.800000011920929,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "rubber",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "factor": [
+            0.02199999988079071,
+            0.027000000700354576,
+            0.03200000151991844,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6499999761581421
+        }
+      ]
+    },
+    {
+      "asset": "wall-mailbox",
+      "source": "Original Blender model: References/SetDressing/author_details.py",
+      "license": "Project-authored",
+      "materials": [
+        {
+          "name": "Ash Handle",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3799999952316284,
+            0.2800000011920929,
+            0.1599999964237213,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "Black Polymer",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.02500000037252903,
+            0.029999999329447746,
+            0.02800000086426735,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Brushed Steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.36000001430511475,
+            1.0
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "Ivory Enamel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.5799999833106995,
+            0.6000000238418579,
+            0.5299999713897705,
+            1.0
+          ],
+          "metallic": 0.15000000596046448,
+          "roughness": 0.47999998927116394
+        },
+        {
+          "name": "Signal Red",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3400000035762787,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "metallic": 0.10000000149011612,
+          "roughness": 0.41999998688697815
+        },
+        {
+          "name": "Umbrella Fabric",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.054999999701976776,
+            0.07500000298023224,
+            0.08500000089406967,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "asset": "entrance-intercom",
+      "source": "Original Blender model: References/SetDressing/author_details.py",
+      "license": "Project-authored",
+      "materials": [
+        {
+          "name": "Ash Handle",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3799999952316284,
+            0.2800000011920929,
+            0.1599999964237213,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "Black Polymer",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.02500000037252903,
+            0.029999999329447746,
+            0.02800000086426735,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Brushed Steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.36000001430511475,
+            1.0
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "Ivory Enamel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.5799999833106995,
+            0.6000000238418579,
+            0.5299999713897705,
+            1.0
+          ],
+          "metallic": 0.15000000596046448,
+          "roughness": 0.47999998927116394
+        },
+        {
+          "name": "Signal Red",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3400000035762787,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "metallic": 0.10000000149011612,
+          "roughness": 0.41999998688697815
+        },
+        {
+          "name": "Umbrella Fabric",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.054999999701976776,
+            0.07500000298023224,
+            0.08500000089406967,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "asset": "security-camera",
+      "source": "Original Blender model: References/SetDressing/author_details.py",
+      "license": "Project-authored",
+      "materials": [
+        {
+          "name": "Ash Handle",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3799999952316284,
+            0.2800000011920929,
+            0.1599999964237213,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "Black Polymer",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.02500000037252903,
+            0.029999999329447746,
+            0.02800000086426735,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Brushed Steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.36000001430511475,
+            1.0
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "Ivory Enamel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.5799999833106995,
+            0.6000000238418579,
+            0.5299999713897705,
+            1.0
+          ],
+          "metallic": 0.15000000596046448,
+          "roughness": 0.47999998927116394
+        },
+        {
+          "name": "Signal Red",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3400000035762787,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "metallic": 0.10000000149011612,
+          "roughness": 0.41999998688697815
+        },
+        {
+          "name": "Umbrella Fabric",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.054999999701976776,
+            0.07500000298023224,
+            0.08500000089406967,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "asset": "street-broom",
+      "source": "Original Blender model: References/SetDressing/author_details.py",
+      "license": "Project-authored",
+      "materials": [
+        {
+          "name": "Ash Handle",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3799999952316284,
+            0.2800000011920929,
+            0.1599999964237213,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "Black Polymer",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.02500000037252903,
+            0.029999999329447746,
+            0.02800000086426735,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Brushed Steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.36000001430511475,
+            1.0
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "Ivory Enamel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.5799999833106995,
+            0.6000000238418579,
+            0.5299999713897705,
+            1.0
+          ],
+          "metallic": 0.15000000596046448,
+          "roughness": 0.47999998927116394
+        },
+        {
+          "name": "Signal Red",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3400000035762787,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "metallic": 0.10000000149011612,
+          "roughness": 0.41999998688697815
+        },
+        {
+          "name": "Umbrella Fabric",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.054999999701976776,
+            0.07500000298023224,
+            0.08500000089406967,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "asset": "folded-umbrella",
+      "source": "Original Blender model: References/SetDressing/author_details.py",
+      "license": "Project-authored",
+      "materials": [
+        {
+          "name": "Ash Handle",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3799999952316284,
+            0.2800000011920929,
+            0.1599999964237213,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "Black Polymer",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.02500000037252903,
+            0.029999999329447746,
+            0.02800000086426735,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Brushed Steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.36000001430511475,
+            1.0
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "Ivory Enamel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.5799999833106995,
+            0.6000000238418579,
+            0.5299999713897705,
+            1.0
+          ],
+          "metallic": 0.15000000596046448,
+          "roughness": 0.47999998927116394
+        },
+        {
+          "name": "Signal Red",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3400000035762787,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "metallic": 0.10000000149011612,
+          "roughness": 0.41999998688697815
+        },
+        {
+          "name": "Umbrella Fabric",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.054999999701976776,
+            0.07500000298023224,
+            0.08500000089406967,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "asset": "shop-noren",
+      "source": "Original Blender model: References/SetDressing/author_details.py",
+      "license": "Project-authored",
+      "materials": [
+        {
+          "name": "Ash Handle",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3799999952316284,
+            0.2800000011920929,
+            0.1599999964237213,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "Black Polymer",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.02500000037252903,
+            0.029999999329447746,
+            0.02800000086426735,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Brushed Steel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.36000001430511475,
+            1.0
+          ],
+          "metallic": 0.800000011920929,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "Ivory Enamel",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.5799999833106995,
+            0.6000000238418579,
+            0.5299999713897705,
+            1.0
+          ],
+          "metallic": 0.15000000596046448,
+          "roughness": 0.47999998927116394
+        },
+        {
+          "name": "Signal Red",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.3400000035762787,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "metallic": 0.10000000149011612,
+          "roughness": 0.41999998688697815
+        },
+        {
+          "name": "Umbrella Fabric",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "alpha": "OPAQUE",
+          "doubleSided": false,
+          "factor": [
+            0.054999999701976776,
+            0.07500000298023224,
+            0.08500000089406967,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.8500000238418579
+        }
+      ]
+    },
+    {
+      "asset": "blossom-wave-manhole-cover",
+      "source": "https://tevy.dev/models/blossom-wave-manhole-cover",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "drain_set",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "unityMask": "Mask0.png"
+        }
+      ]
+    },
+    {
+      "asset": "street-gully-grate",
+      "source": "https://tevy.dev/models/street-gully-grate",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "drain_set",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true,
+          "color": "Image1.png",
+          "normal": "Image0.png",
+          "arm": "Image2.png",
+          "unityMask": "Mask0.png"
+        }
+      ]
+    }
+  ]
+}

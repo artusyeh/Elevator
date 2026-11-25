@@ -1,0 +1,18 @@
+Electrical room service shelf repair
+
+Moved the complete shelf assembly 35 cm to the right, preserving the plank, brackets and room layout. It now clears the distribution cabinet by 32 cm. Extended the rear of the existing plank to meet the tiled wall while retaining its front edge. Seated bracket wall plates flush to the wall and added their visible fasteners.
+
+Removed the generic rod screwdriver and the unrecognizable upright ceramic-fuse shapes from this shelf. Replaced them with the free CC0 Poly Haven Screwdriver and Pliers models by PierreB3D:
+https://polyhaven.com/a/screwdriver
+https://polyhaven.com/a/pliers
+https://polyhaven.com/license
+
+Original models and 2K color, normal, AO/roughness/metallic maps are preserved in Assets/Building/Models/Screwdriver and Pliers. Imported into editable FBX assets with preserved UVs; rotated onto their resting faces and fitted at source proportions (screwdriver 21 cm, pliers 18 cm). Unity materials use correctly packed metallic/AO/smoothness maps. Both tools have reusable prefabs with simple colliders. Editable Blender originals, acquisition and preparation scripts and source/license metadata are retained in this folder.
+
+Both tool footprints lie entirely on the plank. Their minimum surface clearance is 0.7 mm. Checked the actual saved scene after reopening: poses, original detailed textures and materials persist. Door leaf swept through 19 positions with no shelf intersection. Alley preview inherits the moved shelf and both imported tools.
+
+Updated Apartment scene, Electrical Room and Entrance Interior prefabs in place. Reusable assets: Assets/Building/Prefabs/Service Shelf.prefab, Screwdriver.prefab, Pliers.prefab. All electrical controls remain in place. No light, player, power or interaction behavior changes. No paid tools/services.
+
+Authoring: Assets/Building/Editor/ServiceShelfRepair.cs.
+Before/after screenshots: Service Shelf Before/After.png and Electrical Room Shelf Before/After.png.
+Detailed results: Checks.txt.

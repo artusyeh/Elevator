@@ -1,0 +1,13 @@
+Main-route controller movement: (0.00, -0.01, 46.00) grounded=True
+Vending collision stops controller at x=1.925799
+Side passage controller stops at (8.19, 0.08, 25.00) grounded=True
+Ground samples=296 missing=0
+Asphalt top=-0.08499999
+Cover lip relative to asphalt=0.001000002
+Cover lip relative to asphalt=0.001000002
+Cover lip relative to asphalt=0.001000002
+Cover lip relative to asphalt=0.001000002
+Cover lip relative to asphalt=0.001000002
+Vending machines=2
+Machine position=(2.65, 0.16, 12.50) collider=(1.05, 1.85, 0.73) materials=10
+Machine position=(2.65, 0.16, 13.65) collider=(1.05, 1.85, 0.73) materials=10

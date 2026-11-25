@@ -1,0 +1,1 @@
+338 street-floor samples plus 10 side-alley samples: missing ground=0; 1872 horizontal boundary rays: unblocked=0; 

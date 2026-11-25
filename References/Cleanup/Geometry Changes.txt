@@ -1,0 +1,14 @@
+Power pole moved from (-3.05, 4.90, 3.00) to (-2.87, 0.00, 2.35); mast and crossarm clear the balconies.
+Power pole moved from (-2.79, 4.90, 22.00) to (-2.79, 0.00, 19.65); mast and crossarm clear the balconies.
+Power pole moved from (-3.33, 4.90, 41.00) to (-3.08, 0.00, 41.00); mast and crossarm clear the balconies.
+Power pole moved from (3.05, 4.90, 10.00) to (3.05, 0.00, 8.20); mast and crossarm clear the balconies.
+Power pole moved from (3.84, 4.90, 29.00) to (3.70, 0.00, 27.35); mast and crossarm clear the balconies.
+Power pole moved from (2.70, 4.90, 48.00) to (2.70, 0.00, 47.15); mast and crossarm clear the balconies.
+Removed overlapping rain eave beneath balcony at (-6.30, 0.00, 9.90)
+Removed overlapping rain eave beneath balcony at (6.30, 0.00, 11.40)
+Removed overlapping rain eave beneath balcony at (-6.31, 0.00, 22.90)
+Removed overlapping rain eave beneath balcony at (-6.00, 0.00, 35.90)
+Removed overlapping rain eave beneath balcony at (6.76, 0.00, 37.40)
+Removed overlapping rain eave beneath balcony at (-6.65, 0.00, 48.90)
+Removed overlapping rain eave beneath balcony at (5.95, 0.00, 50.40)
+Anchored cantilever slabs=15; corrected AC brackets=30; mounted wall hardware=40; settled props=35

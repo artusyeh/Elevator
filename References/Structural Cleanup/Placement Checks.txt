@@ -1,0 +1,1 @@
+AC cabinets checked=56 door/glass mesh bounding overlaps=0

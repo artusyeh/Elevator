@@ -1,0 +1,7 @@
+Ground Floor: corridor overlap=0.00000 stair overlap=0.00000 level error=0.00000
+Floor 2: corridor overlap=0.00000 stair overlap=0.00000 level error=0.00000
+Floor 3: corridor overlap=0.00000 stair overlap=0.00000 level error=0.00000
+Floor 4: corridor overlap=0.00000 stair overlap=0.00000 level error=0.00000
+Floor 5: corridor overlap=0.00000 stair overlap=0.00000 level error=0.00000
+Floor 6: corridor overlap=0.00000 stair overlap=0.00000 level error=0.00000
+Level collision samples: 162/162

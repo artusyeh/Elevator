@@ -1,0 +1,3 @@
+Apartment: Fitted surface overlays=61; unsupported overlays hidden=0; supported triangles=122
+Aoba Exterior: Fitted surface overlays=41; unsupported overlays hidden=0; supported triangles=82
+Side Streets: Fitted surface overlays=434; unsupported overlays hidden=0; supported triangles=868

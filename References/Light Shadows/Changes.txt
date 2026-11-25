@@ -1,0 +1,13 @@
+Corridor fixture shadow refinement
+
+Removed the oversized, sharp fixture silhouettes on the ceiling by disabling shadow casting on the small housing, socket and bracket meshes of all 18 lobby/corridor fittings. They retain their geometry, materials and shadow receiving. The existing fluorescent tubes already had shadow casting disabled.
+
+Retained the original downward spotlights, light intensities and layout. Adjusted each original Tube Spill point light to sit 13 cm below the fixture origin instead of 6 cm, spreading its ceiling wash and reducing the nearby metal hotspot. Spill intensity is 0.65 and range 4 m; real soft shadows from walls, floors and other room geometry are retained, with near plane/bias tuned for the placement. This is a realtime approximation of an extended fluorescent source in the existing URP pipeline. No pipeline, postprocessing or exposure changes.
+
+Updated Apartment, Residential Corridor, Entrance Interior and Corridor Light prefabs. The old corridor fixture repair now reapplies these settings so rebuilding its housing does not restore the harsh shadow casters. No additional realtime lights remain, and the existing light/circuit references are preserved.
+
+Compared the same camera positions before/after in the lobby, at a fixture and along the second-floor corridor. The ceiling remains visible with gradual falloff, rather than hiding the problem in darkness. New screenshots: Lobby Shadows After.png, Fixture Shadows After.png, Corridor Shadows After.png. Point Review files are intermediate captures; After files are the final saved settings.
+
+Play Mode verification: all 6 floor lighting circuits switch off and restore their prior light states; all 18 spill lights retain room-geometry soft shadows; no obsolete trial lights or Unity Console errors. See Checks.txt. Shared Alley preview verified separately. No manual steps required.
+
+Editable authoring: Assets/Building/Editor/CorridorLightShadows.cs.

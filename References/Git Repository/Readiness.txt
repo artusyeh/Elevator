@@ -1,0 +1,86 @@
+GitHub Desktop commit readiness — 25 November 2026
+
+Result: ready to commit the intended project changes through GitHub Desktop.
+No commit or push was performed. No branch tip or existing history was rewritten.
+All local assets, including ignored source files and archives, remain on disk.
+
+Required oversized Unity asset
+Assets/Alley/Models/Vending Machine/Japanese Vending Machine.fbx
+145,736,028 bytes (138.98 MiB).
+GUID: f8c7376eac317984086218b6fe68254d
+SHA256: d534871e09a1b06b030a73ee3c1ed13aac29c2369ac84f573f7811b3a3fde7b3
+
+Git LFS 3.7.1 was already installed. Repository-local LFS filters and hooks are
+now installed. The exact required FBX path has filter=lfs diff=lfs merge=lfs
+-text in .gitattributes. Small models, materials, textures and .meta files were
+not broadly assigned to LFS. The full local FBX is unchanged; its staged Git blob
+is a small LFS pointer with the correct SHA256 and original size. The locally
+stored LFS object passed git lfs fsck --objects.
+
+Excluded local sources
+/References/Vending Machine/Original/
+  Includes the duplicate 145,736,028-byte source FBX, a 94,554,401-byte original
+  ZIP and a 45,326,004-byte nested 7z archive, plus extracted reference copies.
+/References/Vending Machine/Japanese Vending Machine.blend
+  110,198,605 bytes (105.09 MiB); not imported by Unity.
+
+The original FBX and the imported Unity FBX are byte-identical. Unity's reusable
+Vending Machine prefab depends on the model/textures/materials under Assets;
+neither source copy under References is needed to load or run the project.
+Source and License.txt, Integration.txt and other attribution notes remain
+eligible for version control. No local source file was deleted.
+
+Ignore rules
+Existing Unity exclusions for Library, Temp, Obj, Build/Builds, Logs, UserSettings,
+memory captures and generated solution/project/debug files were retained.
+Added exclusions for local browser automation output, IDE caches, .slnx files,
+Blender/Python incremental caches, decoded reference TextureCache directories,
+OS thumbnails and reference scene/prefab safety
+snapshots. Actual Assets scenes, prefabs, lighting data, textures, materials and
+their .meta files remain eligible for version control. No previously tracked
+file matched the resulting ignore rules, so index removal was unnecessary.
+
+History check
+The current branch is Lucas at c74a245f3709a4b7da6632a5ad1365a2b3b43680.
+Existing branch and remote-tracking refs resolve to the initial commit.
+Reachable blobs, including ancillary local refs and reflogs, were checked: no blob
+over 100 MiB was already in history. The three reported oversized files had
+never been committed. No LFS migration, filter-repo, rebase or reset was needed.
+
+Complete candidate audit
+A separate temporary index under ignored Library/Git Readiness was used to stage
+the complete prospective project snapshot for validation. GitHub Desktop's real
+index was not populated with unrelated project changes. The candidate contained
+zero regular Git blobs at or above 100 MiB. Only the required FBX
+used LFS. Source copies, archives and generated cache directories were absent.
+No commit was created from the temporary index.
+
+Unity verification
+Unity Editor 6000.0.60f1 could load both Alley and Apartment scenes and all 47
+model dependencies. None of those required model paths is ignored. The vending
+model still has nine imported mesh parts and the original GUID. Its reusable
+prefab resolves its original materials and 12 texture dependencies without any
+missing prefab material. Unity assets were not reimported, rewritten or moved.
+Hashes verified 2,892 protected files, including all existing Assets .meta files
+and the vending model, materials, textures, prefab and large source copies:
+zero changed or missing files.
+
+GitHub Desktop next step
+Refresh the repository's Changes view. Include .gitattributes and .gitignore in
+the same commit as the required model and intended project changes. Keep the
+model's .meta file and all intended Assets, Packages and ProjectSettings files
+selected so a fresh checkout is complete. The two excluded source files and
+their Original folder should no longer appear in Changes. The real index
+currently stages only .gitattributes, .gitignore, the LFS model and its .meta;
+existing unrelated modifications/untracked project files remain for your review.
+
+No Git LFS storage was purchased, no billing settings were changed and no LFS
+objects were uploaded. One upload of this model would use about 139 MiB of LFS
+storage. Remote account quota was not queried, so this verifies local commit
+readiness rather than promising that an account with exhausted quota can push.
+
+References
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
+https://git-scm.com/docs/gitignore
+Final complete candidate: 6756 files; 0 regular Git blobs at or above 100 MiB.

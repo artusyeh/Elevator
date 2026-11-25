@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6436976328957336782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5890613981304353286}
+  - component: {fileID: 3814182313806702372}
+  m_Layer: 0
+  m_Name: Small Bag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5890613981304353286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6436976328957336782}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2021421006387425352}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3814182313806702372
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6436976328957336782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.16701578
+  m_Height: 0.50599945
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.25299972, z: 0}
+--- !u!1001 &1983623221764773795
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5890613981304353286}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0028457195
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0024785697
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6887036679583298584, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8325df0226a5f5344b17140fcf8cb6b7, type: 2}
+    - target: {fileID: -6542807416451063200, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 97ff948a7d7f372499e5731e3984defb, type: 2}
+    - target: {fileID: -6169198523463076637, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8325df0226a5f5344b17140fcf8cb6b7, type: 2}
+    - target: {fileID: -5713057169302463491, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d9121d0cb075e09499aca3a568724861, type: 2}
+    - target: {fileID: -4795478288437332385, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: -4375115286157443079, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8325df0226a5f5344b17140fcf8cb6b7, type: 2}
+    - target: {fileID: -3785120664050437261, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Packaging
+      objectReference: {fileID: 0}
+    - target: {fileID: -3686491104770163372, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 97ff948a7d7f372499e5731e3984defb, type: 2}
+    - target: {fileID: -3551094933325578146, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Packaging
+      objectReference: {fileID: 0}
+    - target: {fileID: -2687266992757479283, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: -1351606857164524159, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Packaging
+      objectReference: {fileID: 0}
+    - target: {fileID: -918299096075489816, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: -279338185089131718, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a16d1f1b56d1e841b642221e93144bd, type: 2}
+    - target: {fileID: -1983194050599030, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 166348564686642103, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 344265790817198661, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 97ff948a7d7f372499e5731e3984defb, type: 2}
+    - target: {fileID: 910520893038507556, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 97ff948a7d7f372499e5731e3984defb, type: 2}
+    - target: {fileID: 919132149155446097, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 998166475475480840, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a16d1f1b56d1e841b642221e93144bd, type: 2}
+    - target: {fileID: 1026688178153313122, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837738347064289282, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a16d1f1b56d1e841b642221e93144bd, type: 2}
+    - target: {fileID: 2986219475367523855, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2986219475367523855, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d0f2733085d0c9342a12c5d261a80320, type: 2}
+    - target: {fileID: 3064879725788496447, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8325df0226a5f5344b17140fcf8cb6b7, type: 2}
+    - target: {fileID: 3248973892702615721, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021590993501371343, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 97ff948a7d7f372499e5731e3984defb, type: 2}
+    - target: {fileID: 4310260069454752247, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d9121d0cb075e09499aca3a568724861, type: 2}
+    - target: {fileID: 5404637103104931810, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Packaging
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437769258226892303, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d9121d0cb075e09499aca3a568724861, type: 2}
+    - target: {fileID: 5893222095846813323, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d9121d0cb075e09499aca3a568724861, type: 2}
+    - target: {fileID: 7120802130384566080, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d9121d0cb075e09499aca3a568724861, type: 2}
+    - target: {fileID: 7802954230745644612, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a16d1f1b56d1e841b642221e93144bd, type: 2}
+    - target: {fileID: 7943171708937137397, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: acc132f88d43c2a41a20893f48977ecf, type: 2}
+    - target: {fileID: 8178846151294408747, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Packaging
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186751691014506540, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306743259242429427, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458322806693233698, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779110468104319489, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+      propertyPath: m_Name
+      value: Crumpled Paper
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+--- !u!4 &2021421006387425352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e7233e8828d8419458810ee07ec3b9e6, type: 3}
+  m_PrefabInstance: {fileID: 1983623221764773795}
+  m_PrefabAsset: {fileID: 0}

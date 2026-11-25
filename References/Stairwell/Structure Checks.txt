@@ -1,0 +1,12 @@
+Floor 1 rear aperture opaque blockers=0
+Floor 1: structure sample failures=0; door locked by default=True; circuit lights=4
+Floor 2 rear aperture opaque blockers=0
+Floor 2: structure sample failures=0; door locked by default=True; circuit lights=4
+Floor 3 rear aperture opaque blockers=0
+Floor 3: structure sample failures=0; door locked by default=True; circuit lights=4
+Floor 4 rear aperture opaque blockers=0
+Floor 4: structure sample failures=0; door locked by default=True; circuit lights=4
+Floor 5 rear aperture opaque blockers=0
+Floor 5: structure sample failures=0; door locked by default=True; circuit lights=4
+Floor 6: structure sample failures=0; door locked by default=True; circuit lights=2
+Support samples=342; failed=0; maximum surface height error=0.0000m

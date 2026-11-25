@@ -1,0 +1,12 @@
+Floor 1: coplanar floor/ceiling surfaces=1
+Floor 2: coplanar floor/ceiling surfaces=2
+Floor 3: coplanar floor/ceiling surfaces=2
+Floor 4: coplanar floor/ceiling surfaces=2
+Floor 5: coplanar floor/ceiling surfaces=2
+Floor 6: coplanar floor/ceiling surfaces=2
+Level collision coverage=108/108; positive-area coplanar overlap pairs=0
+Cabin notices remaining=0
+
+Play Mode: completed rides to all six floors and back to ground. Exited and reentered across every repaired join. See Ride Checks.txt for final synchronized results.
+
+Saved Apartment; Alley cabin notices=0; floor shader errors=False

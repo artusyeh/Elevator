@@ -1,0 +1,2 @@
+Entrance approach: (2.75, 0.22, 10.11) grounded=True
+Main walking route: (0.00, -0.01, 46.00) grounded=True

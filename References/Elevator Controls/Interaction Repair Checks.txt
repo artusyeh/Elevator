@@ -1,0 +1,14 @@
+Look + E path floor 1 hit=True lamp=True queued=False
+Look + E path floor 2 hit=True lamp=True queued=True
+Look + E path floor 3 hit=True lamp=True queued=True
+Look + E path floor 4 hit=True lamp=True queued=True
+Look + E path floor 5 hit=True lamp=True queued=True
+Look + E path floor 6 hit=True lamp=True queued=True
+Close target=True
+Close moves doors=True
+Open target=True
+Open interrupts pending departure=True
+Look at plain rear wall + E hits nothing=True
+Plain wall E preserves doors=True
+
+Single floor via aimed interaction=True; open ignored during travel=True; arrival floor=6 door=0.9919992 rider local=(0.00, 0.08, 1.05)

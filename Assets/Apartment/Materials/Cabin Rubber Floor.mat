@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cabin Rubber Floor
+  m_Shader: {fileID: 4800000, guid: 2e601c433435dc241bae3a4f8327a959, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 1adbc302e2c0c60489014d63315f7bbe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: cddeef568df441548b422b69388a63bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: dcde2eebca4c96249bde22a4698c86cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 0.18
+    - _Cull: 2
+    - _Metallic: 0
+    - _Mode: 2
+    - _ReferenceLuma: 0.065
+    - _Smoothness: 0.53
+    - _TouchWear: 0
+    - _Wear: 0.83
+    m_Colors:
+    - _BaseColor: {r: 0.065, g: 0.079, b: 0.063, a: 1}
+    - _Meters: {r: 1.7, g: 2.4, b: 0, a: 0}
+    - _PanelHalfSize: {r: 0.75, g: 0.72, b: 0, a: 0}
+    - _UVOffset: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

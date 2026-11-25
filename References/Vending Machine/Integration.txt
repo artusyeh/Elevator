@@ -1,0 +1,19 @@
+Japanese Vending Machine — Alley integration
+
+Exact creator model: filadog, https://sketchfab.com/3d-models/japanese-vending-machine-4768555100004c75b5167d1aa02c683b
+CC BY 4.0. Include creator/model/license attribution and an indication of adaptation in release credits.
+Original user-downloaded ZIP: F:/桌面文件/japanese-vending-machine.zip
+Archive SHA256: 68dd32a3feacb6f7cb4d14762b644576b87e02f1fd00bdb3efda15dc621e7b53
+Original archive, nested FBX archive, extracted FBX and original texture images retained under References/Vending Machine/Original.
+
+Imported FBX file and all 11 original PNGs are byte-identical to their supplied sources. No model geometry or texture pixels were regenerated or simplified. Nine source mesh parts remain independently editable beneath the Model child of the reusable Vending Machine prefab. Native URP Lit materials use the supplied Corona beauty/diffuse maps, with scalar roughness/metallic settings; the source contains no dedicated PBR normal/roughness maps.
+The original FBX has product faces that require double-sided rendering. Enabling that restores the original can and food-package labels shown in the creator preview. Original alpha in the glass diffuse texture preserves the transparent panel and printed price notice. Display backing, products and price labels use restrained texture-based emission. Existing global bloom and exposure remain unchanged.
+
+Cabinet height 1.85 m, width approximately 1.05 m, cabinet depth approximately 0.73 m. Root BoxCollider covers the cabinet; the concrete mounting pad has its own collider. Original prefab GUID preserved by saving to Assets/Alley/Prefabs/Vending Machine.prefab. Both old procedural instances replaced. Machines moved forward to x=2.65 m to clear pre-existing wall fittings; z positions 12.50 and 13.65 m preserved. A 16 cm concrete pad keeps them supported and clear of overlapping entrance thresholds. A neutral 5100 K spot and a weak display spill light provide local illumination. No gameplay added.
+
+Road correction requested during integration: asphalt, markings, manholes and gully grates lowered 8 cm; concrete gutters and their drain-grate fittings lowered 6 cm. Curbs, buildings and existing architecture retain their transforms. Manhole tops now sit 1 mm above asphalt. The road mesh now has fitted circular cutouts so asphalt cannot cover the recessed metal centers; its continuous collision slab remains. Two overlapping side-passage floor slabs were trimmed back from the roadway and connected by a shallow threshold ramp. Continuous underlying ground remains.
+
+Validation: 296 road/passage ground samples with zero missing ground; controller traversed 44 m of the main route; vending collider stopped lateral movement; side passage remained grounded through to its gate. No Unity Console errors or warnings in the final checked batch. Reflection probes refreshed and lighting rebaked following road movement. See Validation.txt and Transform Audit.json.
+
+Final player-height images: Vending Machines.png, Road and Curb.png; additional viewpoints under References/Captures/Lighting/Vending Machines.
+No payment, account credentials, paid API or pipeline change. No manual installation step remains.

@@ -1,0 +1,6 @@
+Scene=Assets/Scenes/Apartment.unity
+Missing meshes=0
+Missing scripts=0
+Missing material slots=0
+Bake complete=True
+Player-height viewpoints=10

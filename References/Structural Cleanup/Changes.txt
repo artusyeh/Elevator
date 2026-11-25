@@ -1,0 +1,9 @@
+Structural placement cleanup
+
+Replaced 14 simplified door assemblies with fitted leaves, continuous jambs and headers, threshold sills, hinges, peepholes, locks, lever handles and letter flaps. Canopies have wall flashing, anchor plates, diagonal support brackets and front edge trim. Shifted porch fixtures clear of canopy brackets.
+
+Moved side-street ACs into clear wall sections, corrected their orientation so fans face the street, and fitted 41 wall mounts using the actual cabinet bounds. Each mount includes support arms, diagonal braces, anchor plates, bolts, isolation pads and a connected refrigerant route. Removed the unrelated old support bars. Ground-level plants and buckets seated using rendered bounds.
+
+Checked the original main alley: moved 13 AC cabinets clear of window openings, seated the resulting low installations on concrete plinths and isolation pads, and fitted complete wall mounts to the two remaining high installations. The main street layout, businesses and atmosphere are retained.
+
+Validation: 56 AC cabinets checked against nearby door/window glass meshes, 0 bounding overlaps. All 8 approach route checkpoints and both street branches pass with the CharacterController. Side-street and apartment exterior changes are shared prefab edits and appear in both scenes. Review captures saved alongside this note. All assets remain free and editable.

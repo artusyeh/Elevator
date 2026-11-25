@@ -1,0 +1,16 @@
+Final power-loss rescue: from y=3.023009 ground floor=True level=0 doors=0.9919992 no early opening=True
+Ground-floor rescue exit local=(0.00, 0.08, -1.81)
+Entrance live render=True pixel range=255
+Lobby live render=True pixel range=255
+2F Corridor live render=True pixel range=255
+3F Corridor live render=True pixel range=255
+4F Corridor live render=True pixel range=255
+5F Corridor live render=True pixel range=255
+6F Corridor live render=True pixel range=255
+Lift Car live render=True pixel range=255
+Final individual feed CPU submission ms avg=3.72 max=5.00
+Breaker reticle target=True
+Mailbox units=30 normal circuits restored=True
+
+Saved Apartment; circuits=14 CCTV channels=8 monitors=4 mailboxes=30 reticles=1 scanner=True rescue floor=1
+Final Alley reference check: power=True CCTV=True monitor links=4 reticles=1 mailboxes=30 invalid lighting bindings=0

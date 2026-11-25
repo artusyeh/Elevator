@@ -1,0 +1,26 @@
+Physical panel ray targets=15/15
+Floor 2 lighting off=True restored=True
+Floor 3 lighting off=True restored=True
+Floor 4 lighting off=True restored=True
+Floor 5 lighting off=True restored=True
+Floor 6 lighting off=True restored=True
+Console button ray=True activation=True changed channel=True distinct monitors=4
+Live geometry changed feed bytes=3250
+Camera power stops rendering=True signal=0
+Monitor power stops all active feeds=True black display=True
+Master normal lights off=True emergency lights on=8
+Rescue from y=3.023009 to floor=2 exact landing=True doors open=0.9919992 no early opening=True new unpowered request rejected=True
+Rescue exit local=(0.00, 0.08, -1.81)
+
+Electrical door aimed target=True
+Entered electrical room=True position=(-3.22, 0.08, 7.50)
+Fixture emission off=True
+Fixture emission restored=True
+Individual low-res render CPU submission ms avg=3.35 max=4.39 live cameras automatically enabled=0
+Actual residential unit labels=30 | 201,202,203,204,205,206,301,302,303,304,305,306,401,402,403,404,405,406,501,502,503,504,505,506,601,602,603,604,605,606
+
+Alley transition: scene=Alley floor4 remains off=True selected channel=3 managers=1 UI=1 unavailable channels=5
+Return transition: scene=Alley floor4 off=True selected channel=3 managers=1 CCTV systems=1 scanners=1
+Loaded Alley power state retained=True channel retained=True managers=1 UI=1 boxes=30 frame=2
+Confirmed full round trip: scene=Apartment floor4 state retained=True channel retained=True power managers=1 CCTV systems=1 UI=1 mailboxes=30
+The background Editor held frame 2 until a single test frame was stepped; the return interaction succeeded on frame 3.

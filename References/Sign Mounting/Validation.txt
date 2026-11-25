@@ -1,0 +1,9 @@
+Both vending machine transforms retained: True
+Missing scripts: 0
+Missing material slots: 0
+Saved scene: Assets/Scenes/Alley.unity
+GI bake complete: True
+43 signs supported by 9 sample points each, 1.5 mm face offset; all pass. Temporary inspection colliders removed.
+Walk check: entrance reached (2.75, 0.22, 10.11), grounded; main route reached (0, -0.01, 46), grounded.
+Vending nearest body edge z=11.975; relocated step edge z=10.737 leaves 1.238 m separation along the facade.
+Door, door frame, step, intercom and mailbox relocated together; ground window removed only in new entrance bay. AC brackets follow relocated unit above the cabinets.

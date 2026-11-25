@@ -1,0 +1,12 @@
+Japanese Vending Machine
+Creator: filadog (@filadog)
+Exact source: https://sketchfab.com/3d-models/japanese-vending-machine-4768555100004c75b5167d1aa02c683b
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Verified on 24 November 2026 from the public model page and its license link.
+The author describes the original download as FBX usable in Unity/Unreal Engine.
+Public model statistics: approximately 155,600 triangles, 78,400 vertices.
+Cost: free download. Attribution is required in the distributed game's credits.
+Suggested attribution: Japanese Vending Machine by filadog, Sketchfab, CC BY 4.0. Adapted for Unity URP (materials, lighting, scale and colliders).
+Download status: User downloaded the original archive from Sketchfab. Imported and replaced both scene instances on 24 November 2026.
+Keep the original archive and textures unchanged after acquisition. Record import modifications separately.

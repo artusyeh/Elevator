@@ -1,0 +1,1 @@
+Hero section: z=0–16 m. Existing box meshes beveled: 591. Sources: Assets/Alley/Textures/PBR/Sources.json. Nine reusable weathering prefab assets created. No main building or road transform changed.

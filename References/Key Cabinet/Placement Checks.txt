@@ -1,0 +1,1 @@
+Fixture meshes outside fitted envelope=0; fixture colliders=0; door keys=21; key/board/glass penetrations=0; shared entrance keys=21; shared entrance fixture=True

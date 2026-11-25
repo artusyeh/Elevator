@@ -1,0 +1,23 @@
+Elevator fluorescent fixture replacement
+
+Source: Poly Haven Caged Hanging Light by Ulan Cabanilla, CC0.
+https://polyhaven.com/a/caged_hanging_light
+https://polyhaven.com/license
+
+Adapted the source model to a ceiling fitting by removing its hanging chains and suspension plates, preserving the weathered housing, guard, cover, mounting details and original 2K PBR maps. Added four housing-following mounting feet. The adapted fixture is approximately 88 cm long and 24 cm wide, with its lowest part above 2.10 m. Original download and editable Blender source are retained. No paid assets or APIs were used.
+
+URP material uses original albedo, normal, roughness, AO, metallic and emissive maps. Roughness was inverted into Unity smoothness in a packed texture. The source mask confines subdued desaturated emission to the dirty diffuser. BakedEmissive material flag keeps the URP emission keyword enabled; the moving mesh is non-static and does not contribute baked GI.
+
+Existing realtime cabin spotlight now provides 5000 K illumination with a broad cone, soft shadows and restrained intensity. Disabled the near-cover point fill that caused an artificial white specular hotspot. Existing lower fill and independent emergency lighting remain. Normal LightCircuit was rebound to the active lights and new emissive surface; movement, doors, buttons, CCTV and mirror references are retained.
+
+Updated Apartment and shared cabin/landing/entrance prefabs; reusable geometry prefab is Assets/Building/Prefabs/Ceiling Fluorescent.prefab. Existing light components stay on their original cabin objects. Editable model: References/Elevator Light/Ceiling Fluorescent.blend. Authoring: Assets/Building/Editor/LampAndKeyDetails.cs. Do not rerun legacy cabin builders over the updated fittings.
+
+Verification:
+- No fixture mesh outside the fitted cabin envelope; no added fixture colliders.
+- All 9 camera-centred button rays and selected-floor illumination passed.
+- Trips to floor 6 and floor 1, door opening, exit and reentry passed.
+- Live CCTV render and mirror reflection binding passed.
+- Circuit-off disables normal lights and fixture emission; emergency remains on; normal supply restores illumination.
+- No Unity Console errors after implementation and runtime checks.
+Full runtime output: References/Elevator Redesign/Runtime Checks.txt.
+Before/after screenshots: Ceiling Light Before/After.png, Cabin Lighting Before/After.png.

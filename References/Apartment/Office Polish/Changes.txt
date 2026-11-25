@@ -1,0 +1,15 @@
+Management room placement pass — 24 November 2026
+
+Saved scene: Assets/Scenes/Apartment.unity
+
+Workstation: four original CRTs supported on a metal rack; controls beside monitors; open maintenance logbook, pen, phone, radio and mounted task lamp within reach; chair faces writing position. Food, mug and thermos moved to a separate wall shelf. Wiring routed behind the equipment.
+
+Storage: old solid shelf and disconnected boards replaced by an archive rack. Original crate holds maintenance supplies on the bottom shelf, beside a delivery carton. Books, handbook and paperwork have dedicated shelves. New Japanese maintenance notes and storage labels remain editable textured objects.
+
+Records wall: key cabinet, return ledge, floor plan, clock and calendar arranged as one functional area. Filing cabinet and fan have wall clearance. Existing walls, room structure, deterioration and lighting mood retained. Indirect lighting and all four existing reflection probes refreshed.
+
+Access checks: 8/8 player-controller office route targets reached; 42/42 stairwell approaches blocked across all six floors. Doors have frames, handles, hinges, closers, signs and solid colliders. Stair geometry remains behind closed doors. Stairwell Door and Caretaker Mug reusable prefabs saved.
+
+Screenshots: Office Overview.png, Office Interior.png, Office Reception.png, Office Desk Level.png, Office Records.png, Office Storage.png, Locked Stairwell.png.
+
+Assets: reused existing free scanned desk, CRTs, lamp, chair, clock, books, notebook and crate; created rack, mounting hardware, mug mesh and Japanese notice textures. No paid assets or services used. No gameplay systems added beyond the requested stair access restriction. No restart needed.

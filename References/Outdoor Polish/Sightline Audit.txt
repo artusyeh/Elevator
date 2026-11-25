@@ -1,0 +1,8 @@
+(0.00, 1.65, 2.00) unoccluded bearings=
+(0.00, 1.65, 27.00) unoccluded bearings=
+(0.00, 1.65, 58.00) unoccluded bearings=
+(-18.00, 1.65, 58.00) unoccluded bearings=
+(20.00, 1.65, 58.00) unoccluded bearings=
+(22.00, 1.65, 62.00) unoccluded bearings=
+(-23.00, 1.65, 50.00) unoccluded bearings=
+(40.00, 1.65, 50.00) unoccluded bearings=

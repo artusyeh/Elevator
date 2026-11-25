@@ -1,0 +1,1 @@
+Scene=Assets/Scenes/Alley.unity; missing scripts=0; center-route floor holes=0; controllers=1; cameras=1; player=(0.20, 0.15, 2.00); renderers=3604

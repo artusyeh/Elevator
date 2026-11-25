@@ -1,0 +1,346 @@
+{
+  "objects": [
+    {
+      "name": "Backbone",
+      "vertices": 11285,
+      "polygons": 12136,
+      "bounds": {
+        "min": [
+          -0.5628350973129272,
+          -0.5641238689422607,
+          0.4998518228530884
+        ],
+        "max": [
+          0.6018743515014648,
+          -0.05122608318924904,
+          2.143705368041992
+        ]
+      },
+      "materials": [
+        "Material.010"
+      ]
+    },
+    {
+      "name": "Background",
+      "vertices": 6,
+      "polygons": 1,
+      "bounds": {
+        "min": [
+          -0.5532146692276001,
+          -0.40213027596473694,
+          1.0870672464370728
+        ],
+        "max": [
+          0.4564620554447174,
+          -0.38637131452560425,
+          2.0855820178985596
+        ]
+      },
+      "materials": [
+        "Material.006"
+      ]
+    },
+    {
+      "name": "Bottles",
+      "vertices": 72451,
+      "polygons": 137099,
+      "bounds": {
+        "min": [
+          -0.5151354670524597,
+          -0.8771376609802246,
+          1.2103195190429688
+        ],
+        "max": [
+          0.4482573866844177,
+          -0.0243171788752079,
+          2.005261182785034
+        ]
+      },
+      "materials": [
+        "Material.001"
+      ]
+    },
+    {
+      "name": "BoxDispencer",
+      "vertices": 44,
+      "polygons": 44,
+      "bounds": {
+        "min": [
+          -0.4355674982070923,
+          -0.5500675439834595,
+          0.4998518228530884
+        ],
+        "max": [
+          0.336612343788147,
+          -0.3923686742782593,
+          0.7298518419265747
+        ]
+      },
+      "materials": [
+        "Material.005"
+      ]
+    },
+    {
+      "name": "BoxDispencerLid",
+      "vertices": 28,
+      "polygons": 22,
+      "bounds": {
+        "min": [
+          -0.4355674982070923,
+          -0.5500675439834595,
+          0.4998518228530884
+        ],
+        "max": [
+          0.33543527126312256,
+          -0.4677838385105133,
+          0.7298518419265747
+        ]
+      },
+      "materials": [
+        "Material.004"
+      ]
+    },
+    {
+      "name": "Glass",
+      "vertices": 23,
+      "polygons": 21,
+      "bounds": {
+        "min": [
+          -0.5489718914031982,
+          -0.5544490218162537,
+          1.159799575805664
+        ],
+        "max": [
+          0.45381802320480347,
+          -0.5387975573539734,
+          2.059499740600586
+        ]
+      },
+      "materials": [
+        "Material.012"
+      ]
+    },
+    {
+      "name": "Misc",
+      "vertices": 1707,
+      "polygons": 2494,
+      "bounds": {
+        "min": [
+          0.18602795898914337,
+          -0.5665169954299927,
+          0.5392818450927734
+        ],
+        "max": [
+          0.5567626357078552,
+          -0.46336618065834045,
+          1.3697997331619263
+        ]
+      },
+      "materials": [
+        "Material.002"
+      ]
+    },
+    {
+      "name": "PriceTags",
+      "vertices": 900,
+      "polygons": 576,
+      "bounds": {
+        "min": [
+          -0.4900522232055664,
+          -0.5294514298439026,
+          1.193467378616333
+        ],
+        "max": [
+          0.38893648982048035,
+          -0.465119868516922,
+          1.7925658226013184
+        ]
+      },
+      "materials": [
+        "Material.011"
+      ]
+    },
+    {
+      "name": "Shell",
+      "vertices": 2118,
+      "polygons": 2655,
+      "bounds": {
+        "min": [
+          -0.6058782935142517,
+          -0.5641239285469055,
+          0.0010996876517310739
+        ],
+        "max": [
+          0.6070258617401123,
+          0.2795054614543915,
+          2.1437575817108154
+        ]
+      },
+      "materials": [
+        "Material.013"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "BackboneCorona_Beauty.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BackboneCorona_Beauty.tga"
+    },
+    {
+      "name": "BackboneCorona_Beauty.tga.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BackboneCorona_Beauty.tga"
+    },
+    {
+      "name": "BackgroundCorona_Beauty.tga",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BackgroundCorona_Beauty.tga"
+    },
+    {
+      "name": "BackgroundCorona_Beauty.tga.001",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BackgroundCorona_Beauty.tga"
+    },
+    {
+      "name": "BottlesCorona_Beauty.tga.001",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BottlesCorona_Beauty.tga"
+    },
+    {
+      "name": "BottlesCorona_Beauty.tga.002",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BottlesCorona_Beauty.tga"
+    },
+    {
+      "name": "BoxDispencerCorona_Beauty.tga",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BoxDispencerCorona_Beauty.tga"
+    },
+    {
+      "name": "BoxDispencerCorona_Beauty.tga.001",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BoxDispencerCorona_Beauty.tga"
+    },
+    {
+      "name": "BoxDispencerLidCorona_DiffuseModified.tga",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BoxDispencerLidCorona_DiffuseModified.tga"
+    },
+    {
+      "name": "BoxDispencerLidCorona_DiffuseModified.tga.001",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BoxDispencerLidCorona_DiffuseModified.tga"
+    },
+    {
+      "name": "BoxDispencerLidCorona_DiffuseModified.tga.002",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\BoxDispencerLidCorona_DiffuseModified.tga"
+    },
+    {
+      "name": "GlassCorona_DiffuseColor.tga",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\GlassCorona_DiffuseColor.tga"
+    },
+    {
+      "name": "GlassCorona_DiffuseColor.tga.001",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\GlassCorona_DiffuseColor.tga"
+    },
+    {
+      "name": "GlassCorona_DiffuseColor.tga.002",
+      "size": [
+        3000,
+        3000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\GlassCorona_DiffuseColor.tga"
+    },
+    {
+      "name": "MiscCorona_Beauty.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\MiscCorona_Beauty.tga"
+    },
+    {
+      "name": "MiscCorona_Beauty.tga.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\MiscCorona_Beauty.tga"
+    },
+    {
+      "name": "PriceTagsCorona_Beauty.tga",
+      "size": [
+        2048,
+        2048
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\PriceTagsCorona_Beauty.tga"
+    },
+    {
+      "name": "PriceTagsCorona_Beauty.tga.001",
+      "size": [
+        2048,
+        2048
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\PriceTagsCorona_Beauty.tga"
+    },
+    {
+      "name": "ShellCorona_Beauty.tga",
+      "size": [
+        4000,
+        4000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\ShellCorona_Beauty.tga"
+    },
+    {
+      "name": "ShellCorona_Beauty.tga.001",
+      "size": [
+        4000,
+        4000
+      ],
+      "path": "F:\\\u684c\u9762\u6587\u4ef6\\Elevator\\References\\Vending Machine\\Original\\source\\FBX\\Japanese_Vending_Machine1.fbm\\ShellCorona_Beauty.tga"
+    }
+  ]
+}

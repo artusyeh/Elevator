@@ -1,0 +1,1 @@
+Shadowed punctual lights=74; maximum face maps=124; configured texel demand=14417920 / 16777216; atlas unchanged at 4096.

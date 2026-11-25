@@ -1,0 +1,9 @@
+Floor 2 continuous ring join gap=0.0000002m
+Floor 3 continuous ring join gap=0.0000000m
+Floor 4 continuous ring join gap=0.0000010m
+Floor 5 continuous ring join gap=0.0000010m
+Floor 6 continuous ring join gap=0.0000010m
+Post-foot corner support samples=696; failed=0; worst surface error=0.000001m
+Legacy separate landing guards=0
+
+Scene reload: repaired handrail meshes=6; access doors locked=6/6; stairwell key present=True

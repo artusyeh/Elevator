@@ -1,0 +1,5 @@
+Security room obstruction repair
+
+Cause: a shared neighboring-house volume at Apartment-relative (-7,0,1.5) extended into the management/security room. Moved it west and set it back, preserving the interior layout. The same footprint audit found two other neighboring masses intruding into the stair/elevator side of the apartment; those were also moved clear.
+
+All three corrections were made to Assets/Apartment/Prefabs/Side Streets.prefab, so Alley and Apartment share the same fix. The main rooms, furniture, architecture and lighting were not redesigned. Backup prefab and repaired room screenshot are stored in this folder.

@@ -1,0 +1,2 @@
+CC0, Poly Haven: https://polyhaven.com/a/dirty_tiles and https://polyhaven.com/a/damaged_plaster. Original 2K Diffuse, Normal GL, ORM maps preserved. Green tint is an editable Unity material setting.
+Final plaster source: https://polyhaven.com/a/peeling_painted_wall (CC0). Neutral albedo and green ceramic derivatives created locally; originals retained.

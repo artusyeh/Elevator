@@ -1,0 +1,9 @@
+Unobstructed camera-centred button rays=9/9
+Floor-six interaction=True request=True illuminated ring=True
+Ride to 6: arrival=True doors fully open=True exit=True reentry=True
+Ride to 1: arrival=True doors fully open=True exit=True reentry=True
+Live cabin CCTV render=True
+Mirror live RT bound=True
+Elevator circuit off: normal lights off=True emergency on=True
+Fixture emission switches off=True
+Normal lighting restored=True

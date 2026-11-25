@@ -1,0 +1,1 @@
+Mailbox set matches actual units=True; boxes=30; rear wall contact=2.000

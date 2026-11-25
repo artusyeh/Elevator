@@ -73,3 +73,26 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Local acquisition copies; Unity imports the model and textures under Assets.
+# Keep the source/license notes in References versioned.
+/References/Vending Machine/Original/
+/References/Vending Machine/Japanese Vending Machine.blend
+/References/**/TextureCache/
+
+# Local scene/prefab safety snapshots, not Unity's authoritative Assets files.
+/References/**/*.before.unity
+/References/**/*.before.prefab
+/References/**/*.unity.before
+/References/**/*.prefab.before
+
+# Browser automation output and editor/OS temporary files.
+/.playwright-mcp/
+.idea/
+*.slnx
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

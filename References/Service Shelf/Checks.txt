@@ -1,0 +1,2 @@
+Reloaded saved scene: shelf=(-3.15, 0.00, 8.01); panel clearance=0.3200m; plank back/wall gap=0.0000m; Screwdriver shelf clearance=0.0007m footprint supported=True PBR material=True; Pliers shelf clearance=0.0007m footprint supported=True PBR material=True
+Door sweep intersections=0/19; Alley shelf X=-3.15; imported tools=2

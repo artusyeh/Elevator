@@ -1,0 +1,6 @@
+Ground Floor: focus=True locked press stays shut=True collider blocks=True unlocked press=True physical crossing=True close press=True shut=True
+Floor 2: focus=True locked press stays shut=True collider blocks=True unlocked press=True physical crossing=True close press=True shut=True
+Floor 3: focus=True locked press stays shut=True collider blocks=True unlocked press=True physical crossing=True close press=True shut=True
+Floor 4: focus=True locked press stays shut=True collider blocks=True unlocked press=True physical crossing=True close press=True shut=True
+Floor 5: focus=True locked press stays shut=True collider blocks=True unlocked press=True physical crossing=True close press=True shut=True
+Floor 6: focus=True locked press stays shut=True collider blocks=True unlocked press=True physical crossing=True close press=True shut=True

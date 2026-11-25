@@ -1,0 +1,8 @@
+Assets/Apartment/Models/metal_office_desk/textures/metal_office_desk_nor_gl_2k.jpg
+Assets/Apartment/Models/desk_lamp_arm_01/textures/desk_lamp_arm_01_nor_gl_1k.jpg
+Assets/Apartment/Models/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_paper_nor_gl_1k.jpg
+Assets/Apartment/Models/binder_notebook/textures/binder_notebook_nor_gl_1k.jpg
+Assets/Apartment/Models/book_encyclopedia_set_01/textures/book_encyclopedia_set_01_cover_nor_gl_1k.jpg
+Assets/Apartment/Models/mounted_fluorescent_lights/textures/mounted_fluorescent_lights_nor_gl_1k.jpg
+Assets/Apartment/Models/wall_clock/textures/wall_clock_nor_gl_1k.jpg
+Assets/Apartment/Models/Television_01/textures/Television_01_nor_gl_2k.jpg

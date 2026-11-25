@@ -1,0 +1,34 @@
+[
+  {
+    "asset": "screwdriver",
+    "name": "Screwdriver",
+    "source": "https://polyhaven.com/a/screwdriver",
+    "license": "CC0-1.0",
+    "authors": {
+      "PierreB3D": "All"
+    },
+    "files": [
+      "Assets/Building/Models/Screwdriver/Source.gltf",
+      "Assets/Building/Models/Screwdriver/textures/screwdriver_nor_gl_2k.jpg",
+      "Assets/Building/Models/Screwdriver/textures/screwdriver_diff_2k.jpg",
+      "Assets/Building/Models/Screwdriver/textures/screwdriver_arm_2k.jpg",
+      "Assets/Building/Models/Screwdriver/screwdriver.bin"
+    ]
+  },
+  {
+    "asset": "pliers",
+    "name": "Pliers",
+    "source": "https://polyhaven.com/a/pliers",
+    "license": "CC0-1.0",
+    "authors": {
+      "PierreB3D": "All"
+    },
+    "files": [
+      "Assets/Building/Models/Pliers/Source.gltf",
+      "Assets/Building/Models/Pliers/textures/pliers_nor_gl_2k.jpg",
+      "Assets/Building/Models/Pliers/textures/pliers_diff_2k.jpg",
+      "Assets/Building/Models/Pliers/textures/pliers_arm_2k.jpg",
+      "Assets/Building/Models/Pliers/pliers.bin"
+    ]
+  }
+]

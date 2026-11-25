@@ -1,0 +1,5 @@
+Elevator enclosure repair
+
+Closed the missing cabin-to-door side returns and header, bridged the floor-to-threshold gap with a solid apron and inner sill, and added a narrow meeting seal behind the centre door seam. Updated the Apartment scene plus Elevator Cabin, Elevator Landing and Entrance Interior prefabs. Original door motion, lighting, mirror and controls retained.
+
+Reviewed closed doors from inside and the reported lower corner. CharacterController entry and exit through the open doorway both pass. Images and access log are in this folder.

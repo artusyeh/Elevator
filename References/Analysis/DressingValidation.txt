@@ -1,0 +1,2 @@
+Ground samples=264; missing=0; unblocked side rays=0; controller delta=(0.00, -0.08, 4.40); grounded=True; restored player=(0.20, 0.15, 2.00)
+Original building roots compared=19; changed transform fields=0

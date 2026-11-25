@@ -1,0 +1,11 @@
+Tokyo Tower night view — Immanuelle, 13 August 2023.
+Source: https://commons.wikimedia.org/wiki/File:Tokyo_Tower_night_view.jpg
+License: Creative Commons Attribution-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/
+Downloaded 1920 x 2560 preview from Wikimedia Commons.
+Use: prototype image-based distant landmark in Alley/Tokyo Night sky shader.
+Adaptation: shader UV cropping, angular positioning, sky masking, exposure adjustment.
+The photo-derived background adaptation is offered under CC BY-SA 4.0.
+This is a perspective photo, not a seamless 360-degree equirectangular panorama.
+Original image retained unchanged; shader blending removes the source sky boundary.
+Other unused candidates remain in References/Skyline; Fridaypumpkin photo is unsuitable (Skytree, despite its Commons filename).

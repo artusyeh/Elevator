@@ -1,0 +1,19 @@
+Elevator clearance repair
+
+Fixed the Apartment elevator's moving geometry and door pockets. The old segmented shaft back walls protruded into the cabin, the shaft side walls overlapped its outer skin, and the doorway returns and building walls occupied the door tracks. The moving floor apron also passed through the rear face of the ground-floor header wall.
+
+The shaft now has continuous side/back walls with 60mm side clearance and 120mm rear clearance from the cabin shell, a pit and overhead clearance. Door pockets retain 25mm clearance behind their cabin-side covers. The car side panels begin behind the inner door track; widened front returns conceal the stowed panels. Landing wall pockets and their front covers have been fitted around the outer doors. Wall backs stop clear of the moving cabin front. The sill, apron, cabin floor and ceiling were resized to meet without overlapping surfaces. Door bottoms clear the raised thresholds and grooves; seals clear the moving wear strips and edges.
+
+The shared Side Streets rear ground excludes the shaft pit footprint under the building. Exterior walking surfaces outside that footprint remain intact. The cabin and landing prefabs are updated, and the moving cabin retains dynamic flags and realtime lights. The continuous shaft and room wall recesses are in Apartment.unity. Do not rerun older cabin, landing or apartment construction scripts over this repair.
+
+Verification:
+- Full-height swept bounds of every enabled cabin mesh, including stowed doors: zero overlaps with external enabled meshes.
+- All twelve landing door panels and their detail meshes, swept between closed/open positions: zero overlaps with fixed meshes.
+- Both cabin door panels and their detail meshes, swept through their opening path: zero overlaps with fixed meshes.
+- Play Mode ride from floor 1 to 6, 50 transit body samples: zero external collider overlaps, no opening while moving.
+- Walking out on floor 6 passes. Descent to floor 1 preserves the rider at local (.40,.08,1.30), near the rear/right corner.
+- Console errors: zero.
+
+Reviewed player-camera screenshots: Lift In Motion.png, Cabin Walls.png, Door Pockets.png, Upper Landing.png. Geometry audit and ride logs are in this folder. These are bounds/collider checks and selected rendered viewpoints, not a claim that every possible viewing angle has been inspected.
+
+Apartment was saved in Edit Mode at its original ground-floor state. Scene backup: Apartment.before.unity. No purchases or render-pipeline changes.

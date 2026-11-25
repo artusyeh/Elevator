@@ -1,0 +1,17 @@
+{
+  "asset": "Caged Hanging Light",
+  "source": "https://polyhaven.com/a/caged_hanging_light",
+  "license": "CC0-1.0",
+  "authors": {
+    "Ulan Cabanilla": "All"
+  },
+  "files": [
+    "Assets\\Building\\Models\\Caged Fluorescent\\Caged Fluorescent.fbx",
+    "Assets\\Building\\Models\\Caged Fluorescent\\Source.gltf",
+    "Assets\\Building\\Models\\Caged Fluorescent\\textures\\caged_hanging_light_emissive_2k.jpg",
+    "Assets\\Building\\Models\\Caged Fluorescent\\textures\\caged_hanging_light_nor_gl_2k.jpg",
+    "Assets\\Building\\Models\\Caged Fluorescent\\textures\\caged_hanging_light_diff_2k.jpg",
+    "Assets\\Building\\Models\\Caged Fluorescent\\textures\\caged_hanging_light_arm_2k.jpg",
+    "Assets\\Building\\Models\\Caged Fluorescent\\caged_hanging_light.bin"
+  ]
+}

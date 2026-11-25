@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Required Unity model: keep the full local FBX, store a pointer in Git.
+# This exact path avoids using LFS storage for small models or reference copies.
+"Assets/Alley/Models/Vending Machine/Japanese Vending Machine.fbx" filter=lfs diff=lfs merge=lfs -text

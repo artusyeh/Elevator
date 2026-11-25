@@ -1,0 +1,3 @@
+Panel offset=0.28m; upper clearance=0.075m; button refs=True
+Raised panel button rays=9/9; E interaction=True; floor-two queued=True; ring illuminated=True
+Shared entrance preview panel height=0.28m

@@ -1,0 +1,14 @@
+Landing Window at (-3.80, 3.12, 13.89): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Building/Obscured Glass
+Corridor Window at (0.00, 4.50, 0.00): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Universal Render Pipeline/Unlit
+Landing Window at (-3.80, 6.02, 13.89): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Building/Obscured Glass
+Corridor Window at (0.00, 7.40, 0.00): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Universal Render Pipeline/Unlit
+Landing Window at (-3.80, 8.92, 13.89): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Building/Obscured Glass
+Corridor Window at (0.00, 10.30, 0.00): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Universal Render Pipeline/Unlit
+Landing Window at (-3.80, 11.82, 13.89): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Building/Obscured Glass
+Corridor Window at (0.00, 13.20, 0.00): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Universal Render Pipeline/Unlit
+Landing Window at (-3.80, 14.72, 13.89): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Building/Obscured Glass
+Corridor Window at (0.00, 16.10, 0.00): perimeter meshes=1; closed manifold=True; outward volume=True; legacy reveal planes=0; glass collider=True; shader=Universal Render Pipeline/Unlit
+Glass shader errors=False
+Player opaque color copy=True
+
+Play Mode rendering=True; shader supported=True; shader errors=False; obscured stair panes=5

@@ -1,0 +1,33 @@
+Apartment environment — initial implementation
+
+Scene: Assets/Scenes/Apartment.unity. Opened and left in Edit Mode.
+Controls: existing WASD/mouse/Shift/Esc controller retained. Look at the main entrance door within 2.7 m and press E to change scenes. E near the ground-floor elevator operates its sliding doors. Floor buttons are separate editable objects, prepared for later functionality.
+
+Implemented: compact ground-floor lobby, reception glazing, furnished management room, mailbox bank, notices, bench, entrance court, maintenance/storage enclosure, elevator landing and accessible cabin, aligned six-floor architecture, five U-stair connections and repeating residential corridors. Unit interiors are closed. Shaft and stair footprints can extend to a basement/roof later.
+
+Downloaded assets, all free CC0:
+Poly Haven — mounted_fluorescent_lights (two variants selected as a paired fixture), Television_01, metal_office_desk, desk_lamp_arm_01, wall_clock, binder_notebook, book_encyclopedia_set_01.
+Tevy — office-chair, fire-extinguisher.
+Poly Haven PBR — terrazzo_tiles, dirty_tiles, damaged_plaster, peeling_painted_wall. Original files are retained. Green ceramic, neutral plaster and grey terrazzo albedo derivatives were processed locally in Blender; no reference image was used as a game texture. Damaged plaster was evaluated, with peeling_painted_wall selected for the final visible plaster.
+See Sources/Assets.json and the saved source .blend files. Poly Haven asset pages use https://polyhaven.com/a/<asset>. Tevy pages use https://tevy.dev/models/<slug>.
+
+Created locally: beveled, UV-mapped architecture; gate frames and folding braces; mailbox bank; elevator cabin panels, railings, call panel, buttons, door leaves and displays; stair treads, nosings and railings; pipe runs, couplings and utility housings; key cabinet and separate keys; filing cabinet; telephone and coiled cord; fan and guard; papers, logbook layout, Japanese notices, floor plan and calendar; mirror rendering shader/component; scene-travel and sliding-door components.
+Reused from Alley: player controller, plants, bicycle, umbrellas, cleaning props, crates, cardboard, security camera and existing free PBR/weathering assets. No original Alley materials or geometry changed.
+
+Verification:
+- Actual Play Mode travel: Apartment -> Alley arrived at (0.35, -0.01, 51.40), then Alley -> Apartment arrived at (0, 0.06, 1.5).
+- Tested the same Travel handler used by the E interaction. Automated injected keyboard events did not provide a reliable press-edge in the editor tool context; near/direction checks and E binding were inspected separately.
+- Actual Play Mode elevator leaves reached closed offsets -0.275/+0.275 and open offsets -0.96/+0.96.
+- Actual Play Mode mirror allocated and rendered a 1024 x 1024 reflection while player was inside the cabin. Captures show reflected cabin/landing geometry.
+- Existing CharacterController walked to the office and into the cabin; all five reversing stair climbs completed grounded, reaching the sixth floor at about 14.58 m controller-root height. See Walkthrough.txt.
+- Missing-reference audit: no missing meshes, material slots or scripts in the saved scene.
+- Alley scene comparison: the only scene-file change is the SceneEntrance component on the original Aoba entrance door. See Alley Changes.diff. Existing build entries preserved, Alley and Apartment enabled.
+- Unity script compilation, lighting bake and reflection updates completed. No current engine errors. A transient MCP WebSocket warning occurred during editor reloads; connection recovered.
+- Saved camera views are actual 3D renders at 1.65 m above each floor. No concept-image backgrounds were used.
+
+Comparison and remaining work:
+This is an initial environment pass, below the photorealism of the supplied concept images. The layout, green lower walls, pale cracked plaster, low ceilings, utility routes, old gate/mailbox language and cool/warm lighting separation are established.
+The reference office has much denser clutter, a more distinctive worn chair, black industrial CCTV equipment and richer glass scratches. Current paper, telephone, keys, fan, cabinet and some architectural fittings need further close-up detail and more selective wear. Surface textures still repeat visibly and should receive building-specific stains, chipped tile edges and paint layering. Terrazzo needs more localized damp patches and finer edge dirt; current material is not a final wet-floor treatment. The lobby and office remain more orderly than the references. Upper floors have repeating initial architecture/props, not a finished dressing pass. Shoes, shoe racks and resident-specific variations remain to be produced. Performance/occlusion profiling remains for later development.
+The cabin is accessible and its doors work; elevator travel between floors, CCTV live camera feeds, functional floor buttons, residential unit interiors, basement and rooftop are not implemented. No supernatural mechanics, characters, jumpscares or story systems were added.
+
+No paid assets, paid APIs or AI image services used. Blender MCP was unavailable; local Blender background processing was used successfully. Unity was reopened automatically to resolve a pre-existing assembly-load stall. No manual installation or restart step remains.

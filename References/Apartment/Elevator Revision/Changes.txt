@@ -1,0 +1,7 @@
+Elevator entrance revision
+
+Aged painted-metal door panels, narrow centre seam, metal meeting edges and lower wear strips. Updated frame reveals, pocket seals and fixed side covers conceal the retracted sliding leaves. Threshold now has parallel sill grooves and recessed screws. Physical circular call buttons replace floating text arrows. Red floor indicators retained.
+
+Ground-floor cabin: visible ceiling housing with frosted diffuser, reduced downward fluorescent lighting plus restrained local fill. Original rear mirror, worn panels, handrails, inspection sheet and ventilation fan retained. Added lower metal skirting and a less glossy worn floor. Small entrance fixture illuminates the closed door face locally.
+
+Existing street, management room, stairs and render pipeline preserved. Six landing entrances updated consistently; only the existing ground-floor elevator has a cabin and sliding operation. No floor-travel or horror mechanics added. All changes use existing free textures and editable geometry.

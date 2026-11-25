@@ -1,0 +1,6 @@
+Alley exteriorPrefab=Assets/Apartment/Prefabs/Aoba Exterior.prefab contextPrefab=Assets/Apartment/Prefabs/Side Streets.prefab
+Missing mesh=0 missing materials=0
+Door (22.00, 1.12, 64.00) destination=Apartment relative=True offset=(-22.00, 0.00, -64.00)
+Apartment exteriorPrefab=Assets/Apartment/Prefabs/Aoba Exterior.prefab contextPrefab=Assets/Apartment/Prefabs/Side Streets.prefab
+Missing mesh=0 missing materials=0
+Door (0.00, 1.12, 0.00) destination=Alley relative=True offset=(22.00, 0.00, 64.00)

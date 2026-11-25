@@ -1,0 +1,9 @@
+Elevator landing floor repair and cabin notice removal
+
+Removed only the inspection notice inside the cabin, including reusable cabin/landing/entrance-preview appearances. Exterior landing certificates are retained. The legacy cabin construction method no longer creates this notice.
+
+Upper landings had a 10 cm strip of coplanar overlap with the corridor floor. On floors 3-6 the preceding landing ceiling also reached the walking surface, causing a much larger overlapping top face. Trimmed five landing floor extensions edge-to-edge at the corridor boundary, retained their walking heights, and made the floor layers 4 cm thick. Trimmed five landing ceilings to the same horizontal boundary and matched their tops to adjoining corridor ceilings beneath the floor layers.
+
+Aligned the aged material's wear coordinates across the floor join and excluded the internal join from wall-edge dirt. Original terrazzo maps, visible aging, door alignment and lift logic are retained. No added floor overlays or raised cover plates.
+
+Validation: six landings inspected, 108/108 level collision samples, zero positive-area coplanar floor/ceiling overlap pairs in landing regions. Play Mode rides reached all six floors and returned to ground; the player exited across each join and reentered successfully. Cabin notice count zero. Before/after screenshots reviewed. Shared prefabs updated in place, preserving GUIDs.

@@ -1,0 +1,885 @@
+{
+  "changedExistingTransforms": {
+    "Precast Gutter": 108,
+    "Worn Edge Marking": 26,
+    "Drain Grate": 6,
+    "Paving": 1,
+    "Damp Edge": 2,
+    "Road": 1,
+    "Side Passage Floor": 1
+  },
+  "details": [
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Drain Grate",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Drain Grate",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Paving",
+      "fields": [
+        "m_LocalPosition",
+        "m_LocalScale"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Drain Grate",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Damp Edge",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Road",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Side Passage Floor",
+      "fields": [
+        "m_LocalPosition",
+        "m_LocalScale"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Drain Grate",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Drain Grate",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Damp Edge",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Drain Grate",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Precast Gutter",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    },
+    {
+      "name": "Worn Edge Marking",
+      "fields": [
+        "m_LocalPosition"
+      ]
+    }
+  ]
+}

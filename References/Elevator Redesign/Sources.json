@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "blue_metal_plate",
+    "source": "https://polyhaven.com/a/blue_metal_plate",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "resolution": "2k",
+    "maps": [
+      "Diffuse",
+      "nor_gl",
+      "arm"
+    ]
+  },
+  {
+    "asset": "metal_plate_02",
+    "source": "https://polyhaven.com/a/metal_plate_02",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "resolution": "2k",
+    "maps": [
+      "Diffuse",
+      "nor_gl",
+      "arm"
+    ]
+  }
+]

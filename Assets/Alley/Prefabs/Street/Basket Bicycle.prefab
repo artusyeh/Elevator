@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5451673297425782511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9191831853965480069}
+  m_Layer: 0
+  m_Name: Basket Bicycle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &9191831853965480069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451673297425782511}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4278934236633243688}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4389722628419831747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9191831853965480069}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.011330128
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15989369
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8367772498402904970, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: -7740217930462225747, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    - target: {fileID: -7651700828230119142, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a01482b23e827d4d83e9dafbe784040, type: 2}
+    - target: {fileID: -7203134519584778836, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    - target: {fileID: -6919731881152106492, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Handlebar
+      objectReference: {fileID: 0}
+    - target: {fileID: -6793386546021055554, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3249e8625d16a1a4485111cdd80446a0, type: 2}
+    - target: {fileID: -6793386546021055554, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c998b67aa5efd7b4693da0b0342903e9, type: 2}
+    - target: {fileID: -6793386546021055554, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 40fc3d85879af41429277da7bd10681c, type: 2}
+    - target: {fileID: -6793386546021055554, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 68c85202037a9cb4095eb9ba3653686e, type: 2}
+    - target: {fileID: -6793386546021055554, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[4]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c06078db44313f4786b2ba13a8f9a10, type: 2}
+    - target: {fileID: -6446829316306438554, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Pedal
+      objectReference: {fileID: 0}
+    - target: {fileID: -6167941005333850639, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a01482b23e827d4d83e9dafbe784040, type: 2}
+    - target: {fileID: -5866038923786771659, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c998b67aa5efd7b4693da0b0342903e9, type: 2}
+    - target: {fileID: -5866038923786771659, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 40fc3d85879af41429277da7bd10681c, type: 2}
+    - target: {fileID: -5250153020746351079, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Frame
+      objectReference: {fileID: 0}
+    - target: {fileID: -4079113983951068254, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Pedal
+      objectReference: {fileID: 0}
+    - target: {fileID: -3696984453173200378, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Handlebar
+      objectReference: {fileID: 0}
+    - target: {fileID: -2580276398444113814, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 40fc3d85879af41429277da7bd10681c, type: 2}
+    - target: {fileID: -2580276398444113814, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fc126b06399d9e45857333356ee3bb5, type: 2}
+    - target: {fileID: -2580276398444113814, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c998b67aa5efd7b4693da0b0342903e9, type: 2}
+    - target: {fileID: -2570001034042290916, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Details
+      objectReference: {fileID: 0}
+    - target: {fileID: -1724330192522870922, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    - target: {fileID: -1353944360922850423, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    - target: {fileID: 668335229435547987, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 40fc3d85879af41429277da7bd10681c, type: 2}
+    - target: {fileID: 668335229435547987, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c998b67aa5efd7b4693da0b0342903e9, type: 2}
+    - target: {fileID: 668335229435547987, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6fc126b06399d9e45857333356ee3bb5, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: city-bicycle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983706481142192156, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Details
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195827085050437635, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Pedal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487790318032404139, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Details
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543635148563346569, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941821056550301246, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Details
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721329518679046356, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c998b67aa5efd7b4693da0b0342903e9, type: 2}
+    - target: {fileID: 5721329518679046356, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3249e8625d16a1a4485111cdd80446a0, type: 2}
+    - target: {fileID: 5721329518679046356, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b63d4787ee7dc44cac38bf54ee9c13e, type: 2}
+    - target: {fileID: 5721329518679046356, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 136e549e81c686a429a79fba0f873c2b, type: 2}
+    - target: {fileID: 5929641531863734895, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    - target: {fileID: 6495149308769983563, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609223831991055212, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c998b67aa5efd7b4693da0b0342903e9, type: 2}
+    - target: {fileID: 6762362631630518024, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    - target: {fileID: 7427901371382690750, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: m_Name
+      value: Pedal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449996119470504636, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6852a72e2840abb4ea5ad92296380bfc, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+--- !u!4 &4278934236633243688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fa514639139c5e48ba64bd5ec14bd9c, type: 3}
+  m_PrefabInstance: {fileID: 4389722628419831747}
+  m_PrefabAsset: {fileID: 0}

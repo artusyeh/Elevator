@@ -1,0 +1,6 @@
+Floor 2 surface=2.9
+Floor 3 surface=5.8
+Floor 4 surface=8.700001
+Floor 5 surface=11.6
+Floor 6 surface=14.5
+Correct floor-height samples 75/75

@@ -1,0 +1,8 @@
+Office access (0.00, 0.00, 5.77): True reached (0.00, 0.08, 5.72)
+Office access (-2.90, 0.00, 5.77): True reached (-2.86, 0.08, 5.77)
+Office access (-4.40, 0.00, 5.30): True reached (-4.37, 0.08, 5.31)
+Office access (-4.80, 0.00, 4.45): True reached (-4.79, 0.08, 4.48)
+Office access (-4.80, 0.00, 3.15): True reached (-4.80, 0.08, 3.20)
+Office access (-4.80, 0.00, 2.50): True reached (-4.80, 0.08, 2.54)
+Office access (-4.80, 0.00, 4.45): True reached (-4.80, 0.08, 4.39)
+Office access (-3.80, 0.00, 5.60): True reached (-3.82, 0.08, 5.58)

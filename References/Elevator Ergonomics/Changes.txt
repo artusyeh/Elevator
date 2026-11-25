@@ -1,0 +1,7 @@
+Elevator control-panel placement and label spacing
+- Raised the complete Control Panel root by 28 cm. Floor buttons, open/close/alarm buttons, speaker grille, digital display, labels, illuminated rings and interaction colliders remain children and move together.
+- The first floor button is now 1.01 m above the cabin floor, the door buttons 0.80 m, and the emergency button 0.67 m. Panel top remains 75 mm below the ceiling. Main cabin geometry, lighting and movement are unchanged.
+- Updated the current Apartment scene and the Elevator Cabin / Elevator Landing / Entrance Interior prefabs in place. Verified the shared entrance preview panel height is also 0.28 m.
+- Rebuilt capacity and manufacturer plates with measured, separate heading/subtitle lines. Preserved their aged backing and original texture GUIDs. Also reserved clearance between certificate rows and the inspection stamp.
+- Updated the label source generator and cabin authoring helper so future visual passes retain these corrections.
+- Play Mode: all nine button interaction rays passed; floor selection queued successfully and illuminated the ring. Player-height screenshots were reviewed.

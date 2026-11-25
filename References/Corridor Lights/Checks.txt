@@ -1,0 +1,2 @@
+Floor fixtures=18; connected ceiling anchors=36/36; original tube pairs=18; light/circuit references intact=True; mailbox number matches=True (30)
+Alley inherited complete lobby fixtures=3/3; torn mailbox labels=30/30

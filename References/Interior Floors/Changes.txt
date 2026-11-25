@@ -1,0 +1,8 @@
+Apartment interior floor aging
+- Preserved the existing free Poly Haven terrazzo albedo, normal and packed surface maps and all floor geometry/colliders.
+- Added Building/Aged Terrazzo, derived from the project's existing architectural PBR shader. Original Terrazzo material and source textures are preserved.
+- Added continuous macro discoloration, worn patches, edge grime, restrained scuffs, old stain marks and fine repaired joints directly in the PBR surface. No new overlapping floor planes.
+- Reduced uniform high polish; roughness varies across worn and dirty areas. Retained some localized polish in the walking zone.
+- Eighteen existing surfaces use editable material variants for lobby, office, corridors, elevator landings and stair thresholds. Shared entrance preview and reusable floor-containing prefabs updated.
+- Floor heights, lighting, pipeline and player movement remain unchanged. Shader is supported with no compiler errors; eighteen level-floor collision samples passed. Before/after screenshots were visually reviewed.
+- Materials and all procedural wear controls remain editable in Unity. No purchases, external services or new downloaded assets.

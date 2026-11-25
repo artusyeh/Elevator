@@ -1,0 +1,7 @@
+Floor surface repair
+
+Cause: each corridor ceiling slab reached the same top elevation as the next floor's terrazzo, causing coplanar material flicker. Ground-floor lobby concrete also extended above the next walking surface. Corrected floor finish thickness to 0.04m and reduced/repositioned ceiling slab tops beneath it while preserving the intended floor elevations and ceiling undersides. Updated mesh and BoxCollider dimensions together.
+
+Applied to all five upper floor surfaces, six ceiling slabs, Residential Corridor prefab and Entrance Interior prefab. Removed the exterior court's overlapping pavement by making Pavement cover Z=-4..0 and Court Apron cover Z=-6..-4 in the shared Aoba Exterior prefab.
+
+All 75 upper-floor height samples pass at 2.9, 5.8, 8.7, 11.6 and 14.5 metres. Corridor and court review renders captured and visually inspected. Geometry and scene saved. A lighting bake was started, but Unity restarted during the run (new Editor process began at 21:23); completion of that bake could not be verified. Existing LightingData asset remains from the prior bake.

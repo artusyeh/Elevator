@@ -1,0 +1,4 @@
+Header front-wall collision coverage=324/324
+Coplanar overlapping front-face pairs=0
+Focused door=True; interaction=True; door open=True; walked through=True; player=(-3.22, 0.08, 7.50)
+Shared header=True; recessed end walls=1; front x=-2.180

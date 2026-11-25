@@ -1,0 +1,9 @@
+Tokyo At Night, Panorama — Ian Muttoo, 7 August 2006.
+Source requested: https://commons.wikimedia.org/wiki/File:Tokyo_at_night_panorama.jpg
+Original photographer page: https://www.flickr.com/photos/imuttoo/425783124
+Original file downloaded from the photographer's Flickr CDN because Wikimedia downloads returned HTTP 429:
+https://live.staticflickr.com/188/425783124_6a25b2ae4b_o.jpg
+Original dimensions: 8492 x 1936. This is a stitched limited-angle photograph, NOT a full 360-degree equirectangular image.
+License: Creative Commons Attribution-ShareAlike 2.0 Generic
+https://creativecommons.org/licenses/by-sa/2.0/
+The original JPEG is retained unchanged. Prototype rendering crops the tower region using shader UV coordinates, enlarges it, adjusts its brightness/color and blends its sky into a procedural deep-blue sky. The resulting adapted background artwork is offered under CC BY-SA 2.0. Retain this attribution/license when redistributing the photo or adapted background. Ian Muttoo does not endorse this game.

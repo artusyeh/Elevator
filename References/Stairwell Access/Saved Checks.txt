@@ -1,0 +1,1 @@
+Saved key instances=1; key above desk=0.0020m; corridor obscured panes=5/5; default locked access doors=6

@@ -1,0 +1,282 @@
+{
+  "models": [
+    {
+      "asset": "mounted_fluorescent_lights",
+      "source": "https://polyhaven.com/a/mounted_fluorescent_lights",
+      "license": "CC0-1.0",
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "materials": [
+        {
+          "name": "mounted_fluorescent_lights",
+          "color": "textures/mounted_fluorescent_lights_diff_1k.jpg",
+          "normal": "textures/mounted_fluorescent_lights_nor_gl_1k.jpg",
+          "arm": "textures/mounted_fluorescent_lights_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "mounted_fluorescent_lights_glass",
+          "color": "textures/mounted_fluorescent_lights_diff_1k.jpg",
+          "normal": "textures/mounted_fluorescent_lights_nor_gl_1k.jpg",
+          "arm": "textures/mounted_fluorescent_lights_arm_1k.jpg",
+          "emission": "textures/mounted_fluorescent_lights_emission_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "Television_01",
+      "source": "https://polyhaven.com/a/Television_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "Gabriel Radi\u0107": "All"
+      },
+      "materials": [
+        {
+          "name": "Television_01",
+          "color": "textures/Television_01_diff_2k.jpg",
+          "normal": "textures/Television_01_nor_gl_2k.jpg",
+          "arm": "textures/Television_01_arm_2k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "metal_office_desk",
+      "source": "https://polyhaven.com/a/metal_office_desk",
+      "license": "CC0-1.0",
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "materials": [
+        {
+          "name": "metal_office_desk",
+          "color": "textures/metal_office_desk_diff_2k.jpg",
+          "normal": "textures/metal_office_desk_nor_gl_2k.jpg",
+          "arm": "textures/metal_office_desk_arm_2k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "desk_lamp_arm_01",
+      "source": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "Kuutti Siitonen": "Modeling & texturing"
+      },
+      "materials": [
+        {
+          "name": "desk_lamp_arm_01",
+          "color": "textures/desk_lamp_arm_01_diff_1k.jpg",
+          "normal": "textures/desk_lamp_arm_01_nor_gl_1k.jpg",
+          "arm": "textures/desk_lamp_arm_01_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "desk_lamp_arm_01_light",
+          "color": "textures/desk_lamp_arm_01_diff_1k.jpg",
+          "normal": "textures/desk_lamp_arm_01_nor_gl_1k.jpg",
+          "arm": "textures/desk_lamp_arm_01_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "wall_clock",
+      "source": "https://polyhaven.com/a/wall_clock",
+      "license": "CC0-1.0",
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "materials": [
+        {
+          "name": "wall_clock",
+          "color": "textures/wall_clock_diff_1k.jpg",
+          "normal": "textures/wall_clock_nor_gl_1k.jpg",
+          "arm": "textures/wall_clock_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "wall_clock_glass",
+          "color": "",
+          "normal": "",
+          "arm": "textures/wall_clock_glass_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            0.4000000059604645
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "BLEND",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "binder_notebook",
+      "source": "https://polyhaven.com/a/binder_notebook",
+      "license": "CC0-1.0",
+      "authors": {
+        "DaDrood": "All"
+      },
+      "materials": [
+        {
+          "name": "binder_notebook",
+          "color": "textures/binder_notebook_diff_1k.jpg",
+          "normal": "textures/binder_notebook_nor_gl_1k.jpg",
+          "arm": "textures/binder_notebook_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "book_encyclopedia_set_01",
+      "source": "https://polyhaven.com/a/book_encyclopedia_set_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "John Malcolm": "All"
+      },
+      "materials": [
+        {
+          "name": "book_encyclopedia_set_01_cover",
+          "color": "textures/book_encyclopedia_set_01_cover_diff_1k.jpg",
+          "normal": "textures/book_encyclopedia_set_01_cover_nor_gl_1k.jpg",
+          "arm": "textures/book_encyclopedia_set_01_cover_arm_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "book_encyclopedia_set_01_paper",
+          "color": "textures/book_encyclopedia_set_01_paper_diff_1k.jpg",
+          "normal": "textures/book_encyclopedia_set_01_paper_nor_gl_1k.jpg",
+          "arm": "textures/book_encyclopedia_set_01_paper_roughness_1k.jpg",
+          "emission": "",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.6,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "office-chair",
+      "source": "https://tevy.dev/models/office-chair",
+      "license": "CC0-1.0",
+      "materials": []
+    },
+    {
+      "asset": "fire-extinguisher",
+      "source": "https://tevy.dev/models/fire-extinguisher",
+      "license": "CC0-1.0",
+      "materials": []
+    }
+  ],
+  "textures": [
+    {
+      "asset": "terrazzo_tiles",
+      "source": "https://polyhaven.com/a/terrazzo_tiles",
+      "license": "CC0-1.0",
+      "width_m": 2
+    }
+  ]
+}

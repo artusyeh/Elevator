@@ -1,0 +1,5 @@
+Shared entrance gate repair
+
+Replaced the incomplete offset scissor lattice in Aoba Exterior.prefab with a full-width paired folding gate. The two leaves meet at a central latch; steel strips terminate on full-height stiles and have crossing pivot rivets. Added continuous jambs, top/bottom guide tracks, guide shoes, frame anchors, lock cylinder, keeper and stand-off handle. Natural small track and centre clearances retained.
+
+The Alley and Apartment scenes both reference this prefab; matching exterior renders saved as Gate Alley.png and Gate Apartment.png, plus Gate Inside.png. Existing SceneEntrance interaction component and its scene-origin mapping were preserved. A Play Mode entry call succeeded, but Play Mode ended before arrival/return could be verified during this pass. No runtime opening animation was added; this task updates the complete visible gate assembly.

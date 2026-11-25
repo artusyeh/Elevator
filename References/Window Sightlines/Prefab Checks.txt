@@ -1,0 +1,5 @@
+Apartment mirror center=1.72; backup fixture=(-0.70, 2.12, 1.14)
+Elevator Cabin: mirror=1.72; backup fixture=(-0.70, 2.12, 1.14)
+Elevator Landing: mirror=1.72; backup fixture=(-0.70, 2.12, 1.14)
+Entrance Interior: mirror=1.72; backup fixture=(-0.70, 2.12, 1.14)
+Stairwell prefab saved=True

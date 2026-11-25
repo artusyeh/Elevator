@@ -1,0 +1,7 @@
+Stair landing floor repair
+
+Trimmed the oversized Stair Threshold strips on all six Apartment floors. Each now fills only the gap between the stair landing and the lobby/corridor slab, stops at the adjacent floor edges and matches the adjoining terrazzo material. The ground-floor strip is also lowered from its previous raised surface to the correct floor level. The separate metal door threshold remains above the floor. Doors remain locked.
+
+Updated the ground-floor strip in the shared Entrance Interior prefab so the Alley preview uses the same repair. Preserved existing object names, asset GUIDs, door geometry and floor heights.
+
+Verification: all six strips have zero horizontal overlap with their adjoining floors and zero height error. All 162 floor collision samples pass across the repaired seams. Reviewed matching before/after images and ground/upper floor captures. Scene backup and checks are in this folder.

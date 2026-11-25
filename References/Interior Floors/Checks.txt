@@ -1,0 +1,7 @@
+Sign wall-backed=True; surface gap=0.0043m
+Broom floor clearance=0.0030m; west wall clearance=0.0082m
+Bucket floor clearance=0.0030m; tool bounds overlap=False
+Level floor collision samples=18/18
+Shader errors=False
+Alley inherited aged surfaces=3; mounted warning present=True; wall backing=True
+Runtime: 18 aged surfaces, all shaders supported.

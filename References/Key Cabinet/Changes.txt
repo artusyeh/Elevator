@@ -1,0 +1,15 @@
+Key cabinet model replacement
+
+Replaced 21 straight primitive keys with the CC0 Brass Door Key on Ring model from tevy:
+https://tevy.dev/models/brass-door-key-on-ring
+Original GLB, metadata and decoded original PBR textures are retained. No paid service was used.
+
+Keys retain realistic 8.2-8.5 cm overall length including split rings. Cut teeth, grooves, rounded heads and original surface textures are preserved. Keys hang at slightly different angles with the broad faces readable from the room. Existing blank tags remain, connected by fine links and eyelets. Hooks terminate in upturned tips; cabinet frame joins the backing board to the glass. Cabinet glass has reduced opacity and specular glare. Board location, room arrangement and lighting are unchanged.
+
+Reusable prefabs: Assets/Building/Prefabs/Door Key.prefab and Key Cabinet.prefab.
+Editable model: References/Key Cabinet/Door Key.blend.
+Authoring script: Assets/Building/Editor/LampAndKeyDetails.cs.
+Scene: Assets/Scenes/Apartment.unity; shared Entrance Interior prefab also updated.
+
+Placement verification: 21 keys, 21 retained blank tags, no key mesh intersects the board or glass. Shared entrance contains all 21 keys. See Placement Checks.txt.
+Before/after screenshots: Key Cabinet Before/After.png and Keys Close Before/After.png. Angle Review is a working capture, not the saved final camera state.

@@ -1,0 +1,41 @@
+Apartment stairwell and corridor review — 25 November 2026
+
+Implemented
+Ten closed concrete flights connect six existing floors, with nine risers per flight, 161.1 mm rise, 260 mm going, 1.28 m flight width and 2.9 m floor spacing. Each flight includes a continuous concrete waist and beveled stair edges. Six floor landings and five intermediate landings meet the flights and corridor thresholds without overlapping floor surfaces. The enclosing walls, foundation and roof are continuous except for intentional door and window apertures.
+
+Physical dark-green/rusted handrails and pickets have their own collision shapes. There are no old invisible railing walls. Access doors retain separate frames, leaves, hardware and thresholds. StairAccessDoor implements the existing IInteractionTarget interface and dynamic reticle. Locked is true by default, as requested earlier; turn off Locked on a door component to allow access in future gameplay. No new unlocking quest or story system was added.
+
+Five landing windows are real openings aligned with the shared rear facade. After the height correction, their centers are 1.67 m above the intermediate landing, raised 32 cm. The glass transmits the existing neighborhood; the top window reveals the existing Tokyo Tower background. It is not a newly invented exterior scene. One authoritative facade cut now comes from Aoba Exterior.prefab. Legacy scene-added facade copies and duplicate outer window frames are removed/suppressed. Interior frames, exterior frames, reveals, mullions, bars and sills connect with real depth.
+
+The five upper corridors retain their layout and unit doors. Each has a dirty barred end window and two small non-emissive worn enamel floor signs. The corridor sill repair removes the second exterior sill/frame layer. Window heights in the corridors were preserved; the requested height change applies to stairwell windows.
+
+Eighteen lobby/corridor lights and eleven stairwell lights now use the self-authored flush covered Residential Fluorescent model. Its folded metal housing, prismatic aged cover and clips replace the open industrial tray/stems. Cold/desaturated light pools retain darker transitions. The existing circuit assets, backup lights and local switches are preserved. Paint follows the actual stair flights and intermediate landing heights; existing free photographic concrete, plaster and metal PBR textures supply the underlying surfaces.
+
+Floating weather overlays around the elevator and other wall edges were clipped to the actual supporting surfaces. Unsupported fragments are excluded rather than projected across doorways or beyond wall ends. The material alpha textures remain unchanged. The new compact meshes use a few triangles per supported patch rather than a dense permanent grid.
+
+Elevator sightline correction
+The functional mirror and its full frame moved from local Y=1.49 m to 1.72 m. Four fasteners moved with it. The ventilation fan moved to the right wall for clearance. The independent backup bulkhead moved to the high left wall, clear of the mirror, with its original power circuit and emission response retained. Shared cabin, landing and Alley entrance-preview prefabs match. Player eye height and movement were not changed.
+
+Shadow warning correction
+The 4096 additional-light atlas is unchanged. Redundant paired point fills, spill and emergency fills no longer allocate six shadow faces each. Main indoor spotlights use 512 maps; less important exterior sources use 256. Worst-case active punctual shadow maps fell from 617 to 124. Configured area is 14,417,920 texels out of 16,777,216. The policy also runs from the relevant authoring helpers, so a fixture update does not silently restore the excessive requests. Fresh rendered/Play Mode checks produced no shadow-atlas warning.
+
+Verification
+Actual AlleyWalker/CharacterController movement passed all 61 route targets from ground to the highest floor and back down, including corridor exits and reentries. No per-floor teleport was used in that walk. Minimum sampled overhead clearance was 2.132 m over 257 overhead samples. A further 342 floor/threshold/tread support rays had zero failures and no measurable height mismatch. Rear-window aperture checks sampled both halves at three heights, with no opaque blockers.
+
+All six doors passed camera-centered focus, locked interaction, physical blocking, unlocked opening, crossing and closing checks. They remain locked in the saved scene. Seven lighting circuits passed normal-light off/restore and cover-emission off checks. Elevator regression passed nine button rays, requested-floor ring illumination, travel to six and one, exit/reentry, live CCTV, live mirror reflection, normal supply cutoff, backup supply and restoration.
+
+Apartment was saved and reloaded; the single facade, suppressed legacy frames, raised windows/mirror and non-overlapping backup fixture persisted. Tests and raw captures are stored beside this review and in the linked folders. Overview.png is an explicitly temporary inspection cutaway with a review fill light; the normal enclosure and lighting were restored afterward. Other views use the actual scene lighting.
+
+Assets and cost
+Created in Blender/PIL/Unity: closed concrete flight mesh, residential fluorescent housing/cover/clips, fixture textures, physical floor-sign textures, connected window/reveal/railing assemblies and surface-clipped overlay meshes. Existing free PBR maps were reused (concrete_wall_006, painted_plaster_wall, Blue Metal Plate and existing weathering). No paid model, texture, API or service was used. Editable Blender sources are in this folder. The render pipeline was not changed.
+
+Reusable assets
+Assets/Building/Prefabs/Stairwell.prefab
+Assets/Building/Prefabs/Residential Fluorescent.prefab
+Assets/Building/Prefabs/Corridor Window.prefab
+Assets/Building/Prefabs/Floor Sign.prefab
+Assets/Apartment/Prefabs/Stairwell Door.prefab
+
+Apartment is the authoritative playable stairwell. Entrance Interior remains the existing ground-floor visual preview behind its locked door in Alley; it does not duplicate playable upper-floor systems. The shared rear facade matches the stairwell window elevations in both scenes. Do not rerun legacy complete Apartment/Neighborhood construction helpers over the finished scene.
+
+No Unity or Codex restart is required.

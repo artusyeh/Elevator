@@ -1,0 +1,23 @@
+New session has no stairwell key=True
+Door focused before pickup=True; locked press remains shut=True
+Out-of-range key rejected=True
+Key focused from desk=True; prompt=Pick Up
+Obstacle blocks key interaction=True
+Pickup via scanner=True; key held=True; object hidden=True
+Desk-to-door walk (-4.90, 0.00, 2.72)=True actual=(-4.87, 0.08, 2.69)
+Desk-to-door walk (-4.90, 0.00, 5.60)=True actual=(-4.90, 0.08, 5.55)
+Desk-to-door walk (-3.40, 0.00, 5.77)=True actual=(-3.46, 0.08, 5.76)
+Desk-to-door walk (-1.20, 0.00, 5.77)=True actual=(-1.26, 0.08, 5.77)
+Desk-to-door walk (-1.20, 0.00, 9.56)=True actual=(-1.20, 0.08, 9.51)
+With-key prompt=Unlock
+Master key unlock/open=True; physically crossed=True
+Door closes normally=True
+Floor 2: same-key unlock/open=True; close=True
+Floor 3: same-key unlock/open=True; close=True
+Floor 4: same-key unlock/open=True; close=True
+Floor 5: same-key unlock/open=True; close=True
+Floor 6: same-key unlock/open=True; close=True
+Master key retained=True
+Alley scene=Alley; key held=True; pickup instances=1; collected preview pickup hidden=True
+Apartment return: key retained=True; collected key stays hidden=True; reloaded lock opens with held key=True
+New Play session resets inventory=True; pickup restored=True; all six stairwell doors start locked=True

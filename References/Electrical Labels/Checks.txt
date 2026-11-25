@@ -1,0 +1,2 @@
+Wall/panel support samples=85/85; gap range=0.00060..0.00060m; breaker references=True; breaker count=15
+Alley: 15 aged paper breaker labels; flush=True; wall warning aged=True

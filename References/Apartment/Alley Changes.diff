@@ -1,0 +1,33 @@
+--- 
+
++++ 
+
+@@ -182559,4 +182559,5 @@
+
+   - component: {fileID: 1662546733}
+   - component: {fileID: 1662546732}
++  - component: {fileID: 1662546735}
+   m_Layer: 0
+   m_Name: Closed Entry Door
+@@ -182655,4 +182656,20 @@
+
+   m_GameObject: {fileID: 1662546730}
+   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
++--- !u!114 &1662546735
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1662546730}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: ac9e777d4e3ae024a92f4e62959eaceb, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  destination: Apartment
++  arrivalPosition: {x: 0, y: 0.06, z: 1.5}
++  arrivalRotation: {x: 0, y: 0, z: 0}
++  prompt: Enter Aoba Apartments
+ --- !u!1 &1664646780
+ GameObject:

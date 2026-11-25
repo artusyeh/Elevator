@@ -1,0 +1,3 @@
+Replaced pole heads: 3; porch fixtures: 2; apartment entrance: 1. Existing fixture prefabs reused; wall optics aimed down/out; six pole heads now detailed geometry. Street layout preserved.
+Final review: Aoba entrance uses a compact canopy-mounted linear fixture so the recessed facade does not block its beam.
+Canopy spotlight aimed toward the entrance, intensity 5.5, range 4.5 m, 3300 K. Door visibility and light path checked from player height.

@@ -1,0 +1,4 @@
+Aimed floor selection=True
+Transit body samples=50 external overlaps=0 early door opening=False
+Floor 6 exit local=(0.00, 0.08, -1.81) pass=True
+Descent to floor=1 rider at rear/right corner=(0.40, 0.08, 1.30)

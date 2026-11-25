@@ -1,0 +1,60 @@
+{
+  "source": "https://tevy.dev/models/brass-door-key-on-ring",
+  "asset": {
+    "slug": "brass-door-key-on-ring",
+    "name": "Brass Door Key on Ring",
+    "category": "props",
+    "tags": [
+      "key",
+      "pickup",
+      "gameplay",
+      "unlock",
+      "collectible",
+      "prop",
+      "door key",
+      "brass key",
+      "key ring"
+    ],
+    "description": "A 7 cm brass door key on a steel split ring, with a worn shine. A pickup for house and office doors.",
+    "license": "CC0-1.0",
+    "version": 1,
+    "changes": "First release.",
+    "created": "2026-11-07",
+    "updated": "2026-11-07",
+    "units": "meters",
+    "up": "+Y",
+    "forward": "+Z",
+    "dimensions": {
+      "x": 0.085,
+      "y": 0.028,
+      "z": 0.027
+    },
+    "parts": [],
+    "animations": [],
+    "wind": false,
+    "preview": "/models/brass-door-key-on-ring/v1/preview.webp",
+    "files": [
+      {
+        "lod": 0,
+        "path": "/models/brass-door-key-on-ring/v1/lod0.glb",
+        "bytes": 1223608,
+        "sha256": "51a0a13f9b48fac0fd43b6a754ec80aca60916f15d07367d8ee31285179c6f17",
+        "triangles": 3064
+      },
+      {
+        "lod": 1,
+        "path": "/models/brass-door-key-on-ring/v1/lod1.glb",
+        "bytes": 385456,
+        "sha256": "155b34fb2a86ebf8c9277e5f9616bf6dc1236f4e87aec5ec74f823f66c90c57f",
+        "triangles": 1072
+      },
+      {
+        "lod": 2,
+        "path": "/models/brass-door-key-on-ring/v1/lod2.glb",
+        "bytes": 118684,
+        "sha256": "695f0700831ca969366cb66dc6149973d3f6dab8617af72be38961157a4634fc",
+        "triangles": 306
+      }
+    ]
+  }
+}

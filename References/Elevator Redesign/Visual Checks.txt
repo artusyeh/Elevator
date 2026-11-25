@@ -1,0 +1,8 @@
+Building/Cabin Surface: supported=True shader errors=False
+Building/Aged Mirror: supported=True shader errors=False
+Six floor buttons=True
+Button references intact=True
+Functional mirror=True
+Elevator lighting circuit=Elevator lights=2 emitters=3
+Cabin CCTV source intact=True
+Wall-backed framed signs=4/4

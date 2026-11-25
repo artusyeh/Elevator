@@ -1,0 +1,15 @@
+Window frame and stairwell glass correction — 25 November 2026
+
+The top/bottom flicker was not fully resolved by suppressing the old exterior frames. The separate top reveal still shared a plane with the exposed wall-cut face, and the lower wall return stood above the sill. Those surfaces could show through the trim.
+
+All five corridor windows and five stairwell windows now use a single closed extruded perimeter mesh per opening. Its head, sill and jambs meet without overlapping layers. The visible inner metal faces sit approximately 10–11.5 mm ahead of the old wall-cut faces. The stone sill is below the metal frame, with a small separate joint. Former plaster reveal boxes and layered inner/outer frames are removed. The center mullion meets the perimeter, and the corridor latch is physically mounted to the mullion rather than floating over the glass. Existing openings, floor heights and window elevations remain unchanged.
+
+The five stairwell glass materials now use Building/Obscured Glass. The shader combines a broadly blurred sample of the actual scene behind the pane, low transmission, rough PBR reflection, clouded deposits, bottom mud, edge dust and vertical water streaks. Each floor has a different age-pattern seed. The exterior remains present; its readable detail is obscured by the glass rather than replaced by a wall. A very weak cool scatter term and reduced existing outside spot (.12 intensity, 2.1 m range) retain a hint of nighttime space. Corridor glass transparency was preserved; the new dark treatment applies only to stairwell windows.
+
+The player and existing scene cameras enable the supported URP opaque-color copy for frosted transmission. No render-pipeline asset was replaced. The shader is editable; Transmission, Frost Spread, Age Variation, Dust and Mud, Glass Tint and Faint Night Scatter are material properties. All new materials and meshes are independent editable project assets. Existing free textures were reused; no asset purchases or paid services.
+
+Updated shared assets: Residential Corridor.prefab, Corridor Window.prefab and Stairwell.prefab. Targeted corridor/stairwell authoring helpers preserve the repaired frames and obscured glass on later updates. Mirror, elevator, doors, CCTV, electrical circuits, player movement and stair layout were not redesigned in this task.
+
+Checks.txt records ten unique closed manifold frames, positive outward volumes, zero remaining legacy reveal boxes, retained glass colliders and no shader compilation errors. The scene was saved and reopened before the final captures. Six normal-lighting views include straight-on, upward and downward frame views, lower/upper stair windows and a landing angle.
+
+No Unity or Codex restart required. Gallery.html compares before/after images. The earlier clear stairwell-window captures in References/Stairwell and References/Window Sightlines are historical; the current obscured treatment is shown here.

@@ -1,0 +1,23 @@
+Stair corner and railing repair — 25 November 2026
+
+Cause
+The separate landing guards did not share the flight handrails' endpoints. Their top heights differed by 40 mm, their lateral positions differed by 35 mm and their longitudinal returns differed by 140–260 mm. Raw cylinder ends also met without proper elbows. This left the loose ends, awkward crossings and disconnected corners shown in the user's screenshot.
+
+Repair
+Six landing sections and ten flight railings now form one continuous handrail route. Rounded swept pipe joins replace the separate capped cylinders at each turn. The flight rails follow the existing tread centers at 0.96 m above the steps, and meet the landing guards at the same 1.04056 m height. Intermediate turns use consistent flat U returns. The ground and top guards terminate at actual solid wall mounts; the ground mount clears the door opening.
+
+The route is divided into six editable mesh objects at straight landing spans so it retains local lighting and useful floor groups. Neighboring ends share the same position, radius, orientation and cross-section; they have no duplicate cap faces. Fitted capsule segments follow the pipe rather than forming invisible broad barriers. New post feet are seated on the actual landings/treads. Ground-floor guard and top-floor guard coverage are retained. No stair flights, landing slabs, window treatments, lights, player movement or room layout were changed.
+
+Saved
+Assets/Scenes/Apartment.unity
+Assets/Building/Prefabs/Stairwell.prefab
+Assets/Building/Models/Ground Handrail.asset and Floor 2–6 Handrail.asset
+Assets/Building/Editor/StairRailingRepair.cs
+StairwellReconstruction now uses the repaired railing helper for future targeted stair updates. Existing stairwell key/door components and lock settings are retained. All geometry is self-authored editable Unity mesh data; no paid assets or services.
+
+Verification
+Geometry Checks.txt records 696 support rays at the corners of all post footplates, with zero failures and approximately 0.001 mm maximum surface discrepancy. Five between-floor tube-ring joints have at most approximately 0.001 mm positional discrepancy. No old separate Landing Rail groups remain.
+
+The actual AlleyWalker/CharacterController completed the full ground-to-highest-floor-and-back route through all 61 targets. All five intermediate turns and all floor entrance approaches remained passable. Minimum sampled overhead clearance was 2.068 m over 257 samples. Play Mode Console had no warnings or errors. Seven player-height captures cover every upper-floor corner, an intermediate U return and the ground guard. Doors were temporarily opened only for the walk test; saved access doors retain their key-operated locked state.
+
+No Unity/Codex restart required. The scene was saved and reloaded after testing.

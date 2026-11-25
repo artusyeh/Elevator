@@ -1,0 +1,67 @@
+Playing=False scene=Apartment
+Elevator Cabin parent=Elevator Landing local=(0.000, 0.000, 0.110) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00)
+Cabin Floor parent=Elevator Cabin local=(0.000, -0.055, 0.880) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.000, -0.055, 0.880), Extents: (0.750, 0.055, 0.720) mats=Cabin Worn Floor
+Cabin Ceiling parent=Elevator Cabin local=(0.000, 2.330, 0.925) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.000, 2.330, 0.925), Extents: (0.830, 0.060, 0.775) mats=Pale Green Panels
+Side Panel parent=Elevator Cabin local=(-0.790, 1.150, 0.925) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (-0.790, 1.150, 0.925), Extents: (0.040, 1.150, 0.775) mats=Pale Green Panels
+Handrail parent=Elevator Cabin local=(-0.660, 0.940, 0.835) rot=(90.00, 0.00, 0.00) scale=(0.05, 0.59, 0.05) bounds=Center: (-0.660, 0.940, 0.835), Extents: (0.024, 0.024, 0.585) mats=Stainless Steel
+Rail Bracket parent=Elevator Cabin local=(-0.700, 0.940, 0.300) rot=(0.00, 0.00, 270.00) scale=(0.03, 0.04, 0.03) bounds=Center: (-0.700, 0.940, 0.300), Extents: (0.040, 0.014, 0.014) mats=Stainless Steel
+Rail Bracket parent=Elevator Cabin local=(-0.700, 0.940, 1.350) rot=(0.00, 0.00, 270.00) scale=(0.03, 0.04, 0.03) bounds=Center: (-0.700, 0.940, 1.350), Extents: (0.040, 0.014, 0.014) mats=Stainless Steel
+Panel Joint parent=Elevator Cabin local=(-0.744, 1.150, 0.150) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (-0.744, 1.150, 0.150), Extents: (0.005, 1.140, 0.004) mats=Black Rubber
+Panel Joint parent=Elevator Cabin local=(-0.744, 1.150, 0.800) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (-0.744, 1.150, 0.800), Extents: (0.005, 1.140, 0.004) mats=Black Rubber
+Panel Joint parent=Elevator Cabin local=(-0.744, 1.150, 1.450) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (-0.744, 1.150, 1.450), Extents: (0.005, 1.140, 0.004) mats=Black Rubber
+Side Panel parent=Elevator Cabin local=(0.790, 1.150, 0.925) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.790, 1.150, 0.925), Extents: (0.040, 1.150, 0.775) mats=Pale Green Panels
+Handrail parent=Elevator Cabin local=(0.660, 0.940, 1.045) rot=(90.00, 0.00, 0.00) scale=(0.05, 0.38, 0.05) bounds=Center: (0.660, 0.940, 1.045), Extents: (0.024, 0.024, 0.375) mats=Stainless Steel
+Rail Bracket parent=Elevator Cabin local=(0.700, 0.940, 0.720) rot=(0.00, 0.00, 90.00) scale=(0.03, 0.04, 0.03) bounds=Center: (0.700, 0.940, 0.720), Extents: (0.040, 0.014, 0.014) mats=Stainless Steel
+Rail Bracket parent=Elevator Cabin local=(0.700, 0.940, 1.350) rot=(0.00, 0.00, 90.00) scale=(0.03, 0.04, 0.03) bounds=Center: (0.700, 0.940, 1.350), Extents: (0.040, 0.014, 0.014) mats=Stainless Steel
+Panel Joint parent=Elevator Cabin local=(0.744, 1.150, 0.150) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.744, 1.150, 0.150), Extents: (0.005, 1.140, 0.004) mats=Black Rubber
+Panel Joint parent=Elevator Cabin local=(0.744, 1.150, 0.800) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.744, 1.150, 0.800), Extents: (0.005, 1.140, 0.004) mats=Black Rubber
+Panel Joint parent=Elevator Cabin local=(0.744, 1.150, 1.450) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.744, 1.150, 1.450), Extents: (0.005, 1.140, 0.004) mats=Black Rubber
+Rear Panel parent=Elevator Cabin local=(0.000, 1.150, 1.650) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.000, 1.150, 1.650), Extents: (0.825, 1.150, 0.050) mats=Pale Green Panels
+Rear Handrail parent=Elevator Cabin local=(0.000, 0.940, 1.500) rot=(0.00, 0.00, 270.00) scale=(0.05, 0.60, 0.05) bounds=Center: (0.000, 0.940, 1.500), Extents: (0.600, 0.024, 0.024) mats=Stainless Steel
+Mirror Frame parent=Elevator Cabin local=(0.000, 1.600, 1.586) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.000, 1.600, 1.586), Extents: (0.630, 0.440, 0.013) mats=Stainless Steel
+Mirror parent=Elevator Cabin local=(0.000, 1.600, 1.570) rot=(0.00, 0.00, 0.00) scale=(1.17, 0.79, 1.00) bounds=Center: (0.000, 1.600, 1.570), Extents: (0.585, 0.395, 0.000) mats=Cabin Mirror
+Mirror Camera parent=Elevator Cabin local=(0.100, 1.650, 2.240) rot=(3.35, 259.88, 0.00) scale=(1.00, 1.00, 1.00)
+Control Panel parent=Elevator Cabin local=(0.733, 0.000, 0.370) rot=(0.00, 90.00, 0.00) scale=(1.00, 1.00, 1.00)
+Floor Button parent=Control Panel local=(0.000, 0.730, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 0.730, 0.370), Extents: (0.008, 0.028, 0.028) mats=Lift Button Lens
+Floor Button parent=Control Panel local=(0.000, 0.875, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 0.875, 0.370), Extents: (0.008, 0.028, 0.028) mats=Lift Button Lens
+Floor Button parent=Control Panel local=(0.000, 1.020, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 1.020, 0.370), Extents: (0.008, 0.028, 0.028) mats=Lift Button Lens
+Floor Button parent=Control Panel local=(0.000, 1.165, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 1.165, 0.370), Extents: (0.008, 0.028, 0.028) mats=Lift Button Lens
+Floor Button parent=Control Panel local=(0.000, 1.310, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 1.310, 0.370), Extents: (0.008, 0.028, 0.028) mats=Lift Button Lens
+Floor Button parent=Control Panel local=(0.000, 1.455, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 1.455, 0.370), Extents: (0.008, 0.028, 0.028) mats=Lift Button Lens
+Door Button parent=Control Panel local=(-0.055, 0.520, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.05, 0.01, 0.05) bounds=Center: (0.701, 0.520, 0.425), Extents: (0.007, 0.024, 0.024) mats=Lift Button Lens
+Door Button parent=Control Panel local=(0.055, 0.520, -0.032) rot=(270.00, 0.00, 0.00) scale=(0.05, 0.01, 0.05) bounds=Center: (0.701, 0.520, 0.315), Extents: (0.007, 0.024, 0.024) mats=Lift Button Lens
+Emergency Button parent=Control Panel local=(0.000, 0.390, -0.033) rot=(270.00, 0.00, 0.00) scale=(0.06, 0.01, 0.06) bounds=Center: (0.701, 0.390, 0.370), Extents: (0.007, 0.028, 0.028) mats=Lift Button Lens
+Button Interaction parent=Control Panel local=(0.000, 0.730, -0.049) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Floor:1 cap=Floor Button lamp=Floor Button
+Button Interaction parent=Control Panel local=(0.000, 0.875, -0.049) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Floor:2 cap=Floor Button lamp=Floor Button
+Button Interaction parent=Control Panel local=(0.000, 1.020, -0.049) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Floor:3 cap=Floor Button lamp=Floor Button
+Button Interaction parent=Control Panel local=(0.000, 1.165, -0.049) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Floor:4 cap=Floor Button lamp=Floor Button
+Button Interaction parent=Control Panel local=(0.000, 1.310, -0.049) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Floor:5 cap=Floor Button lamp=Floor Button
+Button Interaction parent=Control Panel local=(0.000, 1.455, -0.049) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Floor:6 cap=Floor Button lamp=Floor Button
+Button Interaction parent=Control Panel local=(-0.055, 0.520, -0.050) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Open:1 cap=Door Button lamp=Door Button
+Button Interaction parent=Control Panel local=(0.055, 0.520, -0.050) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Close:1 cap=Door Button lamp=Door Button
+Button Interaction parent=Control Panel local=(0.000, 0.390, -0.051) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) button=Alarm:1 cap=Emergency Button lamp=Emergency Button
+Panel Face parent=Control Panel local=(0.000, 1.100, 0.000) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.733, 1.100, 0.370), Extents: (0.012, 0.815, 0.115) mats=Stainless Steel
+Fluorescent Light parent=Elevator Cabin local=(0.000, 2.260, 0.700) rot=(0.00, 90.00, 0.00) scale=(1.00, 1.00, 1.00)
+Light parent=Fluorescent Light local=(0.000, -0.110, 0.000) rot=(90.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) light=Spot intensity=4.1 kelvin=4100 enabled=True
+Tube Spill parent=Fluorescent Light local=(0.000, -0.060, 0.000) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) light=Point intensity=0.45 kelvin=4100 enabled=True
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.700) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.700), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.735) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.735), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.770) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.770), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.805) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.805), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.840) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.840), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.875) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.875), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.910) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.910), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.945) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.945), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Ceiling Vent parent=Elevator Cabin local=(0.550, 2.265, 0.980) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.550, 2.265, 0.980), Extents: (0.110, 0.006, 0.009) mats=Black Rubber
+Rust parent=Elevator Cabin local=(0.000, 0.350, 1.595) rot=(0.00, 0.00, 0.00) scale=(1.30, 0.65, 1.00) bounds=Center: (0.000, 0.350, 1.595), Extents: (0.650, 0.325, 0.000) mats=Rust
+Ventilation Fan parent=Elevator Cabin local=(0.500, 1.950, 1.550) rot=(0.00, 0.00, 0.00) scale=(0.50, 0.50, 0.50)
+Fan Mounting Plate parent=Elevator Cabin local=(0.500, 2.140, 1.595) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) bounds=Center: (0.500, 2.140, 1.595), Extents: (0.115, 0.115, 0.010) mats=Stainless Steel
+Cabin Details parent=Elevator Cabin local=(0.000, 0.000, 0.000) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00)
+Light parent=Cabin Details local=(0.000, 1.900, 0.950) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) light=Point intensity=0.75 kelvin=4100 enabled=True
+Doorway Returns parent=Elevator Cabin local=(0.000, 0.000, 0.000) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00)
+Cabin Doors parent=Elevator Cabin local=(0.000, 0.000, 0.000) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00)
+Cabin Camera parent=Elevator Cabin local=(-0.550, 2.000, 1.340) rot=(41.75, 152.13, 0.00) scale=(1.00, 1.00, 1.00)
+Emergency Light parent=Elevator Cabin local=(0.300, 2.120, 1.540) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00)
+Light parent=Emergency Light local=(0.000, -0.040, -0.110) rot=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) light=Point intensity=0.24 kelvin=4100 enabled=True
+Circuit=Elevator Cabin Elevator lights=3 emitters=12
+Circuit=Emergency Light Emergency lights=1 emitters=1

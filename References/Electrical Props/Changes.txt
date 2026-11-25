@@ -1,0 +1,5 @@
+Electrical-room prop repair
+- Moved the high-voltage warning from its unsupported position below the meter cabinet to the actual west wall. Added a thin metal backing; its back is flush with the wall, with a small offset for the printed face.
+- Grounded the broom and bucket with a 3 mm clearance. Leaned the broom toward the wall; separated it from the bucket and nearby utility cabinet.
+- Updated Apartment and the shared Electrical Room prefab in place. The standalone Meter Cabinet prefab no longer contains an unsupported warning sign.
+- Checks and before/after screenshots are in this folder.

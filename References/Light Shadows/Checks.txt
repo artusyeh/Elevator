@@ -1,0 +1,2 @@
+Runtime floor circuits: off=6/6 restored=6/6; fixture housings excluded from oversized shadow projection=True; room shadow lights=18/18; obsolete trial lights=0
+Alley inherited shadow treatment=3/3

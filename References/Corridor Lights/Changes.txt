@@ -1,0 +1,9 @@
+Lobby and residential corridor fixture repair
+
+Fitted all 18 lights across the six floors with a continuous folded steel ballast tray, raised side rims, centre ballast cover, end socket bridges, socket mounts, cover screws, ceiling anchors and connected mounting brackets. Removed the disconnected original Mounting Stud pieces. The original twin-tube meshes, their rendering materials, Light components, light intensities and LightCircuit references are retained.
+
+Ceiling support height is measured separately for each fixture. All 36 anchors meet the actual slab undersides. Socket supports connect both original tube holders into the tray; the centre cover is part of a complete fitting. The housing reuses the existing free CC0 Metal Plate 02 photographic color/normal maps, restricted to a seam-free area of the source. No paid assets or services were used.
+
+Apartment scene, Residential Corridor prefab and shared Entrance Interior prefab updated in place. Reusable assembled fixture: Assets/Building/Prefabs/Corridor Light.prefab. Editable authoring: Assets/Building/Editor/CorridorLightRepair.cs. Existing elevator fixture remains independent; the stairwell and other service-room fixtures were outside this corridor/lobby repair.
+
+Checks: 18 fixture housings; 36/36 anchors connected; 18 original tube pairs retained; all light and emitter circuit references valid. Before/after player-height screenshots inspected. See Checks.txt and Corridor Fixture Before/After.png, Corridor Lighting Before/After.png.
