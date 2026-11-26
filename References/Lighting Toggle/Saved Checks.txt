@@ -1,0 +1,1 @@
+Normal baked surface bindings=294; independent profile components=True / True

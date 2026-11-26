@@ -1,0 +1,1 @@
+Reload public renderers=610; still configured to receive lightmaps=0; baked GI flags=0

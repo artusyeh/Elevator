@@ -1,0 +1,6 @@
+Camera-centred interaction rays=9/9; sixth-floor button=True; arrived at six=True; moving display floors=1,2,3,4,5,6; panel light on elevator circuit=True; power-off light=True diffuser=True emergency remains=True; power-off survives mood toggle=True; light restored=True; current mood=Normal
+Saved scene: display lamps=1; cabin-envelope violations=0; custom shadow tier=0; default mode=Normal
+Assets/Apartment/Prefabs/Elevator Cabin.prefab: lamps=1 wired=True buttons=9
+Assets/Apartment/Prefabs/Elevator Landing.prefab: lamps=1 wired=True buttons=9
+Assets/Apartment/Prefabs/Entrance Interior.prefab: lamps=1 wired=True buttons=0
+Alley entrance preview lamps=1; reloaded Apartment lamps=1; saved display materials unchanged; current Play Mode=False

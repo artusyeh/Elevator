@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 4843961620818871849}
   - component: {fileID: 7368033392396320807}
   - component: {fileID: 4388495963994075624}
+  - component: {fileID: 2837424292215006480}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -211,3 +212,18 @@ MonoBehaviour:
   eyes: {fileID: 8580317002858960908}
   speed: 2.2
   sensitivity: 0.085
+--- !u!114 &2837424292215006480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8278400909439889434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48b248db635d414eb0355d306ac62d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view: {fileID: 8580317002858960908}
+  zoomFieldOfView: 40
+  transitionSpeed: 12

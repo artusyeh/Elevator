@@ -12,9 +12,11 @@ public sealed class CctvMonitor : MonoBehaviour,IInteractionTarget
     public string InteractionPrompt=>"Switch Camera";
     public float InteractionRange=>2;
     Material display;
+    Vector3 localFaceNormal=Vector3.forward;
+    public Vector3 FaceNormal=>screen!=null?screen.transform.TransformDirection(localFaceNormal):Vector3.forward;
     public bool CanInteract(InteractionScanner source)=>Powered&&system!=null;
     public void Interact(InteractionScanner source){if(CanInteract(source))system.NextChannel(this);}
-    void Awake(){ChannelIndex=CctvSystem.ReadChannel(monitorId,initialChannel);display=new Material(screen.sharedMaterial);screen.sharedMaterial=display;}
+    void Awake(){ChannelIndex=CctvSystem.ReadChannel(monitorId,initialChannel);display=new Material(screen.sharedMaterial);screen.sharedMaterial=display;var mesh=screen.GetComponent<MeshFilter>();if(mesh!=null&&mesh.sharedMesh!=null&&mesh.sharedMesh.isReadable){var normals=mesh.sharedMesh.normals;if(normals.Length>0)localFaceNormal=normals[0];}}
     public void Select(int index){ChannelIndex=index;CctvSystem.RememberChannel(monitorId,index);}
     public void Refresh()
     {

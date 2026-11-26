@@ -1,0 +1,156 @@
+{
+  "models": [
+    {
+      "asset": "modular_pipes",
+      "source": "https://polyhaven.com/a/modular_pipes",
+      "license": "CC0-1.0",
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "materials": [
+        {
+          "name": "modular_pipes_metal",
+          "color": "textures/modular_pipes_metal_diff_1k.jpg",
+          "normal": "textures/modular_pipes_metal_nor_gl_1k.jpg",
+          "arm": "textures/modular_pipes_metal_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "modular_pipes_pvc",
+          "color": "textures/modular_pipes_pvc_diff_1k.jpg",
+          "normal": "textures/modular_pipes_pvc_nor_gl_1k.jpg",
+          "arm": "textures/modular_pipes_pvc_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "modular_electric_cables",
+      "source": "https://polyhaven.com/a/modular_electric_cables",
+      "license": "CC0-1.0",
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "materials": [
+        {
+          "name": "modular_electric_cables",
+          "color": "textures/modular_electric_cables_diff_1k.jpg",
+          "normal": "textures/modular_electric_cables_nor_gl_1k.jpg",
+          "arm": "textures/modular_electric_cables_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "modular_electric_cables_boxes",
+          "color": "textures/modular_electric_cables_boxes_diff_1k.jpg",
+          "normal": "textures/modular_electric_cables_boxes_nor_gl_1k.jpg",
+          "arm": "textures/modular_electric_cables_boxes_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "chinese_stool",
+      "source": "https://polyhaven.com/a/chinese_stool",
+      "license": "CC0-1.0",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "materials": [
+        {
+          "name": "chinese_stool",
+          "color": "textures/chinese_stool_diff_1k.jpg",
+          "normal": "textures/chinese_stool_nor_gl_1k.jpg",
+          "arm": "textures/chinese_stool_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    },
+    {
+      "asset": "rubber_boots",
+      "source": "https://polyhaven.com/a/rubber_boots",
+      "license": "CC0-1.0",
+      "authors": {
+        "L": "All"
+      },
+      "materials": [
+        {
+          "name": "rubber_boots",
+          "color": "textures/rubber_boots_diff_1k.jpg",
+          "normal": "textures/rubber_boots_nor_gl_1k.jpg",
+          "arm": "textures/rubber_boots_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        },
+        {
+          "name": "rubber_boots_dirty",
+          "color": "textures/rubber_boots_dirty_diff_1k.jpg",
+          "normal": "textures/rubber_boots_dirty_nor_gl_1k.jpg",
+          "arm": "textures/rubber_boots_dirty_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 1,
+          "alpha": "OPAQUE",
+          "doubleSided": true
+        }
+      ]
+    }
+  ]
+}

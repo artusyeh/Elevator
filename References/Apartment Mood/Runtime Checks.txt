@@ -1,0 +1,11 @@
+Lobby: lights off=True; fixture emission off=True; restored=True
+Elevator: lights off=True; fixture emission off=True; restored=True
+Second Floor: lights off=True; fixture emission off=True; restored=True
+Third Floor: lights off=True; fixture emission off=True; restored=True
+Fourth Floor: lights off=True; fixture emission off=True; restored=True
+Fifth Floor: lights off=True; fixture emission off=True; restored=True
+Sixth Floor: lights off=True; fixture emission off=True; restored=True
+Existing CCTV feed renders=True
+Fixed post exposure=0.55; saturation=-8; contrast=7
+Apartment lights=160; 18 existing ceiling fixtures retained
+Final Play Mode: public receive-lightmap renderers=0; public GI-static renderers=0; lobby off check=True; restored=True

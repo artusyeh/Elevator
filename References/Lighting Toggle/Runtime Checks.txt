@@ -1,0 +1,21 @@
+Starts Normal=True
+Twenty toggles return Normal=True
+Preset assets unchanged by switching=True
+Horror: lights exact=True; materials exact=True; lightmap state exact=True; profile exact=True
+Normal: lights exact=True; materials exact=True; lightmap state exact=True; profile exact=True
+Lobby: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Second Floor: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Third Floor: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Fourth Floor: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Fifth Floor: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Sixth Floor: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Emergency: mood switches preserve lights off=True; emission off=True; circuit state restored=True
+Actual L press selects Horror=True
+Holding L does not toggle repeatedly=True
+Second L press restores Normal=True
+Menu blocks toggle=True
+Document blocks toggle=True
+Released cursor blocks toggle=True
+Alley retains its original outdoor grade: post exposure=0.9 saturation=-3; apartment controller count=0
+Apartment return retains Horror=True; controller instances=1; horror lightmap receivers=0
+Fresh Play session starts Normal=True; configured hotkey=L

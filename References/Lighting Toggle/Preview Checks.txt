@@ -1,0 +1,2 @@
+Normal: first fixture intensity=4; ambient=RGBA(0.190, 0.235, 0.310, 1.000); assigned lightmap receivers=294
+Horror: first fixture intensity=9.023999; ambient=RGBA(0.160, 0.200, 0.220, 1.000); assigned lightmap receivers=0

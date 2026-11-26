@@ -1,0 +1,296 @@
+{
+  "models": [
+    {
+      "asset": "old_bed_frame",
+      "source": "https://polyhaven.com/a/old_bed_frame",
+      "license": "CC0-1.0",
+      "authors": {
+        "Luca B": "All"
+      },
+      "materials": [
+        {
+          "name": "old_bed_frame",
+          "color": "textures/old_bed_frame_diff_1k.jpg",
+          "normal": "textures/old_bed_frame_nor_gl_1k.jpg",
+          "arm": "textures/old_bed_frame_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "chinese_tea_table",
+      "source": "https://polyhaven.com/a/chinese_tea_table",
+      "license": "CC0-1.0",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "materials": [
+        {
+          "name": "chinese_tea_table",
+          "color": "textures/chinese_tea_table_diff_1k.jpg",
+          "normal": "textures/chinese_tea_table_nor_gl_1k.jpg",
+          "arm": "textures/chinese_tea_table_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "painted_wooden_chair_02",
+      "source": "https://polyhaven.com/a/painted_wooden_chair_02",
+      "license": "CC0-1.0",
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "materials": [
+        {
+          "name": "painted_wooden_chair_02",
+          "color": "textures/painted_wooden_chair_02_diff_1k.jpg",
+          "normal": "textures/painted_wooden_chair_02_nor_gl_1k.jpg",
+          "arm": "textures/painted_wooden_chair_02_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "Shelf_01",
+      "source": "https://polyhaven.com/a/Shelf_01",
+      "license": "CC0-1.0",
+      "authors": {
+        "Gabriel Radić": "All"
+      },
+      "materials": [
+        {
+          "name": "Shelf_01",
+          "color": "textures/Shelf_01_diff_1k.jpg",
+          "normal": "textures/Shelf_01_nor_gl_1k.jpg",
+          "arm": "textures/Shelf_01_arm_1k.jpg",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "washing-machine",
+      "source": "https://tevy.dev/models/washing-machine",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "door_glass_0",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "factor": [
+            0.550000011920929,
+            0.6000000238418579,
+            0.6200000047683716,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.05000000074505806
+        },
+        {
+          "name": "washing_machine_0",
+          "color": "textures/Original 2.png",
+          "normal": "textures/Original 0.png",
+          "arm": "textures/Original 1.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "refrigerator",
+      "source": "https://tevy.dev/models/refrigerator",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "fridge_0",
+          "color": "textures/Original 2.png",
+          "normal": "textures/Original 0.png",
+          "arm": "textures/Original 1.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        },
+        {
+          "name": "shelf_glass_0",
+          "color": "",
+          "normal": "",
+          "arm": "",
+          "factor": [
+            0.8500000238418579,
+            0.9200000166893005,
+            0.8999999761581421,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.05000000074505806
+        }
+      ]
+    },
+    {
+      "asset": "wardrobe",
+      "source": "https://tevy.dev/models/wardrobe",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "wardrobe_0",
+          "color": "textures/Original 1.png",
+          "normal": "",
+          "arm": "textures/Original 0.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "laundry-basket",
+      "source": "https://tevy.dev/models/laundry-basket",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "laundry_basket_0",
+          "color": "textures/Original 2.png",
+          "normal": "textures/Original 0.png",
+          "arm": "textures/Original 1.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "wooden-bed",
+      "source": "https://tevy.dev/models/wooden-bed",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "bed_0",
+          "color": "textures/Original 2.png",
+          "normal": "textures/Original 0.png",
+          "arm": "textures/Original 1.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "wooden-chair",
+      "source": "https://tevy.dev/models/wooden-chair",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "chair_pine_0",
+          "color": "textures/Original 2.png",
+          "normal": "textures/Original 0.png",
+          "arm": "textures/Original 1.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "kitchen-base-unit-sink",
+      "source": "https://tevy.dev/models/kitchen-base-unit-sink",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "kitchen_base_0",
+          "color": "textures/Original 2.png",
+          "normal": "textures/Original 0.png",
+          "arm": "textures/Original 1.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    },
+    {
+      "asset": "cream-dome-kettle",
+      "source": "https://tevy.dev/models/cream-dome-kettle",
+      "license": "CC0-1.0",
+      "materials": [
+        {
+          "name": "kettle_0",
+          "color": "textures/Original 1.png",
+          "normal": "",
+          "arm": "textures/Original 0.png",
+          "factor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 1,
+          "roughness": 1
+        }
+      ]
+    }
+  ]
+}

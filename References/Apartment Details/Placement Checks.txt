@@ -1,0 +1,10 @@
+Service groups=14; added light components=0
+Wall-backed signs, alarms and grilles=19/19
+Floor 2: 4 household clusters / 6 entrances; beams=2
+Floor 3: 4 household clusters / 6 entrances; beams=1
+Floor 4: 5 household clusters / 6 entrances; beams=2
+Floor 5: 5 household clusters / 6 entrances; beams=1
+Floor 6: 4 household clusters / 6 entrances; beams=2
+Grounded clusters=22/22; clusters outside 2.5 m central passage=22/22; conservative symmetric clearance=3.15 m
+Lowest new beam/collector clearance=2.360 m
+Supported materials=True

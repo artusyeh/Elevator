@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &86125652437129207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5112763121385312393}
+  m_Layer: 0
+  m_Name: washing-machine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5112763121385312393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86125652437129207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4138621616306915493}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4532291468073070414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5112763121385312393}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.031991452
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8573761923326217341, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8573761923326217341, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8573761923326217341, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 533729b695be52841ac19368836bd8b3, type: 2}
+    - target: {fileID: -936809639537204209, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -936809639537204209, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -936809639537204209, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 533729b695be52841ac19368836bd8b3, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_Name
+      value: washing-machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863542389390508867, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863542389390508867, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863542389390508867, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 533729b695be52841ac19368836bd8b3, type: 2}
+    - target: {fileID: 6326294355019227050, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326294355019227050, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326294355019227050, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8f1bafc82cfba64da05a03f0d04bdda, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+--- !u!4 &4138621616306915493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0238a39ba8eb0dd44bc524d7b6921a41, type: 3}
+  m_PrefabInstance: {fileID: 4532291468073070414}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,3 @@
+Updated player prefab: Assets/Apartment/Prefabs/Player.prefab
+Alley: one zoom component, normal FOV=67 target=40
+Apartment: one zoom component, normal FOV=67 target=40

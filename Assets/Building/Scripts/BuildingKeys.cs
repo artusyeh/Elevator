@@ -13,6 +13,11 @@ public static class BuildingKeys
         if(string.IsNullOrEmpty(id)||!held.Add(id))return false;
         Changed?.Invoke();return true;
     }
+    public static bool Return(string id)
+    {
+        if(string.IsNullOrEmpty(id)||!held.Remove(id))return false;
+        Changed?.Invoke();return true;
+    }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetSession(){held.Clear();Changed=null;}
 }

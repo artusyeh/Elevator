@@ -1,0 +1,12 @@
+Smooth held zoom=True; converged FOV=40
+Release returns normal=True
+menu restores normal=True
+document restores normal=True
+cutscene restores normal=True
+Cursor release restores normal=True
+Focus loss restores normal=True
+Pause restores normal=True
+Component disable restores normal=True
+30/144fps convergence=True
+Apartment actual right-button input: zoomed=True; released=True
+Alley actual right-button input: zoomed=True; released=True; zoom components after transition=1

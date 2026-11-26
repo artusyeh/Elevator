@@ -27,6 +27,8 @@ public sealed class ElevatorController : MonoBehaviour
     bool shook;
     float shakeClock;
     bool previousPower=true;
+    AlleyStudy.AlleyWalker cachedPlayer;
+    AlleyStudy.AlleyWalker Player=>cachedPlayer!=null?cachedPlayer:(cachedPlayer=Object.FindFirstObjectByType<AlleyStudy.AlleyWalker>());
     void Awake(){baseHeight=cabin.position.y;TargetFloor=currentFloor;RefreshDisplay();}
     public bool IsRequested(int floor){return floor>=1&&floor<=6&&requests[floor-1];}
     public void RequestFloor(int floor)
@@ -46,7 +48,7 @@ public sealed class ElevatorController : MonoBehaviour
     {var p=cabin.InverseTransformPoint(player.position);return Mathf.Abs(p.x)<.73f&&p.z>.10f&&p.z<1.60f&&p.y>-.2f&&p.y<2.25f;}
     bool DoorwayOccupied()
     {
-        var player=Object.FindFirstObjectByType<AlleyStudy.AlleyWalker>();
+        var player=Player;
         if(player==null)return false;
         var p=cabin.InverseTransformPoint(player.transform.position);
         return Mathf.Abs(p.x)<.82f&&Mathf.Abs(p.z-.075f)<.38f&&p.y>-.2f&&p.y<.4f;
@@ -82,7 +84,7 @@ public sealed class ElevatorController : MonoBehaviour
                 int best=-1;for(int i=0;i<6;i++)if(requests[i]&&(best<0||Mathf.Abs(i+1-currentFloor)<Mathf.Abs(best+1-currentFloor)))best=i;
                 TargetFloor=best+1;Direction=TargetFloor>currentFloor?1:-1;startHeight=cabin.position.y;
                 travelTime=Mathf.Max(2.5f,Mathf.Abs((TargetFloor-1)*2.9f+baseHeight-startHeight)/metresPerSecond);elapsed=0;Moving=true;
-                var player=Object.FindFirstObjectByType<AlleyStudy.AlleyWalker>();rider=player!=null&&IsInside(player.transform)?player.GetComponent<CharacterController>():null;
+                var player=Player;rider=player!=null&&IsInside(player.transform)?player.GetComponent<CharacterController>():null;
                 if(rider!=null){eyes=player.eyes.transform;eyeRest=eyes.localPosition;}
             }
         }

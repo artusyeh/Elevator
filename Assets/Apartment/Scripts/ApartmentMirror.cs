@@ -8,8 +8,19 @@ public sealed class ApartmentMirror : MonoBehaviour
     public Camera reflectionCamera;
     public Renderer mirrorSurface;
     public RenderTexture texture;
+    [Range(10,60)]public float refreshRate=30;
+    public bool renderOnlyWhenVisible=true;
+    readonly Plane[] viewPlanes=new Plane[6];
+    readonly RaycastHit[] visibilityHits=new RaycastHit[16];
+    float nextFrame;
     bool rendering;
-    void LateUpdate(){if(Camera.main!=null)RenderFrom(Camera.main);}
+    void LateUpdate()
+    {
+        var source=Camera.main;if(source==null||Time.unscaledTime<nextFrame)return;
+        nextFrame=Time.unscaledTime+1/Mathf.Max(1,refreshRate);
+        if(renderOnlyWhenVisible){GeometryUtility.CalculateFrustumPlanes(source,viewPlanes);if(!CameraSurfaceVisibility.CanSee(source,mirrorSurface,transform,8,viewPlanes,visibilityHits))return;}
+        RenderFrom(source);
+    }
     public void RenderFrom(Camera source)
     {
         if(rendering||reflectionCamera==null||texture==null||mirrorSurface==null)return;

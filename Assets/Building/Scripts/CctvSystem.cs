@@ -6,9 +6,15 @@ public sealed class CctvSystem : MonoBehaviour
     public CctvChannel[] channels;
     public CctvMonitor[] monitors;
     [Range(1,12)] public float refreshRate=6;
+    public bool renderOnlyVisibleMonitors=true;
+    [Min(1)]public float viewerDistance=12;
     public int LastRenderedChannels { get; private set; }
     public float LastRenderMilliseconds { get; private set; }
     readonly Dictionary<int,float> lastUpdate=new Dictionary<int,float>();
+    readonly Plane[] viewPlanes=new Plane[6];
+    readonly RaycastHit[] visibilityHits=new RaycastHit[16];
+    bool[] visible;
+    float nextVisibilityCheck;
     static readonly Dictionary<string,int> selections=new Dictionary<string,int>();
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]static void ResetSession(){selections.Clear();}
     public static int ReadChannel(string id,int fallback)=>selections.TryGetValue(id,out int value)?value:fallback;
@@ -20,10 +26,19 @@ public sealed class CctvSystem : MonoBehaviour
     }
     void LateUpdate()
     {
+        if(channels==null||channels.Length==0||monitors==null)return;
+        if(visible==null||visible.Length!=monitors.Length)visible=new bool[monitors.Length];
+        if(Time.unscaledTime>=nextVisibilityCheck)
+        {
+            nextVisibilityCheck=Time.unscaledTime+.15f;var viewer=Camera.main;
+            if(viewer!=null)GeometryUtility.CalculateFrustumPlanes(viewer,viewPlanes);
+            for(int i=0;i<monitors.Length;i++)visible[i]=!renderOnlyVisibleMonitors||monitors[i]!=null&&CameraSurfaceVisibility.CanSee(viewer,monitors[i].screen,monitors[i].transform,viewerDistance,viewPlanes,visibilityHits,monitors[i].FaceNormal);
+        }
         // Stagger cameras: at most one low-resolution scene render per player frame.
         int oldest=-1;float stamp=float.MaxValue;
-        foreach(var monitor in monitors)if(monitor!=null&&monitor.Powered)
+        for(int slot=0;slot<monitors.Length;slot++)if(visible[slot]&&monitors[slot]!=null&&monitors[slot].Powered)
         {
+            var monitor=monitors[slot];
             int index=Mathf.Clamp(monitor.ChannelIndex,0,channels.Length-1);if(!channels[index].Powered)continue;
             float updated=lastUpdate.TryGetValue(index,out float value)?value:-100;
             if(Time.unscaledTime-updated>=1/refreshRate&&updated<stamp){oldest=index;stamp=updated;}

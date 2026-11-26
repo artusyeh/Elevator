@@ -130,19 +130,19 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 0
-  m_Color: {r: 0.93, g: 0.98, b: 1, a: 1}
-  m_Intensity: 4
-  m_Range: 4.2
-  m_SpotAngle: 135
-  m_InnerSpotAngle: 95
+  m_Color: {r: 0.66, g: 0.92, b: 0.89, a: 1}
+  m_Intensity: 9.023999
+  m_Range: 4.35
+  m_SpotAngle: 148
+  m_InnerSpotAngle: 96
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.012
-    m_NormalBias: 0.04
+    m_Bias: 0.008
+    m_NormalBias: 0.02
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -175,7 +175,7 @@ Light:
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 2.5
   m_ColorTemperature: 5200
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -251,9 +251,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.93, g: 0.98, b: 1, a: 1}
-  m_Intensity: 0.16
-  m_Range: 2.35
+  m_Color: {r: 0.66, g: 0.92, b: 0.89, a: 1}
+  m_Intensity: 0.68
+  m_Range: 3.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -296,7 +296,7 @@ Light:
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 2.5
   m_ColorTemperature: 5200
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -536,6 +536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8863689530262506451, guid: d5311657f6786724e8623b6e27dafe43, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 516da9a2290d72d46a5c77cb305cd87d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

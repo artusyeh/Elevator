@@ -33,7 +33,7 @@ public static partial class ApartmentBuilder
             var fill=lamp.Find("Tube Spill").GetComponent<Light>();fill.transform.localPosition=new Vector3(0,gap-.17f,0);fill.useColorTemperature=true;fill.colorTemperature=5200;fill.color=new Color(.93f,.98f,1);fill.intensity=.16f;fill.range=2.35f;fill.shadows=LightShadows.Soft;
             var emitter=fixture.GetComponentsInChildren<Renderer>().First(r=>r.name.StartsWith("Diffuser"));foreach(var circuit in scope.GetComponentsInChildren<LightCircuit>(true).Where(c=>c.lights!=null&&c.lights.Contains(primary))){circuit.emitters=circuit.emitters.Where(r=>r!=null&&!r.transform.IsChildOf(lamp)).Concat(new[]{emitter}).ToArray();EditorUtility.SetDirty(circuit);}count++;
         }
-        FitShadowPolicy(scope);return count;
+        FitPublicLighting(scope);FitShadowPolicy(scope);return count;
     }
     public static string FinishResidentialLighting()
     {
