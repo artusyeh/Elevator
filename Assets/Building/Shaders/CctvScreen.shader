@@ -8,6 +8,7 @@ Shader "Building/CCTV Screen"
   _Power("Monitor power",Float)=1
   _Signal("Camera signal",Float)=1
   _Gain("Night camera gain",Float)=1.6
+  _Interference("Scripted interference",Float)=0
   _Clock("Clock",Vector)=(23,10,0,0)
  }
  SubShader
@@ -26,7 +27,7 @@ Shader "Building/CCTV Screen"
    TEXTURE2D(_LabelTex);SAMPLER(sampler_LabelTex);
    TEXTURE2D(_NoSignalTex);SAMPLER(sampler_NoSignalTex);
    CBUFFER_START(UnityPerMaterial)
-    float _Power,_Signal,_Gain;float4 _Clock;
+    float _Power,_Signal,_Gain,_Interference;float4 _Clock;
    CBUFFER_END
    Varyings vert(Attributes i){Varyings o;o.positionCS=TransformObjectToHClip(i.positionOS.xyz);o.uv=i.uv;return o;}
    float rectangle(float2 p,float2 center,float2 halfSize){float2 d=abs(p-center)-halfSize;return 1-step(0,max(d.x,d.y));}
@@ -43,11 +44,11 @@ Shader "Building/CCTV Screen"
    }
    half4 frag(Varyings i):SV_Target
    {
-    float2 uv=i.uv;float3 source=SAMPLE_TEXTURE2D(_MainTex,sampler_MainTex,uv).rgb;
+    float2 uv=i.uv;uv.x+=sin(uv.y*53+_Time.y*21)*.035*_Interference;float3 source=SAMPLE_TEXTURE2D(_MainTex,sampler_MainTex,uv).rgb;
     float luminance=pow(saturate(dot(source,float3(.2126,.7152,.0722))*_Gain),.78);
     float random=frac(sin(dot(floor(uv*float2(384,256)),float2(12.9898,78.233))+floor(_Time.y*12))*43758.5453);
     float lines=1-.035*(.5+.5*sin(uv.y*256*3.14159));
-    float value=lerp(.025,luminance,_Signal)*lines+(random-.5)*.018;
+    float value=lerp(.025,luminance,_Signal)*lines+(random-.5)*lerp(.018,.38,_Interference);
     float label=SAMPLE_TEXTURE2D(_LabelTex,sampler_LabelTex,uv).a;
     float lost=SAMPLE_TEXTURE2D(_NoSignalTex,sampler_NoSignalTex,uv).a*(1-_Signal);
     float2 clock=(uv-float2(.035,.045))/float2(.018,.047);int cell=(int)floor(clock.x/1.25);float2 glyph=float2(frac(clock.x/1.25)*1.25,clock.y);float timeInk=0;

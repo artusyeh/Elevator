@@ -72,7 +72,7 @@ public static partial class ApartmentBuilder
         Wall(lobby,new Vector3(-2.09f,0,5.12f),.36f,2.78f,true);Wall(lobby,new Vector3(-2.09f,0,6.95f),1.34f,2.78f,true);Wall(lobby,new Vector3(-2.09f,0,5.77f),1.0f,.5f,true,2.28f);
         Wall(lobby,new Vector3(-2.09f,0,8.35f),1.3f,2.78f,true);Wall(lobby,new Vector3(-2.09f,0,11.5f),2.1f,2.78f,true);
         for(int i=0;i<4;i++)B("Reception Mullion",lobby,new Vector3(-2.075f,1.6f,1.55f+i*1.12f),new Vector3(.095f,1.42f,.035f),"Stainless Steel",false);
-        foreach(float y in new[]{.92f,2.28f})B("Reception Frame",lobby,new Vector3(-2.075f,y,3.25f),new Vector3(.12f,.055f,3.48f),"Stainless Steel",false);
+        foreach(float y in new[]{.975f,2.28f})B("Reception Frame",lobby,new Vector3(-2.075f,y,3.25f),new Vector3(.12f,.055f,3.48f),"Stainless Steel",false);
         Q("Reception Glass",lobby,new Vector3(-2.075f,1.6f,3.25f),new Vector2(3.35f,1.3f),M("Dirty Glass"),Quaternion.Euler(0,-90,0));
         B("Reception Sill",lobby,new Vector3(-2.01f,.91f,3.25f),new Vector3(.36f,.075f,3.58f),"Stainless Steel");
         B("Office Door Jamb",lobby,new Vector3(-2.085f,1.1f,5.27f),new Vector3(.15f,2.2f,.065f),"Green Steel");B("Office Door Jamb",lobby,new Vector3(-2.085f,1.1f,6.27f),new Vector3(.15f,2.2f,.065f),"Green Steel");
@@ -94,7 +94,7 @@ public static partial class ApartmentBuilder
         Prop("Potted Foliage",lobby,new Vector3(1.54f,.01f,1.05f),15,.65f,false);
         Prop("Security Camera",lobby,new Vector3(-1.8f,2.48f,7.3f),135,.23f,false);
         Prop("Fire Extinguisher",lobby,new Vector3(1.76f,.18f,8.65f),-90,.65f);
-        for(int i=0;i<3;i++){PipeRun(lobby,new Vector3(1.82f-i*.12f,2.58f,.25f),new Vector3(1.82f-i*.12f,2.58f,12.4f),.025f+i*.006f);}
+        for(int i=0;i<3;i++){PipeRun(lobby,new Vector3(1.82f-i*.12f,2.58f,.25f),new Vector3(1.82f-i*.12f,2.58f,12.53f),.025f+i*.006f);}
         PipeRun(lobby,new Vector3(1.82f,.12f,8.4f),new Vector3(1.82f,2.58f,8.4f),.036f);
         foreach(float z in new[]{2.9f,6.8f,10.8f})Fluorescent(lobby,new Vector3(.15f,2.77f,z),z<9?7:6);
         for(int i=0;i<5;i++){Weather(lobby,"Water Stain",new Vector3(1.993f,1.93f,1.5f+i*2.1f),new Vector2(.8f,1.3f),Quaternion.Euler(0,90,0));Weather(lobby,"Peeling Paint",new Vector3(1.99f,1.85f,2+i*2.1f),new Vector2(.8f,1.2f),Quaternion.Euler(0,90,0));}

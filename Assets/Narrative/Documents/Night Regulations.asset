@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c7eb9d65ce3dd408d58e54fe8a4c3d, type: 3}
+  m_Name: Night Regulations
+  m_EditorClassIdentifier: 
+  documentId: night-regulations
+  title: Night-shift regulations
+  body: 'Keep common areas clear
+
+
+    Do not leave deliveries or personal items
+    in escape routes. Keep stair doors and access panels unobstructed.
+
+
+    Respect
+    quiet hours
+
+
+    Avoid unnecessary noise between 22:00 and 07:00. Record repeated
+    complaints in the shift log.
+
+
+    Handle keys responsibly
+
+
+    Building keys
+    remain on the security office board when not in use. Return keys after maintenance
+    work.
+
+
+    Electrical and mechanical access
+
+
+    Only authorized staff may
+    enter B1 service rooms. Isolate equipment before carrying out repairs.
+
+
+    Report
+    safety concerns
+
+
+    Record faults, leaks and damaged fixtures. Use emergency
+    services when there is immediate danger.'

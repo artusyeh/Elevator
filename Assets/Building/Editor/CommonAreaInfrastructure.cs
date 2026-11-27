@@ -66,7 +66,8 @@ public static partial class ApartmentBuilder
     {
         var ground=GameObject.Find("Ground Floor").transform;var lobby=CommonGroup(ground.Find("Lobby"),"Ceiling Services");
         foreach(float z in new[]{4.65f,8.85f})B("Concrete Downstand",lobby,new Vector3(.60f,2.71f,z),new Vector3(5.4f,.14f,.24f),"Concrete",true,.003f);
-        CommonRoute("Lobby Drain Collector",lobby,.055f,"Service Drain Enamel",new Vector3(-1.94f,2.54f,.34f),new Vector3(1.47f,2.54f,.34f),new Vector3(1.47f,2.58f,12.45f),new Vector3(1.99f,2.58f,12.45f));
+        CommonRoute("Lobby Drain Collector",lobby,.055f,"Service Drain Enamel",new Vector3(-1.94f,2.54f,.34f),new Vector3(1.47f,2.54f,.34f),new Vector3(1.47f,2.58f,11.88f),new Vector3(1.47f,2.70f,12.18f),new Vector3(1.47f,2.70f,12.38f),new Vector3(2.15f,2.70f,12.38f),new Vector3(2.15f,2.70f,12.67f));
+        Rod("Drain Wall Socket",lobby,new Vector3(2.15f,2.70f,12.47f),new Vector3(2.15f,2.70f,12.51f),.068f,"Service Drain Enamel");
         CommonRoute("Ground Drain Stack",lobby,.055f,"Service Drain Enamel",new Vector3(-1.94f,-.10f,.34f),new Vector3(-1.94f,2.9f,.34f));
         CommonHanger(lobby,new Vector3(-.7f,2.54f,.34f),.055f,2.78f);
         foreach(float z in new[]{1.2f,3.2f,5.4f,7.5f,9.8f,11.7f}){CommonHanger(lobby,new Vector3(1.47f,2.54f+(z-.34f)/12.11f*.04f,z),.055f,2.78f);CommonCoupling(lobby,new Vector3(1.47f,2.54f+(z-.34f)/12.11f*.04f,z+.1f),Vector3.forward);}

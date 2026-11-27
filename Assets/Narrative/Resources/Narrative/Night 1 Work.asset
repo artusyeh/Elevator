@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b77c3a8ce00bf40b613b127286bd67, type: 3}
+  m_Name: Night 1 Work
+  m_EditorClassIdentifier: 
+  assignments:
+  - id: handover
+    time: 22:00
+    title: Shift handover and CCTV
+    location: Security office
+    description: Sign in, read the night regulations, inspect the CCTV feeds, and
+      borrow the stairwell key.
+    status: 0
+  - id: corridors
+    time: 22:30
+    title: Residential patrol
+    location: "2F\u20134F corridors"
+    description: Check the designated doors and shared lighting on the second through
+      fourth floors.
+    status: 0
+  - id: services
+    time: 01:10
+    title: Lighting service request
+    location: 4F corridor
+    description: Respond to the reported fluorescent light fault and verify the repair.
+    status: 0
+  - id: entrance
+    time: 05:45
+    title: Shift closeout
+    location: Security office
+    description: Return borrowed equipment and submit a short nightly report before
+      leaving.
+    status: 0
+  requests:
+  - reference: N1-LIGHT
+    time: 01:10
+    location: 4F corridor
+    title: Flickering corridor light
+    status: Reported
+    description: Fluorescent fitting buzzes and briefly goes dark. Reset the local
+      4F lighting switch, then inspect the fitting again.
+  - reference: N1-CCTV
+    time: 22:10
+    location: Security office / 1F utility room
+    title: Camera signal loss
+    status: Reported
+    description: Restart CCTV CAMERAS using the local power control. Switch it off,
+      then back on.
+  records: []

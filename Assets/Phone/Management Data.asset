@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b77c3a8ce00bf40b613b127286bd67, type: 3}
+  m_Name: Management Data
+  m_EditorClassIdentifier: 
+  assignments:
+  - id: handover
+    time: 22:00
+    title: Review shift handover
+    location: Security office
+    description: Read the previous guard's notes and check for unresolved service
+      requests.
+    status: 0
+  - id: corridors
+    time: 22:15
+    title: Inspect common areas
+    location: "2F\u20136F corridors"
+    description: Check corridor lighting and confirm that shared passageways remain
+      clear.
+    status: 0
+  - id: entrance
+    time: 22:40
+    title: Check entrance security
+    location: 1F lobby
+    description: Inspect the entrance gate and note any damage or access problems.
+    status: 0
+  - id: services
+    time: 23:10
+    title: Record equipment condition
+    location: B1 services
+    description: Observe the electrical and water pump equipment. Record faults without
+      attempting unauthorized repairs.
+    status: 0
+  requests:
+  - reference: M-0241
+    time: 20:35
+    location: 4F corridor
+    title: Corridor light reported faulty
+    status: Reported
+    description: Ceiling fixture intermittently fails to start.
+  - reference: M-0242
+    time: 20:50
+    location: 1F entrance camera
+    title: CCTV connection interruption
+    status: Under review
+    description: Intermittent signal loss reported during the evening shift.
+  - reference: M-0243
+    time: 21:05
+    location: Passenger elevator
+    title: Elevator service request
+    status: Awaiting service
+    description: Resident reported delayed response from the landing call button.
+  - reference: M-0244
+    time: 21:20
+    location: B1 water pump room
+    title: Water leakage report
+    status: Reported
+    description: Inspect the damp patch beside the supply manifold.
+  - reference: M-0245
+    time: 21:35
+    location: "306 \xB7 Shared laundry"
+    title: Unusual washing machine noise
+    status: Logged
+    description: Rattling reported during the final spin cycle.
+  - reference: M-0246
+    time: 21:45
+    location: 1F utility room
+    title: Electrical inspection requested
+    status: Under review
+    description: Check the local lighting circuit after a reported trip.
+  records:
+  - time: 21:00
+    title: Entrance inspection
+    location: 1F lobby
+    description: Gate and emergency access checked by the evening guard.
+  - time: 21:15
+    title: Pump service recorded
+    location: B1 water pump room
+    description: Routine pressure reading entered in the maintenance log.
+  - time: 21:30
+    title: Delivery incident recorded
+    location: 3F corridor
+    description: An unattended parcel was moved clear of the escape route.
+  - time: 21:50
+    title: Shift handover prepared
+    location: Security office
+    description: Outstanding requests passed to the night shift.

@@ -6,6 +6,8 @@ public sealed class PhoneIcon : MaskableGraphic
     public enum Symbol { RoundedRect,Chat,Building,Phone,Flashlight,Back,Signal,Wifi,Battery,Person,Tasks,Progress,Directory,Wrench,Rules,Report,Send,Plus,Check }
     public Symbol symbol;
     [Range(0,.5f)]public float cornerRadius=.22f;
+    [Range(0,1)]public float batteryFill=1;
+    public void SetBattery(float amount){amount=Mathf.Clamp01(amount);if(!Mathf.Approximately(batteryFill,amount)){batteryFill=amount;SetVerticesDirty();}}
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         vh.Clear();var rect=GetPixelAdjustedRect();
@@ -23,7 +25,7 @@ public sealed class PhoneIcon : MaskableGraphic
             case Symbol.Back:line(new Vector2(.65f,.80f),new Vector2(.32f,.50f),.07f);line(new Vector2(.32f,.50f),new Vector2(.65f,.20f),.07f);break;
             case Symbol.Signal:for(int i=0;i<4;i++)line(new Vector2(.15f+i*.22f,.15f),new Vector2(.15f+i*.22f,.30f+i*.18f),.12f);break;
             case Symbol.Wifi:for(int j=0;j<3;j++)for(int i=0;i<20;i++){float a=(45+i*4.5f)*Mathf.Deg2Rad,b=(45+(i+1)*4.5f)*Mathf.Deg2Rad,r=.18f+j*.20f;line(new Vector2(.5f,.15f)+new Vector2(Mathf.Cos(a),Mathf.Sin(a))*r,new Vector2(.5f,.15f)+new Vector2(Mathf.Cos(b),Mathf.Sin(b))*r,.065f);}circle(new Vector2(.5f,.15f),.06f,true);break;
-            case Symbol.Battery:box(.08f,.28f,.76f,.44f);line(new Vector2(.93f,.40f),new Vector2(.93f,.60f),.10f);for(int i=0;i<5;i++)line(new Vector2(.19f+i*.12f,.38f),new Vector2(.19f+i*.12f,.62f),.075f);break;
+            case Symbol.Battery:box(.08f,.28f,.76f,.44f);line(new Vector2(.93f,.40f),new Vector2(.93f,.60f),.10f);for(int i=0;i<5;i++)if(batteryFill>i*.2f)line(new Vector2(.19f+i*.12f,.38f),new Vector2(.19f+i*.12f,.38f+.24f*Mathf.Clamp01((batteryFill-i*.2f)*5)),.075f);break;
             case Symbol.Person:circle(new Vector2(.50f,.66f),.17f,true);for(int i=0;i<8;i++)line(new Vector2(.27f+i*.065f,.20f),new Vector2(.27f+i*.065f,.34f+Mathf.Sin(i/7f*Mathf.PI)*.12f),.075f);break;
             case Symbol.Tasks:case Symbol.Rules:case Symbol.Report:box(.23f,.15f,.54f,.70f);for(int i=0;i<3;i++)line(new Vector2(.34f,.33f+i*.16f),new Vector2(.66f,.33f+i*.16f),.04f);break;
             case Symbol.Progress:circle(new Vector2(.5f,.5f),.33f,false);line(new Vector2(.5f,.5f),new Vector2(.5f,.74f),.05f);line(new Vector2(.5f,.5f),new Vector2(.67f,.41f),.05f);break;

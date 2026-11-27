@@ -11,6 +11,7 @@ public sealed class CctvChannel : MonoBehaviour
     public PowerCircuit circuit;
     public bool feedEnabled=true;
     public bool locationAvailable=true;
+    public bool scriptedSignalLoss;
     public int width=384,height=256;
     public RenderTexture Texture { get; private set; }
     public int RenderCount { get; private set; }

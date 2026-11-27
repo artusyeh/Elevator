@@ -12,8 +12,12 @@ public sealed class PlaytestRoomAccess : MonoBehaviour
     static void Attach(){foreach(var player in Object.FindObjectsByType<AlleyStudy.AlleyWalker>(FindObjectsSortMode.None))if(player.GetComponent<PlaytestRoomAccess>()==null)player.gameObject.AddComponent<PlaytestRoomAccess>();}
     void Update()
     {
+#if !UNITY_EDITOR && !DEVELOPMENT_BUILD
+        return;
+#else
         var keys=Keyboard.current;if(!enableShortcut||keys==null)return;
         var scan=GetComponent<InteractionScanner>();if(scan!=null&&(scan.phoneOpen||scan.menuOpen||scan.documentOpen||scan.cutscenePlaying))return;
         if(keys.digit1Key.wasPressedThisFrame&&lastToggleFrame!=Time.frameCount){lastToggleFrame=Time.frameCount;BuildingKeys.TogglePlaytestAccess();}
+#endif
     }
 }

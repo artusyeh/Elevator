@@ -19,6 +19,8 @@ public sealed class CctvSystem : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]static void ResetSession(){selections.Clear();}
     public static int ReadChannel(string id,int fallback)=>selections.TryGetValue(id,out int value)?value:fallback;
     public static void RememberChannel(string id,int value){selections[id]=value;}
+    public static NarrativeValue[] CaptureSelections(){var result=new List<NarrativeValue>();foreach(var item in selections)result.Add(new NarrativeValue{id=item.Key,value=item.Value.ToString()});return result.ToArray();}
+    public static void RestoreSelections(IEnumerable<NarrativeValue> saved){selections.Clear();foreach(var item in saved){int value;if(int.TryParse(item.value,out value))selections[item.id]=value;}}
     public void NextChannel(CctvMonitor monitor)
     {
         int next=monitor.ChannelIndex;for(int i=0;i<channels.Length;i++){next=(next+1)%channels.Length;bool used=false;foreach(var other in monitors)used|=other!=monitor&&other.ChannelIndex==next;if(!used)break;}

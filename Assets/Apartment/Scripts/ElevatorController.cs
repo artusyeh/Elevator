@@ -9,6 +9,8 @@ public sealed class ElevatorController : MonoBehaviour
     public Transform cabinLeft,cabinRight;
     public ElevatorFloorDisplay[] displays;
     public int currentFloor=1;
+    public static event System.Action<int> Arrived;
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]static void ResetArrivalEvents(){Arrived=null;}
     public float metresPerSecond=1.45f;
     public bool vibration=true;
     public PowerCircuit powerCircuit;
@@ -41,6 +43,11 @@ public sealed class ElevatorController : MonoBehaviour
     }
     public void OpenDoors(){if(!Moving&&settle<=0){wantOpen=true;dwell=2;}}
     public void CloseDoors(){if(!Moving&&settle<=0&&HasPower){wantOpen=false;dwell=0;}}
+    public void RestoreAtFloor(int floor)
+    {
+        RemoveShake();rider=null;Moving=false;Direction=0;currentFloor=Mathf.Clamp(floor,0,6);TargetFloor=DisplayedFloor=currentFloor;System.Array.Clear(requests,0,requests.Length);settle=dwell=0;DoorAmount=1;wantOpen=true;
+        var position=cabin.position;position.y=baseHeight+(currentFloor-1)*2.9f;cabin.position=position;ApplyDoors();RefreshDisplay();Physics.SyncTransforms();
+    }
     void Update()
     {
         RemoveShake();
@@ -96,7 +103,7 @@ public sealed class ElevatorController : MonoBehaviour
             var p=cabin.position;p.y=Mathf.Lerp(startHeight,baseHeight+(TargetFloor-1)*2.9f,eased);cabin.position=p;
             Physics.SyncTransforms();if(rider!=null&&rider.enabled)rider.Move(Vector3.up*(p.y-old));
             DisplayedFloor=Mathf.Clamp(Mathf.RoundToInt((p.y-baseHeight)/2.9f)+1,0,6);
-            if(t>=1){currentFloor=TargetFloor;DisplayedFloor=currentFloor;requests[currentFloor]=false;Moving=false;Direction=0;settle=.35f;dwell=2.3f;RemoveShake();rider=null;}
+            if(t>=1){currentFloor=TargetFloor;DisplayedFloor=currentFloor;requests[currentFloor]=false;Moving=false;Direction=0;settle=.35f;dwell=2.3f;RemoveShake();rider=null;Arrived?.Invoke(currentFloor);}
         }
         RefreshDisplay();
     }

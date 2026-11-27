@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c7eb9d65ce3dd408d58e54fe8a4c3d, type: 3}
+  m_Name: Guard Logbook
+  m_EditorClassIdentifier: 
+  documentId: guard-logbook
+  title: Previous guard's shift log
+  body: "23 OCT \u2014 22:05\nEntrance checked. Parcel for Room 201 left outside
+    as requested.\n\n24 OCT \u2014 00:40\nFourth-floor tube slow to start. Maintenance
+    informed. Water pressure normal.\n\n26 OCT \u2014 01:08\nHeard someone speaking
+    in the third-floor stairwell. No one there when I checked. Could have carried
+    up from the entrance.\n\n28 OCT \u2014 03:15\nLift stopped at the sixth floor
+    twice without a call showing on the panel. Will ask the supervisor about the
+    contacts.\n\n30 OCT \u2014 23:50\nThe elderly resident in Room 201 asked whether
+    I'd heard anyone outside her door after midnight. Said it sounded familiar. Didn't
+    want to explain.\n\n02:13 AM \u2014 Another noise complaint from the fifth floor.
+    Going upstairs to check."

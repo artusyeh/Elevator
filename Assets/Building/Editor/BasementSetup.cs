@@ -130,7 +130,7 @@ public static partial class ApartmentBuilder
         Text("B1",button,new Vector3(0,0,-.022f),.025f,Quaternion.identity,new Color(.14f,.12f,.09f));
         var press=button.gameObject.AddComponent<ElevatorButton>();press.floor=0;press.action=ElevatorButton.Action.Floor;press.cap=cap;press.lamp=cap.GetComponent<Renderer>();var buttonHit=button.gameObject.AddComponent<BoxCollider>();buttonHit.size=new Vector3(.075f,.075f,.06f);
         lift.displays=lift.displays.Concat(landing.GetComponentsInChildren<ElevatorFloorDisplay>()).ToArray();
-        foreach(var display in lift.displays){Text("B",display.transform,new Vector3(-.05f,0,-.001f),.09f,Quaternion.identity,new Color(.75f,.06f,.02f));display.basementPrefix=display.transform.GetChild(display.transform.childCount-1).GetComponent<Renderer>();display.basementPrefix.enabled=false;}
+        foreach(var display in lift.displays){Text("B",display.transform,new Vector3(-.05f,0,-.014f),.09f,Quaternion.identity,new Color(.75f,.06f,.02f));display.basementPrefix=display.transform.GetChild(display.transform.childCount-1).GetComponent<Renderer>();display.basementPrefix.sharedMaterial=AssetDatabase.LoadAssetAtPath<Material>(Base+"Materials/World Labels.mat");display.basementPrefix.enabled=false;}
         // Maintenance key occupies one empty existing hook.
         var board=ground.Find("Management Room").GetComponentsInChildren<Transform>(true).First(t=>t.name=="Key Hooks");var hook=board.Cast<Transform>().First(t=>t.name=="Empty Hook");hook.name="Maintenance Key";hook.Find("Key and Tag").gameObject.SetActive(true);
         var key=hook.gameObject.AddComponent<KeyPickup>();key.keyId="Maintenance";key.label="B1 maintenance key";key.allowReturn=true;key.visualRoot=hook.Find("Key and Tag").gameObject;

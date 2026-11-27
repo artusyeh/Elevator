@@ -19,9 +19,10 @@ public sealed class PhonePresentation : MonoBehaviour
     Renderer[] modelRenderers;
     Canvas canvas;
     Camera owner;
+    PhoneBattery battery;
     readonly System.Collections.Generic.Dictionary<Camera,int> hiddenUiMasks=new System.Collections.Generic.Dictionary<Camera,int>();
     public float Amount {get;private set;}
-    void Awake(){modelRenderers=visual.GetComponentsInChildren<Renderer>(true);canvas=screen.GetComponent<Canvas>();owner=GetComponentInParent<Camera>();Amount=0;Apply(0);}
+    void Awake(){modelRenderers=visual.GetComponentsInChildren<Renderer>(true);canvas=screen.GetComponent<Canvas>();owner=GetComponentInParent<Camera>();battery=GetComponent<PhoneBattery>();Amount=0;Apply(0);}
     void OnEnable(){RenderPipelineManager.beginCameraRendering+=BeginView;RenderPipelineManager.endCameraRendering+=EndView;}
     void OnDisable(){RenderPipelineManager.beginCameraRendering-=BeginView;RenderPipelineManager.endCameraRendering-=EndView;foreach(var entry in hiddenUiMasks)if(entry.Key!=null)entry.Key.cullingMask=entry.Value;hiddenUiMasks.Clear();}
     void BeginView(ScriptableRenderContext context,Camera camera)
@@ -43,8 +44,8 @@ public sealed class PhonePresentation : MonoBehaviour
         visual.localPosition=Vector3.Lerp(FlashlightActive?flashlightPosition:loweredPosition,raisedPosition,t)+new Vector3(Mathf.Sin(Time.unscaledTime*.73f),Mathf.Sin(Time.unscaledTime*1.13f),0)*idleMotion*t;
         visual.localRotation=Quaternion.Slerp(Quaternion.Euler(loweredRotation),Quaternion.Euler(raisedRotation),t);
         visual.localScale=modelScale;
-        if(modelRenderers!=null)foreach(var renderer in modelRenderers)if(renderer!=null)renderer.enabled=Raised||value>.001f||FlashlightActive;
-        if(screen!=null){screen.alpha=FlashlightActive?1:t;screen.interactable=Raised&&value>.95f;screen.blocksRaycasts=screen.interactable;}
+        if(modelRenderers!=null)foreach(var renderer in modelRenderers)if(renderer!=null)renderer.enabled=!PhoneBattery.IsDocked&&(Raised||value>.001f||FlashlightActive);
+        if(screen!=null){screen.alpha=(FlashlightActive?1:t)*(battery!=null?battery.ScreenBrightness:1);screen.interactable=Raised&&value>.95f&&(battery==null||battery.CanUse);screen.blocksRaycasts=screen.interactable;}
     }
     void LateUpdate(){Tick(Time.unscaledDeltaTime);}
 }

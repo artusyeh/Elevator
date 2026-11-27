@@ -23,7 +23,16 @@ public sealed class ApartmentRuntimeBatcher : MonoBehaviour
         foreach(var item in FindObjectsByType<ElevatorButton>(FindObjectsSortMode.None))if(item.cap!=null)moving.Add(item.cap);
         foreach(var item in FindObjectsByType<PowerSwitch>(FindObjectsSortMode.None))if(item.lever!=null)moving.Add(item.lever);
         foreach(var item in FindObjectsByType<PhoneControls>(FindObjectsSortMode.None))moving.Add(item.transform);
-        foreach(var item in FindObjectsByType<ElevatorController>(FindObjectsSortMode.None))if(item.cabin!=null)moving.Add(item.cabin);
+        foreach(var item in FindObjectsByType<PhoneChargingStation>(FindObjectsSortMode.None))if(item.dockedPhone!=null)moving.Add(item.dockedPhone.transform);
+        foreach(var clock in FindObjectsByType<NarrativeAnalogClock>(FindObjectsSortMode.None)){if(clock.hourPivot!=null)moving.Add(clock.hourPivot);if(clock.minutePivot!=null)moving.Add(clock.minutePivot);}
+        foreach(var fault in FindObjectsByType<NarrativeLightFault>(FindObjectsSortMode.None))moving.Add(fault.transform);
+        foreach(var item in FindObjectsByType<ElevatorController>(FindObjectsSortMode.None))
+        {
+            if(item.cabin!=null)moving.Add(item.cabin);
+            // Landing leaves move independently of the cabin, including the B1 doors.
+            if(item.leftDoors!=null)foreach(var door in item.leftDoors)if(door!=null)moving.Add(door);
+            if(item.rightDoors!=null)foreach(var door in item.rightDoors)if(door!=null)moving.Add(door);
+        }
         foreach(var item in FindObjectsByType<SlidingDoors>(FindObjectsSortMode.None)){if(item.left!=null)moving.Add(item.left);if(item.right!=null)moving.Add(item.right);}
         var scene=gameObject.scene;
         var objects=FindObjectsByType<MeshRenderer>(FindObjectsSortMode.None).Where(renderer=>

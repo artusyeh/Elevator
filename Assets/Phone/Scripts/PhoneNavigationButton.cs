@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public sealed class PhoneNavigationButton : MonoBehaviour
 {
-    public enum Action { Navigate,Conversation,Back,Call,Flashlight,Task,SendMessage,SubmitReport,Dial,ClearDial }
+    public enum Action { Navigate,Conversation,Back,Call,Flashlight,Task,SendMessage,SubmitReport,Dial,ClearDial,Record,BeginShift,ShowReport,CancelReport }
     public Action action;
     public PhoneApplications.Page page;
     public int index;

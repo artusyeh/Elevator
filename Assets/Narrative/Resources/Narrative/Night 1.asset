@@ -1,0 +1,1083 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4d3c9536362f04d9111f257588a5ad, type: 3}
+  m_Name: Night 1
+  m_EditorClassIdentifier: 
+  nightNumber: 1
+  title: The New Hire
+  protagonist: Aki
+  date: 2026-11-01
+  startSeconds: 78600
+  startingBattery: 100
+  openingLines:
+  - Two months behind on rent.
+  - I've lost count of how many jobs I've applied for.
+  - Then, yesterday, someone finally called back.
+  - An overnight security position at an old apartment building.
+  - The pay was surprisingly good.
+  - They didn't even ask for an interview.
+  - I guess I can't afford to be picky.
+  openingLineSeconds: 3.1
+  fadeSeconds: 1.4
+  history:
+  - contact: Landlord
+    time: 2026-10-30 18:11
+    body: Your rent is now two months overdue. I need to know when you can pay.
+    id: rent.1
+    outgoing: 0
+    read: 1
+  - contact: Landlord
+    time: 2026-10-30 18:16
+    body: I'm sorry. I'm still waiting to hear back from a few jobs.
+    id: rent.2
+    outgoing: 1
+    read: 1
+  - contact: Landlord
+    time: 2026-11-01 17:46
+    body: I can't keep putting this off. Please give me a payment date by Friday.
+    id: rent.3
+    outgoing: 0
+    read: 1
+  - contact: Landlord
+    time: 2026-11-01 17:49
+    body: I found a night job. It starts tonight. I'll send something as soon as
+      I get paid.
+    id: rent.4
+    outgoing: 1
+    read: 1
+  approachSignal: approach.apartment
+  approachMessages:
+  - contact: Supervisor
+    time: 
+    body: The office is just inside, on the left. The key's on the little workbench
+      in the utility room next door.
+    id: approach.office
+    outgoing: 0
+    read: 0
+  - contact: Supervisor
+    time: 
+    body: Our last guard stopped showing up a few days ago. I tried his number a
+      few times. Nothing. Thought he'd just quit, to be honest.
+    id: approach.guard
+    outgoing: 0
+    read: 0
+  - contact: Supervisor
+    time: 
+    body: His jacket and things are still in there. Leave those for now. I'll try
+      him again tomorrow.
+    id: approach.belongings
+    outgoing: 0
+    read: 0
+  management: {fileID: 11400000, guid: e15e562723cc9f2479005f5dfcef3ca8, type: 2}
+  beats:
+  - id: arrival
+    title: Get to Aoba Apartments
+    objective: Get to Aoba Apartments
+    guidance: Follow the alley to the apartment entrance. Press Tab to check the
+      supervisor's message.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: begin
+    conditions:
+    - kind: 1
+      target: Apartment
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Alley
+    spawnBinding: spawn.alley
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 8
+      target: 
+      completionId: 
+      text: 
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 0
+      target: Supervisor
+      completionId: intro.supervisor
+      text: "Hi, it's the building supervisor. Sorry for the late start. Aoba Apartments
+        is at the end of the lane. \xA524,000 per night, as agreed."
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: begin
+    title: Start the night shift
+    objective: Start the night shift
+    guidance: Take the Security Office key from the utility-room workbench, unlock
+      the office, and sign in on the small desk pad or phone Tasks page.
+    supervisorMessage: Log in when you get to the desk. Don't worry about the old
+      guard's things. Just leave them where they are.
+    protagonistDialogue: 
+    nextStepId: rules
+    conditions:
+    - kind: 4
+      target: Management
+      value: 
+      checkCurrentStateOnEnter: 1
+    - kind: 6
+      target: office.door
+      value: 
+      checkCurrentStateOnEnter: 0
+    - kind: 0
+      target: shift.begin
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 79200
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 3
+      target: handover
+      completionId: 
+      text: InProgress
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: rules
+    title: Read the night regulations
+    objective: Read the night regulations
+    guidance: "Open Management \u2192 Regulations and read to the bottom. A paper
+      copy is available at the sign-in pad if your phone is unavailable."
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: cctv
+    conditions:
+    - kind: 0
+      target: rules.read
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit: []
+  - id: cctv
+    title: Inspect the CCTV monitors
+    objective: Inspect the CCTV monitors
+    guidance: At the security desk, use a monitor or console control to inspect the
+      camera feeds.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: camera.off
+    conditions:
+    - kind: 13
+      target: security.monitors
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 7
+      target: 
+      completionId: 
+      text: 
+      number: 0
+      value: 1
+      circuit: {fileID: 11400000, guid: 6e1f3a3ebe5a4644a99e7f833daf166e, type: 2}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 7
+      target: 
+      completionId: 
+      text: 
+      number: 0
+      value: 1
+      circuit: {fileID: 11400000, guid: 49420ab00b51a69489f1ab4fb8a6b978, type: 2}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 27
+      target: camera.fault
+      completionId: 
+      text: 
+      number: 0
+      value: 1
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 12
+      target: lift.monitor
+      completionId: 
+      text: 
+      number: 3
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 79800
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: camera.off
+    title: Restart the malfunctioning camera
+    objective: Restart the malfunctioning camera
+    guidance: In the 1F utility room, switch CCTV CAMERAS off. Leave the main electrical
+      supply alone.
+    supervisorMessage: That feed's dropped out again? The camera power switch is
+      in the little utility room. Switch CCTV CAMERAS off, then back on. Usually
+      clears it.
+    protagonistDialogue: 
+    nextStepId: camera.on
+    conditions:
+    - kind: 7
+      target: CCTV Cameras
+      value: off
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.utility
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 4
+      target: N1-CCTV
+      completionId: 
+      text: Reported
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 12
+      target: lift.monitor
+      completionId: 
+      text: 
+      number: 3
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: camera.on
+    title: Restore CCTV camera power
+    objective: Restore CCTV camera power
+    guidance: Switch CCTV CAMERAS back on, then return to the security office.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: keys
+    conditions:
+    - kind: 7
+      target: CCTV Cameras
+      value: on
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.utility
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit:
+    - kind: 27
+      target: camera.fault
+      completionId: 
+      text: 
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 4
+      target: N1-CCTV
+      completionId: 
+      text: Resolved
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 5
+      target: CCTV service
+      completionId: 
+      text: Camera power restarted. Signal returned to normal.
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: keys
+    title: Borrow the stairwell key
+    objective: Borrow the stairwell key
+    guidance: Collect the labeled Stairwell key from the security office key board.
+    supervisorMessage: Thanks. Take the stairwell key from the board. Start with
+      floors two through four tonight. The lift works too.
+    protagonistDialogue: 
+    nextStepId: patrol2
+    conditions:
+    - kind: 4
+      target: Stairwell
+      value: 
+      checkCurrentStateOnEnter: 1
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit:
+    - kind: 3
+      target: handover
+      completionId: 
+      text: Completed
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: patrol2
+    title: Patrol the second floor
+    objective: Patrol the second floor
+    guidance: Visit 2F, inspect the lock on door 203, and inspect the corridor light
+      near the middle of the hall.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: patrol3
+    conditions:
+    - kind: 1
+      target: floor.2
+      value: 
+      checkCurrentStateOnEnter: 0
+    - kind: 0
+      target: inspect.door.203
+      value: 
+      checkCurrentStateOnEnter: 0
+    - kind: 0
+      target: inspect.light.2
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor2
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 3
+      target: corridors
+      completionId: 
+      text: InProgress
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 81000
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit:
+    - kind: 5
+      target: 2F patrol
+      completionId: 
+      text: Door 203 secured; shared corridor lighting checked.
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: patrol3
+    title: Continue the residential patrol
+    objective: Continue the residential patrol
+    guidance: Walk through the third-floor residential corridor before continuing
+      to 4F.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: patrol4
+    conditions:
+    - kind: 1
+      target: floor.3
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor3
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 83700
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit:
+    - kind: 5
+      target: 3F patrol
+      completionId: 
+      text: Shared passage inspected.
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: patrol4
+    title: Inspect the fourth-floor light
+    objective: Inspect the fourth-floor light
+    guidance: Visit the fourth floor and approach the buzzing fluorescent fitting
+      halfway down the corridor.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: maintenance.off
+    conditions:
+    - kind: 1
+      target: floor.4
+      value: 
+      checkCurrentStateOnEnter: 0
+    - kind: 0
+      target: light.fault.approached
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor4
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 28
+      target: light.fault
+      completionId: 
+      text: 
+      number: 0
+      value: 1
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 90600
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit:
+    - kind: 3
+      target: corridors
+      completionId: 
+      text: Completed
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 4
+      target: N1-LIGHT
+      completionId: 
+      text: Reported
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: maintenance.off
+    title: Reset the fourth-floor lighting
+    objective: Reset the fourth-floor lighting
+    guidance: At the far end of the 4F corridor, switch the local lighting control
+      off first.
+    supervisorMessage: Got the light report. Try the local 4F lighting switch by
+      the back landing. Off, then on. Don't open the fitting yourself.
+    protagonistDialogue: 
+    nextStepId: maintenance.on
+    conditions:
+    - kind: 7
+      target: Fourth Floor
+      value: off
+      checkCurrentStateOnEnter: 1
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor4
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 3
+      target: services
+      completionId: 
+      text: InProgress
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: maintenance.on
+    title: Turn fourth-floor lighting back on
+    objective: Turn fourth-floor lighting back on
+    guidance: Switch the 4F lighting control back on.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: verify4
+    conditions:
+    - kind: 7
+      target: Fourth Floor
+      value: on
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor4
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit:
+    - kind: 28
+      target: light.fault
+      completionId: 
+      text: 
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 32
+      target: floor.doors
+      completionId: 
+      text: 
+      number: 8.7
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: verify4
+    title: Verify the repaired light
+    objective: Verify the repaired light
+    guidance: Return to the middle 4F fitting and press E to inspect it.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: slam
+    conditions:
+    - kind: 0
+      target: inspect.light.4
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor4
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit:
+    - kind: 4
+      target: N1-LIGHT
+      completionId: 
+      text: Resolved
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 3
+      target: services
+      completionId: 
+      text: Completed
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 5
+      target: 4F lighting service
+      completionId: 
+      text: Local circuit reset; light verified working.
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: slam
+    title: Listen
+    objective: Listen
+    guidance: Stay calm. The hallway is clear.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: return
+    conditions:
+    - kind: 17
+      target: door.slam.done
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.floor4
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 14
+      target: door.slam
+      completionId: door.slam.done
+      text: 
+      number: 0.55
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 8300000, guid: b56641c0fa443474f9d95496def901ff, type: 3}
+      sequence: {fileID: 0}
+    exit: []
+  - id: return
+    title: Return to the security office
+    objective: Return to the security office
+    guidance: Go back to the ground-floor security office.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: returnkey
+    conditions:
+    - kind: 1
+      target: office.zone
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 93600
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 3
+      target: entrance
+      completionId: 
+      text: InProgress
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: returnkey
+    title: Return the borrowed key
+    objective: Return the borrowed key
+    guidance: Return the Stairwell key to its labeled hook on the office key board.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: charge
+    conditions:
+    - kind: 5
+      target: Stairwell
+      value: 
+      checkCurrentStateOnEnter: 1
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit: []
+  - id: charge
+    title: Put your phone on the charger
+    objective: Put your phone on the charger
+    guidance: At the desk charger, press E to place your phone down. You can recall
+      these instructions with G.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: telephone
+    conditions:
+    - kind: 0
+      target: phone.docked
+      value: 
+      checkCurrentStateOnEnter: 1
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 94380
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: telephone
+    title: Answer the desk telephone
+    objective: Answer the desk telephone
+    guidance: The desk telephone is ringing. Walk up to it and press E to answer.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: sit
+    conditions:
+    - kind: 16
+      target: silent-call
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 29
+      target: desk.telephone
+      completionId: 
+      text: 
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 11
+      target: lift
+      completionId: 
+      text: 
+      number: 1
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit:
+    - kind: 5
+      target: Telephone call
+      completionId: 
+      text: Caller disconnected without identifying themselves.
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+  - id: sit
+    title: Sit at the security desk
+    objective: Sit at the security desk
+    guidance: Look at the security chair and press E to sit down.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: empty
+    conditions:
+    - kind: 10
+      target: security.chair
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit: []
+  - id: empty
+    title: Watch the elevator feed
+    objective: Watch the elevator feed
+    guidance: The elevator is moving. Watch the desk monitors; you can still look
+      around.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: collect
+    conditions:
+    - kind: 16
+      target: empty-elevator
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 11400000, guid: 4f40178ad077045479e4fb3b12d12d71, type: 2}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 94560
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: collect
+    title: Collect your phone
+    objective: Collect your phone
+    guidance: Retrieve your phone from the charger before closing the shift.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: report
+    conditions:
+    - kind: 0
+      target: phone.collected
+      value: 
+      checkCurrentStateOnEnter: 1
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 107100
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: report
+    title: Submit the nightly report
+    objective: Submit the nightly report
+    guidance: "In the security office, open Management \u2192 Records \u2192 Submit
+      report, or use the desk sign-in pad."
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: leave
+    conditions:
+    - kind: 0
+      target: report.submitted
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit: []
+  - id: leave
+    title: Your shift is over
+    objective: Your shift is over
+    guidance: Take your phone and leave through the apartment entrance.
+    supervisorMessage: Report received, thanks. You're done for tonight. Lock up
+      behind you and get some rest. I'll check in before your next shift.
+    protagonistDialogue: 
+    nextStepId: alley.trigger
+    conditions:
+    - kind: 1
+      target: Alley
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Apartment
+    spawnBinding: spawn.office
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 6
+      target: leave.allowed
+      completionId: 
+      text: 
+      number: 0
+      value: 1
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 3
+      target: entrance
+      completionId: 
+      text: Completed
+      number: 0
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    - kind: 2
+      target: 
+      completionId: 
+      text: 
+      number: 108000
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []
+  - id: alley.trigger
+    title: Walk home
+    objective: Walk home
+    guidance: Follow the alley back toward the main street.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: alley.voice
+    conditions:
+    - kind: 1
+      target: alley.voice.zone
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Alley
+    spawnBinding: spawn.voice
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit: []
+  - id: alley.voice
+    title: Keep walking
+    objective: Keep walking
+    guidance: Keep going toward the main street. There is no reason to turn back.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: home
+    conditions:
+    - kind: 17
+      target: alley.voice.done
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Alley
+    spawnBinding: spawn.voice
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 14
+      target: alley.voice
+      completionId: alley.voice.done
+      text: 
+      number: 0.35
+      value: 0
+      circuit: {fileID: 0}
+      audio: {fileID: 8300000, guid: 6189eca966075644280939a6cfd937c0, type: 3}
+      sequence: {fileID: 0}
+    exit: []
+  - id: home
+    title: Continue home
+    objective: Continue home
+    guidance: Leave the alley at the main-street end.
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: fade
+    conditions:
+    - kind: 1
+      target: alley.exit
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Alley
+    spawnBinding: spawn.voice
+    waitForSignals: []
+    freshSignals: 0
+    enter: []
+    exit: []
+  - id: fade
+    title: Night 1 complete
+    objective: Night 1 complete
+    guidance: 
+    supervisorMessage: 
+    protagonistDialogue: 
+    nextStepId: 
+    conditions:
+    - kind: 0
+      target: night.fade.done
+      value: 
+      checkCurrentStateOnEnter: 0
+    checkpointOnBegin: 1
+    checkpointOnComplete: 1
+    scriptedSequence: {fileID: 0}
+    scene: Alley
+    spawnBinding: spawn.voice
+    waitForSignals: []
+    freshSignals: 0
+    enter:
+    - kind: 25
+      target: 
+      completionId: night.fade.done
+      text: 
+      number: 1.6
+      value: 1
+      circuit: {fileID: 0}
+      audio: {fileID: 0}
+      sequence: {fileID: 0}
+    exit: []

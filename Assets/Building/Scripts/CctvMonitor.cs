@@ -21,9 +21,9 @@ public sealed class CctvMonitor : MonoBehaviour,IInteractionTarget
     public void Refresh()
     {
         if(display==null||system==null)return;var channel=system.channels[Mathf.Clamp(ChannelIndex,0,system.channels.Length-1)];
-        display.SetFloat("_Power",Powered?1:0);display.SetFloat("_Signal",channel.Powered&&channel.Texture!=null?1:0);
+        display.SetFloat("_Power",Powered?1:0);display.SetFloat("_Signal",channel.Powered&&channel.Texture!=null&&!channel.scriptedSignalLoss?1:0);display.SetFloat("_Interference",channel.scriptedSignalLoss?1:0);
         display.SetTexture("_MainTex",channel.Texture);display.SetTexture("_LabelTex",channel.label);
-        var clock=System.DateTime.UtcNow.AddHours(9);display.SetVector("_Clock",new Vector4(clock.Hour,clock.Minute,clock.Second,0));
+        var clock=StoryDirector.Active!=null&&StoryDirector.Active.state!=null?StoryDirector.Active.Clock:System.DateTime.UtcNow.AddHours(9);display.SetVector("_Clock",new Vector4(clock.Hour,clock.Minute,clock.Second,0));
     }
     void OnDestroy(){if(display!=null)Destroy(display);}
 }

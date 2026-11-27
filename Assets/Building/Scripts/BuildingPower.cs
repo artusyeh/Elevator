@@ -18,4 +18,6 @@ public sealed class BuildingPower : MonoBehaviour
     public static bool IsPowered(PowerCircuit circuit)=>circuit==null||IsEnabled(circuit)&&(MainSupply||circuit.backupSupply);
     public static void SetCircuit(PowerCircuit circuit,bool value){if(circuit==null)return;states[circuit.id]=value;Changed?.Invoke();}
     public static void SetMain(bool value){MainSupply=value;Changed?.Invoke();}
+    public static NarrativeValue[] CaptureState(){var result=new List<NarrativeValue>();foreach(var state in states)result.Add(new NarrativeValue{id=state.Key,value=state.Value?"on":"off"});return result.ToArray();}
+    public static void RestoreState(System.Collections.Generic.IEnumerable<NarrativeValue> saved,bool main){states.Clear();foreach(var state in saved)states[state.id]=state.value=="on";MainSupply=main;Changed?.Invoke();}
 }

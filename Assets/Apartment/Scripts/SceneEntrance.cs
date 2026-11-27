@@ -30,6 +30,8 @@ public sealed class SceneEntrance : MonoBehaviour, IInteractionTarget
     }
     public void Travel()
     {
+        if(StoryDirector.Active!=null&&!StoryDirector.Active.CanTravel(destination))return;
+        if(StoryDirector.Active!=null)StoryDirector.Active.SaveCheckpoint();
         usedFrame=Time.frameCount;
         var position=arrivalPosition;var rotation=arrivalRotation;var eyeRotation=Quaternion.identity;
         var current=Object.FindFirstObjectByType<AlleyStudy.AlleyWalker>();

@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public sealed class InteractionScanner : MonoBehaviour
 {
     public static InteractionScanner Active { get; private set; }
+    public static event System.Action<IInteractionTarget> Interacted;
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]static void ResetEvents(){Interacted=null;}
     public Camera eyes;
     [Min(.1f)] public float interactionDistance=2.7f;
     public LayerMask detectionMask=~0;
@@ -57,12 +59,12 @@ public sealed class InteractionScanner : MonoBehaviour
     {
         if(!UiVisible)return false;
         var target=Probe(ray,maximumDistance);if(target==null||(elevatorOnly&&!(target is ElevatorButton)))return false;
-        target.Interact(this);return true;
+        target.Interact(this);Interacted?.Invoke(target);return true;
     }
     public bool InteractFocused()
     {
         RefreshFocus();if(FocusedTarget==null)return false;
-        FocusedTarget.Interact(this);return true;
+        var target=FocusedTarget;target.Interact(this);Interacted?.Invoke(target);return true;
     }
     void LateUpdate()
     {

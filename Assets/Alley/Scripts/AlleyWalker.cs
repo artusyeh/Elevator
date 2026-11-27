@@ -45,6 +45,8 @@ namespace AlleyStudy
         void OnDisable() { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
         void Update()
         {
+            var narrativeUi=GetComponent<InteractionScanner>();
+            if(StoryDirector.Active!=null&&StoryDirector.Active.Opening||narrativeUi!=null&&(narrativeUi.documentOpen||narrativeUi.cutscenePlaying||narrativeUi.menuOpen)){Step(Vector2.zero,Time.deltaTime,false);return;}
             var k = Keyboard.current; var m = Mouse.current;
             if (k == null || m == null || eyes == null) { Step(Vector2.zero, Time.deltaTime, false); return; }
             if(Cursor.lockState==CursorLockMode.Locked||phoneInterfaceOpen)TickCrouch(k.leftCtrlKey.isPressed||k.rightCtrlKey.isPressed,Time.deltaTime);

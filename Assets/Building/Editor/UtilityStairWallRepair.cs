@@ -7,7 +7,7 @@ public static partial class ApartmentBuilder
     public static string FitUtilityStairWall()
     {
         EnsureApartment();var apt=GameObject.Find("Apartment").transform;var ground=apt.Find("Ground Floor");var lobby=ground.Find("Lobby");
-        var section=G("Utility Stair Wall Joint",lobby);
+        var section=lobby.Find("Utility Stair Wall Joint");if(section==null)section=G("Utility Stair Wall Joint",lobby);
         if(section.childCount==0)
         {
             var sources=lobby.GetComponentsInChildren<MeshRenderer>(true).Where(r=>r.enabled&&r.name=="Door Return"&&Mathf.Abs(r.bounds.center.z-8.515f)<.03f).ToArray();
@@ -20,6 +20,12 @@ public static partial class ApartmentBuilder
         }
         var backing=apt.Find("B1/Stairwell Outer Backing/East Front Backing");
         if(backing!=null){var size=backing.GetComponent<MeshFilter>().sharedMesh.bounds.size;size.y=3.2f;LiftResize(backing,new Vector3(-2.25f,1.3f,8.66f),size);}
+        // The basement front backing reached the lobby face; its end cap fought the tiled joint.
+        var front=apt.Find("B1/Stairwell Outer Backing/Continuous Front Backing");
+        if(front!=null)LiftResize(front,new Vector3(-3.90f,front.localPosition.y,front.localPosition.z),new Vector3(3.40f,front.GetComponent<MeshFilter>().sharedMesh.bounds.size.y,.10f));
+        // Keep the utility-door header over the opening, clear of the full-height joint plaster.
+        foreach(var header in lobby.GetComponentsInChildren<MeshRenderer>(true).Where(r=>r.enabled&&r.name=="Plaster Wall"&&r.transform.parent.name=="Electrical Entrance"&&r.bounds.center.y>2.2f))
+            LiftResize(header.transform,new Vector3(-2.09f,header.transform.localPosition.y,7.15f),new Vector3(.18f,header.GetComponent<MeshFilter>().sharedMesh.bounds.size.y,1.76f));
         CommonDynamic(section);SaveCommonModule(ground,Base+"Prefabs/Entrance Interior.prefab");SaveCommonModule(apt.Find("B1"),BuildingBase+"Prefabs/B1 Services.prefab");SaveApartment();return "Replaced overlapping joint faces with continuous wall, moved backing behind stair wall.";
     }
 }

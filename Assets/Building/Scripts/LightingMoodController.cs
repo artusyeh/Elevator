@@ -24,9 +24,13 @@ public sealed class LightingMoodController : MonoBehaviour
     void OnEnable(){SetMood(Application.isPlaying&&hasSessionMood?sessionMood:startingMood);}
     void Update()
     {
+#if !UNITY_EDITOR && !DEVELOPMENT_BUILD
+        return;
+#else
         var keyboard=Keyboard.current;var scanner=InteractionScanner.Active;
         if(!enableKeyboardToggle||keyboard==null||!keyboard[toggleKey].wasPressedThisFrame||scanner==null||!scanner.UiVisible)return;
         ToggleMood();
+#endif
     }
     public void ToggleMood()=>SetMood(CurrentMood==Mood.Normal?Mood.Horror:Mood.Normal);
     public void SetHorror(bool value)=>SetMood(value?Mood.Horror:Mood.Normal);

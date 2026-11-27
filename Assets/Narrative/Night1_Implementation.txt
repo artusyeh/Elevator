@@ -1,0 +1,33 @@
+NIGHT 1 — IMPLEMENTATION AND PLAYTEST NOTES
+
+PLAY
+Open Assets/Scenes/Alley.unity and enter Play Mode for the full opening.
+E interacts; Tab opens the phone; F toggles its flashlight; G recalls the current objective.
+Read Rules to the bottom. Use the desk sign-in pad for rules/reporting if the phone is unavailable.
+Only the active story step consumes completion events. The clock advances through authored steps; battery consumption remains based on real gameplay minutes.
+
+AUTHORING
+Assets/Narrative/Resources/Narrative/Night 1.asset contains 27 ordered steps, objectives, conditions, actions, clock changes and messages. Documents are in Assets/Narrative/Documents. Silent Call.asset and Empty Elevator.asset contain editable action/wait sequences.
+Scene objects under Night 1 Gameplay Hooks and Night 1 Alley Hooks contain editable bindings, trigger bounds and spatial sound sources. The 4F fixture has the flicker pattern, approach distance, buzz and blackout duration. Sound positions, volumes and sequence durations can be adjusted in Unity.
+The runtime prefab owns the opening, objectives, subtitles and document/report UI. The existing Phone prefab owns editable management/message templates. Do not run the authoring setup methods after editing the content unless you intend to regenerate it.
+
+FUNCTIONAL ENCOUNTERS — IN ORDER
+1. Previous guard: optional jacket, ID, mug, note and logbook inspection. The exact requested 02:13 AM entry is the final log entry. These never gate the shift.
+2. CCTV: inspection exposes the designated 3F camera fault. Turn CCTV CAMERAS off, then on in the ground-floor utility room to restore the feed.
+3. 4F light: approaching the faulty fitting causes a brief blackout and creates the maintenance request.
+4. Door slam: reset the local 4F lighting switch off/on and inspect the repaired fitting. A spatial slam plays behind the player; visible doors stay closed.
+5. Silent call: return the Stairwell key, dock the phone, answer the ringing desk telephone; dialogue, silence, breathing and disconnect complete before the sit objective.
+6. Empty elevator: sitting starts the real lift's 6F/1F trip, landing CCTV view, movement audio, bell and doors. Standing is temporarily locked; camera look remains available. Retrieve the phone afterward.
+7. Alley voice: submit the report, receive leave permission, exit, cross the voice trigger and continue to the final exit for the fade and completion screen.
+
+DEVELOPMENT / CHECKPOINTS
+Horror Game > Narrative > Story Development provides night reset, step jump, current-step display, test completion, clock/message/battery controls, checkpoint save/load, individual encounter tests and a replaceable waypoint NPC sample. This window is Editor-only. No NPC is placed in Night 1. No later-night content is authored.
+Editor checkpoints are local to Library/NarrativeCheckpoints/Night.json; builds use Application.persistentDataPath. Load is explicit through the development tool. An interrupted seated lift encounter resumes at the sit objective; ringing calls and short audio/fade encounters recover their active state. Restart Play Mode after compiling scripts during play.
+
+VERIFIED
+The Night 1 acceptance driver completed all 27 steps once, from Alley arrival through the final fade. It used actual interaction raycasts, keys, switches, charger, telephone, chair, elevator and phone report submission. It deliberately repositions the player between locations and temporarily accelerates the elevator for testing; this is not a continuous manual walking/play-feel test or a standalone-build test.
+Also checked: no clock advancement from elapsed time, rejected out-of-order events, optional discovery behavior, standing lock/release, checkpoint restoration of step/time/keys/battery/faults/docked phone, no duplicate director/phone/EventSystem after scene transitions, NPC waypoint completion, and task/message UI rendering. The full opening was checked separately at normal timing. Acceptance output: Library/NarrativeCheckpoints/Night1Acceptance.txt.
+
+TEMPORARY ART / AUDIO
+Phone dialogue and the distant Po voice use local Windows Microsoft Zira speech synthesis. Ring, breathing, buzz, slam, motor, door movement, bell and disconnect sounds are locally synthesized placeholders. No paid assets or external audio downloads were used. Replace these with final voice acting and Foley for release.
+The guard jacket uses the textured black leather JACKET model by ypushkar30, licensed CC BY 4.0; its source and conversion changes are listed beside the model in Attribution.txt. ID/note use existing paper geometry/materials with readable inspection text. Final ID artwork can replace the paper prop without changing progression. The development NPC uses a simple replaceable shape model and needs final character art/animation only if later stories use it.

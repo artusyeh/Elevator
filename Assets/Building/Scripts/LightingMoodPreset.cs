@@ -26,7 +26,7 @@ public sealed class LightingMoodPreset : ScriptableObject
         public int lightmapIndex;
         public Vector4 lightmapScaleOffset;
         public static Surface Capture(MeshRenderer source)=>new Surface{receiveGI=source.receiveGI,probes=source.lightProbeUsage,lightmapIndex=source.lightmapIndex,lightmapScaleOffset=source.lightmapScaleOffset};
-        public void Apply(MeshRenderer target){target.receiveGI=receiveGI;target.lightProbeUsage=probes;target.lightmapIndex=lightmapIndex;target.lightmapScaleOffset=lightmapScaleOffset;}
+        public void Apply(MeshRenderer target){target.receiveGI=receiveGI;target.lightProbeUsage=probes;if(!target.isPartOfStaticBatch){target.lightmapIndex=lightmapIndex;target.lightmapScaleOffset=lightmapScaleOffset;}}
     }
     public VolumeProfile postProcessing;
     public AmbientMode ambientMode=AmbientMode.Trilight;

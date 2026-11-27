@@ -10,6 +10,13 @@ public sealed class ApartmentMirror : MonoBehaviour
     public RenderTexture texture;
     [Range(10,60)]public float refreshRate=30;
     public bool renderOnlyWhenVisible=true;
+    [Tooltip("Limit punctual shadow sources only during the reflection render.")]
+    [Range(0,8)]public int maximumShadowedLights=4;
+    struct ShadowState{public Light light;public LightShadows shadows;}
+    Light[] shadowSources;
+    float nextShadowCache;
+    readonly System.Collections.Generic.List<Light> rankedShadows=new System.Collections.Generic.List<Light>();
+    readonly System.Collections.Generic.List<ShadowState> suppressedShadows=new System.Collections.Generic.List<ShadowState>();
     readonly Plane[] viewPlanes=new Plane[6];
     readonly RaycastHit[] visibilityHits=new RaycastHit[16];
     float nextFrame;
@@ -39,10 +46,19 @@ public sealed class ApartmentMirror : MonoBehaviour
             var point=worldToView.MultiplyPoint(position+normal*.005f);var n=worldToView.MultiplyVector(normal).normalized;
             reflectionCamera.projectionMatrix=source.CalculateObliqueMatrix(new Vector4(n.x,n.y,n.z,-Vector3.Dot(point,n)));
             mirrorSurface.enabled=false;GL.invertCulling=!previous;
+            LimitReflectionShadows();
             RenderPipeline.SubmitRenderRequest(reflectionCamera,new UniversalRenderPipeline.SingleCameraRequest{destination=texture});
             mirrorSurface.sharedMaterial.SetTexture("_BaseMap",texture);
             mirrorSurface.sharedMaterial.SetMatrix("_ReflectionVP",GL.GetGPUProjectionMatrix(reflectionCamera.projectionMatrix,true)*worldToView);
         }
-        finally{GL.invertCulling=previous;mirrorSurface.enabled=visible;rendering=false;}
+        finally{foreach(var entry in suppressedShadows)if(entry.light!=null)entry.light.shadows=entry.shadows;suppressedShadows.Clear();GL.invertCulling=previous;mirrorSurface.enabled=visible;rendering=false;}
+    }
+    void LimitReflectionShadows()
+    {
+        if(shadowSources==null||Time.realtimeSinceStartup>=nextShadowCache){shadowSources=Object.FindObjectsByType<Light>(FindObjectsSortMode.None);nextShadowCache=Time.realtimeSinceStartup+5;}
+        rankedShadows.Clear();var position=reflectionCamera.transform.position;
+        foreach(var light in shadowSources)if(light!=null&&light.isActiveAndEnabled&&light.type!=LightType.Directional&&light.shadows!=LightShadows.None)rankedShadows.Add(light);
+        rankedShadows.Sort((a,b)=>(a.transform.position-position).sqrMagnitude.CompareTo((b.transform.position-position).sqrMagnitude));
+        for(int i=Mathf.Max(0,maximumShadowedLights);i<rankedShadows.Count;i++){var light=rankedShadows[i];suppressedShadows.Add(new ShadowState{light=light,shadows=light.shadows});light.shadows=LightShadows.None;}
     }
 }

@@ -5,7 +5,7 @@ public sealed class PhoneFlashlight : MonoBehaviour
     public Light beam;
     public Light softBeam;
     public bool IsOn {get;private set;}
-    public void SetEnabled(bool value){IsOn=value;if(beam!=null)beam.enabled=value;if(softBeam!=null)softBeam.enabled=value;}
+    public void SetEnabled(bool value){var battery=GetComponent<PhoneBattery>();if(value&&battery!=null&&!battery.CanUse)value=false;IsOn=value;if(beam!=null)beam.enabled=value;if(softBeam!=null)softBeam.enabled=value;}
     public void Toggle(){SetEnabled(!IsOn);}
     void LateUpdate()
     {
