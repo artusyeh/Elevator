@@ -4,6 +4,8 @@ public sealed class ElevatorController : MonoBehaviour
 {
     public Transform cabin;
     public Transform[] landings,leftDoors,rightDoors;
+    public int[] landingFloors;
+    public BasementAccess basementAccess;
     public Transform cabinLeft,cabinRight;
     public ElevatorFloorDisplay[] displays;
     public int currentFloor=1;
@@ -18,7 +20,7 @@ public sealed class ElevatorController : MonoBehaviour
     public int TargetFloor { get; private set; }=1;
     public int DisplayedFloor { get; private set; }=1;
     public float DoorAmount { get; private set; }=1;
-    readonly bool[] requests=new bool[6];
+    readonly bool[] requests=new bool[7];
     bool wantOpen=true;
     float baseHeight,startHeight,travelTime,elapsed,settle,dwell;
     CharacterController rider;
@@ -29,13 +31,13 @@ public sealed class ElevatorController : MonoBehaviour
     bool previousPower=true;
     AlleyStudy.AlleyWalker cachedPlayer;
     AlleyStudy.AlleyWalker Player=>cachedPlayer!=null?cachedPlayer:(cachedPlayer=Object.FindFirstObjectByType<AlleyStudy.AlleyWalker>());
-    void Awake(){baseHeight=cabin.position.y;TargetFloor=currentFloor;RefreshDisplay();}
-    public bool IsRequested(int floor){return floor>=1&&floor<=6&&requests[floor-1];}
+    void Awake(){baseHeight=cabin.position.y-(currentFloor-1)*2.9f;TargetFloor=currentFloor;RefreshDisplay();}
+    public bool IsRequested(int floor){return floor>=0&&floor<=6&&requests[floor];}
     public void RequestFloor(int floor)
     {
-        if(floor<1||floor>6||!HasPower)return;
+        if(floor<0||floor>6||!HasPower||floor==0&&(basementAccess==null||!basementAccess.CanEnter))return;
         if(!Moving&&floor==currentFloor){wantOpen=true;return;}
-        requests[floor-1]=true;wantOpen=false;
+        requests[floor]=true;wantOpen=false;
     }
     public void OpenDoors(){if(!Moving&&settle<=0){wantOpen=true;dwell=2;}}
     public void CloseDoors(){if(!Moving&&settle<=0&&HasPower){wantOpen=false;dwell=0;}}
@@ -81,8 +83,8 @@ public sealed class ElevatorController : MonoBehaviour
             DoorAmount=Mathf.MoveTowards(DoorAmount,wantOpen?1:0,dt*.8f);ApplyDoors();
             if(pending&&DoorAmount<=.0001f&&settle<=0&&dwell<=0)
             {
-                int best=-1;for(int i=0;i<6;i++)if(requests[i]&&(best<0||Mathf.Abs(i+1-currentFloor)<Mathf.Abs(best+1-currentFloor)))best=i;
-                TargetFloor=best+1;Direction=TargetFloor>currentFloor?1:-1;startHeight=cabin.position.y;
+                int best=-1;for(int i=0;i<requests.Length;i++)if(requests[i]&&(best<0||Mathf.Abs(i-currentFloor)<Mathf.Abs(best-currentFloor)))best=i;
+                TargetFloor=best;Direction=TargetFloor>currentFloor?1:-1;startHeight=cabin.position.y;
                 travelTime=Mathf.Max(2.5f,Mathf.Abs((TargetFloor-1)*2.9f+baseHeight-startHeight)/metresPerSecond);elapsed=0;Moving=true;
                 var player=Player;rider=player!=null&&IsInside(player.transform)?player.GetComponent<CharacterController>():null;
                 if(rider!=null){eyes=player.eyes.transform;eyeRest=eyes.localPosition;}
@@ -93,15 +95,15 @@ public sealed class ElevatorController : MonoBehaviour
             elapsed+=dt;float t=Mathf.Clamp01(elapsed/travelTime);float eased=t*t*(3-2*t);float old=cabin.position.y;
             var p=cabin.position;p.y=Mathf.Lerp(startHeight,baseHeight+(TargetFloor-1)*2.9f,eased);cabin.position=p;
             Physics.SyncTransforms();if(rider!=null&&rider.enabled)rider.Move(Vector3.up*(p.y-old));
-            DisplayedFloor=Mathf.Clamp(Mathf.RoundToInt((p.y-baseHeight)/2.9f)+1,1,6);
-            if(t>=1){currentFloor=TargetFloor;DisplayedFloor=currentFloor;requests[currentFloor-1]=false;Moving=false;Direction=0;settle=.35f;dwell=2.3f;RemoveShake();rider=null;}
+            DisplayedFloor=Mathf.Clamp(Mathf.RoundToInt((p.y-baseHeight)/2.9f)+1,0,6);
+            if(t>=1){currentFloor=TargetFloor;DisplayedFloor=currentFloor;requests[currentFloor]=false;Moving=false;Direction=0;settle=.35f;dwell=2.3f;RemoveShake();rider=null;}
         }
         RefreshDisplay();
     }
     void ApplyDoors()
     {
         float offset=Mathf.Lerp(.275f,.96f,DoorAmount);
-        for(int i=0;i<leftDoors.Length;i++){float v=i+1==currentFloor&&!Moving?offset:.275f;var a=leftDoors[i].localPosition;var b=rightDoors[i].localPosition;a.x=-v;b.x=v;leftDoors[i].localPosition=a;rightDoors[i].localPosition=b;}
+        for(int i=0;i<leftDoors.Length;i++){int floor=landingFloors!=null&&i<landingFloors.Length?landingFloors[i]:i+1;float v=floor==currentFloor&&!Moving?offset:.275f;var a=leftDoors[i].localPosition;var b=rightDoors[i].localPosition;a.x=-v;b.x=v;leftDoors[i].localPosition=a;rightDoors[i].localPosition=b;}
         var l=cabinLeft.localPosition;var r=cabinRight.localPosition;l.x=-offset;r.x=offset;cabinLeft.localPosition=l;cabinRight.localPosition=r;
     }
     void RefreshDisplay(){if(displays!=null)foreach(var display in displays)if(display!=null)display.Show(DisplayedFloor,Direction);}

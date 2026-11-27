@@ -7,7 +7,10 @@ public static class BuildingKeys
 {
     static readonly HashSet<string> held=new HashSet<string>(StringComparer.Ordinal);
     public static event Action Changed;
-    public static bool Has(string id)=>!string.IsNullOrEmpty(id)&&held.Contains(id);
+    public static bool PlaytestAccess {get;private set;}
+    public static bool IsCollected(string id)=>!string.IsNullOrEmpty(id)&&held.Contains(id);
+    public static bool Has(string id)=>!string.IsNullOrEmpty(id)&&(PlaytestAccess||held.Contains(id));
+    public static void TogglePlaytestAccess(){PlaytestAccess=!PlaytestAccess;Changed?.Invoke();Debug.Log("[Playtest] Room key bypass "+(PlaytestAccess?"ON":"OFF"));}
     public static bool Collect(string id)
     {
         if(string.IsNullOrEmpty(id)||!held.Add(id))return false;
@@ -19,5 +22,5 @@ public static class BuildingKeys
         Changed?.Invoke();return true;
     }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-    static void ResetSession(){held.Clear();Changed=null;}
+    static void ResetSession(){held.Clear();Changed=null;PlaytestAccess=false;}
 }

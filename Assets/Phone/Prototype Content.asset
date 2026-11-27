@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b292346d2a9596643b08f700a553d766, type: 3}
+  m_Name: Prototype Content
+  m_EditorClassIdentifier: 
+  contacts:
+  - name: Building Office
+    preview: The shift log is on the desk.
+    time: 22:41
+    unread: 1
+    incoming: The shift log is on the desk. Please leave your notes there.
+    outgoing: Thanks. I'll check it before the next round.
+  - name: Maintenance
+    preview: Received. Thank you.
+    time: 21:18
+    unread: 0
+    incoming: Spare parts are stored in the maintenance room.
+    outgoing: Received. Thank you.
+  - name: "Resident \xB7 503"
+    preview: Thank you for your help.
+    time: Yesterday
+    unread: 0
+    incoming: Thank you for your help earlier.
+    outgoing: You're welcome. Have a good evening.
+  tasks:
+  - Review the shift log
+  - Check shared corridor lights
+  - Inspect the entrance gate
+  - Record equipment condition
+  regulations:
+  - Keep common areas clear
+  - Do not leave deliveries or personal items in escape routes. Keep stair doors
+    and access panels unobstructed.
+  - Respect quiet hours
+  - Avoid unnecessary noise between 22:00 and 07:00. Record repeated complaints in
+    the shift log.
+  - Handle keys responsibly
+  - Building keys remain on the security office board when not in use. Return keys
+    after maintenance work.
+  - Electrical and mechanical access
+  - Only authorized staff may enter B1 service rooms. Isolate equipment before carrying
+    out repairs.
+  - Report safety concerns
+  - Record faults, leaks and damaged fixtures. Use emergency services when there
+    is immediate danger.
+  maintenance:
+  - Common-area lighting|Routine inspection|Open
+  - Water pump service|Scheduled check|Pending
+  - Entrance intercom|Sound quality check|Reviewed
+  directory: {fileID: 11400000, guid: 23ca558fd858c654bb42930aa19c9de7, type: 2}

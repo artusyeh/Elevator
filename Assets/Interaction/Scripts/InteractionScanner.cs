@@ -13,10 +13,13 @@ public sealed class InteractionScanner : MonoBehaviour
     public bool menuOpen;
     public bool cutscenePlaying;
     public bool documentOpen;
+    public bool phoneOpen;
+    int ignoreInputFrame=-1;
+    public void IgnoreInputThisFrame(){ignoreInputFrame=Time.frameCount;}
     public IInteractionTarget FocusedTarget { get; private set; }
     public bool UiVisible=>isActiveAndEnabled&&eyes!=null&&eyes.isActiveAndEnabled&&eyes==Camera.main&&
         (walker==null||walker.isActiveAndEnabled)&&Cursor.lockState==CursorLockMode.Locked&&Time.timeScale>0&&
-        !menuOpen&&!cutscenePlaying&&!documentOpen;
+        !menuOpen&&!cutscenePlaying&&!documentOpen&&!phoneOpen;
     readonly RaycastHit[] buffer=new RaycastHit[32];
     AlleyStudy.AlleyWalker walker;
     void Awake(){walker=GetComponent<AlleyStudy.AlleyWalker>();}
@@ -63,6 +66,7 @@ public sealed class InteractionScanner : MonoBehaviour
     }
     void LateUpdate()
     {
+        if(ignoreInputFrame==Time.frameCount)return;
         RefreshFocus();if(FocusedTarget==null)return;
         bool use=Keyboard.current!=null&&Keyboard.current.eKey.wasPressedThisFrame;
         bool click=FocusedTarget is ElevatorButton&&Mouse.current!=null&&Mouse.current.leftButton.wasPressedThisFrame;

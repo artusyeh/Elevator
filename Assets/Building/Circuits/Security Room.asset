@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Security Room
   m_EditorClassIdentifier: 
   id: Security Room
-  label: Security Room
+  label: Security Office
   startsEnabled: 1
   backupSupply: 0

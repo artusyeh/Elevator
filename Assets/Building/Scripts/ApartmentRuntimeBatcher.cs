@@ -22,6 +22,7 @@ public sealed class ApartmentRuntimeBatcher : MonoBehaviour
         foreach(var item in FindObjectsByType<MaintenanceDoor>(FindObjectsSortMode.None))if(item.leaf!=null)moving.Add(item.leaf);
         foreach(var item in FindObjectsByType<ElevatorButton>(FindObjectsSortMode.None))if(item.cap!=null)moving.Add(item.cap);
         foreach(var item in FindObjectsByType<PowerSwitch>(FindObjectsSortMode.None))if(item.lever!=null)moving.Add(item.lever);
+        foreach(var item in FindObjectsByType<PhoneControls>(FindObjectsSortMode.None))moving.Add(item.transform);
         foreach(var item in FindObjectsByType<ElevatorController>(FindObjectsSortMode.None))if(item.cabin!=null)moving.Add(item.cabin);
         foreach(var item in FindObjectsByType<SlidingDoors>(FindObjectsSortMode.None)){if(item.left!=null)moving.Add(item.left);if(item.right!=null)moving.Add(item.right);}
         var scene=gameObject.scene;

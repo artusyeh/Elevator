@@ -5,6 +5,26 @@ using UnityEditor;
 
 public static partial class ApartmentBuilder
 {
+    public static string FixAllStairDoorFloorOverlays()
+    {
+        EnsureApartment();var apt=GameObject.Find("Apartment").transform;int count=0;
+        foreach(var door in apt.GetComponentsInChildren<StairAccessDoor>(true).Where(d=>d.name=="Stairwell Door"))
+        {
+            var stairs=door.transform.parent;var bridge=stairs.Find("Stair Threshold");var sill=door.transform.Find("Door Threshold");
+            var slab=stairs.parent.Find("Residential Corridor/Corridor Floor")??stairs.parent.Find("Lobby/Terrazzo Floor");
+            if(slab==null)slab=stairs.parent.Find("Basement Slab");if(slab==null||sill==null)continue;
+            float level=slab.GetComponent<Renderer>().bounds.max.y;
+            if(bridge!=null&&bridge.gameObject.activeSelf)
+            {
+                var bounds=bridge.GetComponent<Renderer>().bounds;var p=bridge.position;p.y=level+.002f-bounds.extents.y;bridge.position=p;PrefabUtility.RecordPrefabInstancePropertyModifications(bridge);
+            }
+            var sb=sill.GetComponent<Renderer>().bounds;var at=sill.position;at.y=level+.003f+sb.extents.y;sill.position=at;PrefabUtility.RecordPrefabInstancePropertyModifications(sill);
+            count++;
+        }
+        SaveCommonModule(apt.Find("Ground Floor"),Base+"Prefabs/Entrance Interior.prefab");
+        SaveCommonModule(apt.Find("B1"),BuildingBase+"Prefabs/B1 Services.prefab");
+        SaveApartment();return "Separated landing strips and metal sills from coplanar floor/wall surfaces at "+count+" stairwell doors.";
+    }
     static int FitStairThresholds(GameObject root)
     {
         int count=0;
