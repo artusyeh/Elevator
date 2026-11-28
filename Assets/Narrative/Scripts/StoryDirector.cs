@@ -19,6 +19,10 @@ public sealed class StoryDirector : MonoBehaviour
     public string CurrentId=>Running&&state.index<definition.beats.Length?definition.beats[state.index].id:"complete";
     public DateTime Clock=>DateTime.ParseExact(definition.date,"yyyy-MM-dd",System.Globalization.CultureInfo.InvariantCulture).AddSeconds(state.seconds);
     public string ClockText=>Clock.ToString("HH:mm");
+    public string ManagementNoticeTitle=>state!=null&&state.hasManagementNotice?state.managementNoticeTitle:definition.managementNoticeTitle;
+    public string ManagementNotice=>state!=null&&state.hasManagementNotice?state.managementNotice:definition.managementNotice;
+    public string ShiftStatus=>state!=null&&(state.completed||Has("leave.allowed")||Has("shift.completed"))?"Completed":state!=null&&(state.completedSteps.Contains("begin")||Has("shift.active"))?"Active":"Awaiting sign-in";
+    public void SetManagementNotice(string title,string body){if(state==null)return;state.hasManagementNotice=true;state.managementNoticeTitle=title??"";state.managementNotice=body??"";Changed?.Invoke();}
     public bool AllowLeave=>state==null||state.completed||Has("leave.allowed");
     bool advancing,restoring;
     public UnityEngine.InputSystem.Key recallObjectiveKey=UnityEngine.InputSystem.Key.G;
@@ -165,6 +169,7 @@ public sealed class StoryDirector : MonoBehaviour
             case NarrativeActionKind.TaskStatus:SetValue(state.tasks,action.target,action.text);break;
             case NarrativeActionKind.MaintenanceStatus:SetValue(state.requests,action.target,action.text);break;
             case NarrativeActionKind.Record:AddRecord(action.target,action.text);break;
+            case NarrativeActionKind.ManagementNotice:SetManagementNotice(action.target,action.text);break;
             case NarrativeActionKind.SetFlag:if(action.value){if(!Has(action.target))state.signals.Add(action.target);}else state.signals.Remove(action.target);break;
             case NarrativeActionKind.SetCircuit:BuildingPower.SetCircuit(action.circuit,action.value);break;
             case NarrativeActionKind.LightingMood:foreach(var mood in FindObjectsByType<LightingMoodController>(FindObjectsSortMode.None))if(mood.CurrentMood!=(action.value?LightingMoodController.Mood.Horror:LightingMoodController.Mood.Normal))mood.SetHorror(action.value);break;

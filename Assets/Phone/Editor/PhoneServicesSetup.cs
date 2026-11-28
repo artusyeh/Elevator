@@ -22,11 +22,26 @@ public static partial class ApartmentBuilder
     }
     static void InstallManagementDashboard(PhoneApplications apps,Transform screen,List<PhoneApplications.ScreenPage> pages)
     {
-        if(pages.Any(p=>p.page==PhoneApplications.Page.Management))return;
-        var dashboard=AppPage(screen,"Management · Overview","Building Services",pages,PhoneApplications.Page.Management);apps.management=dashboard.gameObject;dashboard.Find("App Title").GetComponent<Text>().fontSize=36;
-        Copy("Role",dashboard,"Security office",new Vector2(680,60),new Vector2(0,470),30,false,managementMuted);
-        string[] titles={"Tasks","Maintenance","Regulations","Records"};var icons=new[]{PhoneIcon.Symbol.Tasks,PhoneIcon.Symbol.Wrench,PhoneIcon.Symbol.Rules,PhoneIcon.Symbol.Report};var destinations=new[]{PhoneApplications.Page.Tasks,PhoneApplications.Page.Maintenance,PhoneApplications.Page.Regulations,PhoneApplications.Page.Records};
-        for(int i=0;i<4;i++){var tile=Nav(titles[i],dashboard,new Vector2(328,222),new Vector2(i%2==0?-177:177,235-i/2*255),PhoneNavigationButton.Action.Navigate,destinations[i],phoneTheme.surface);Shape("Section Icon",tile.transform,new Vector2(65,65),new Vector2(-105,51),managementAccent,icons[i]);Copy("Section Name",tile.transform,titles[i],new Vector2(285,78),new Vector2(0,-48),31,true);}
+        var existing=pages.FirstOrDefault(p=>p.page==PhoneApplications.Page.Management);var dashboard=existing.root!=null?existing.root.transform:AppPage(screen,"Management · Overview","Building Services",pages,PhoneApplications.Page.Management);
+        apps.management=dashboard.gameObject;dashboard.Find("App Title").GetComponent<Text>().fontSize=36;
+        foreach(var child in dashboard.Cast<Transform>().ToArray())if(child.name!="App Background"&&child.name!="Back"&&child.name!="App Title"&&!(child.name=="Divider"&&((RectTransform)child).anchoredPosition.y>550))UnityEngine.Object.DestroyImmediate(child.gameObject);
+        Copy("Office Heading",dashboard,"Security office",new Vector2(680,84),new Vector2(0,472),56,true);
+        var night=Copy("Night and Shift",dashboard,"",new Vector2(680,52),new Vector2(0,398),31,false,managementMuted);night.gameObject.SetActive(false);
+        Copy("Shift Status Label",dashboard,"Shift status",new Vector2(300,52),new Vector2(-190,315),26,false,managementMuted);
+        Shape("Shift Status Background",dashboard,new Vector2(240,52),new Vector2(220,315),phoneTheme.surface,PhoneIcon.Symbol.RoundedRect,.25f);
+        var status=Copy("Shift Status",dashboard,"Awaiting sign-in",new Vector2(224,48),new Vector2(220,315),25,true,managementAccent,TextAnchor.MiddleCenter);
+        string[] titles={"Tasks","Maintenance","Regulations","Records"};string[] descriptions={"Assignments for\nthis shift","Faults and\nservice requests","Night-shift\nprocedures","Inspections and\nincident history"};var icons=new[]{PhoneIcon.Symbol.TaskList,PhoneIcon.Symbol.ServiceTool,PhoneIcon.Symbol.Rulebook,PhoneIcon.Symbol.Archive};var destinations=new[]{PhoneApplications.Page.Tasks,PhoneApplications.Page.Maintenance,PhoneApplications.Page.Regulations,PhoneApplications.Page.Records};
+        for(int i=0;i<4;i++){var tile=Nav(titles[i],dashboard,new Vector2(328,276),new Vector2(i%2==0?-177:177,120-i/2*300),PhoneNavigationButton.Action.Navigate,destinations[i],phoneTheme.surface);Shape("Section Icon",tile.transform,new Vector2(88,88),new Vector2(-93,66),managementAccent,icons[i]);Copy("Section Name",tile.transform,titles[i],new Vector2(274,52),new Vector2(0,-16),34,true);Copy("Description",tile.transform,descriptions[i],new Vector2(274,70),new Vector2(0,-83),25,false,managementMuted,TextAnchor.UpperLeft);}
+        Divider(dashboard,-350);Copy("Management Notice Label",dashboard,"Management notice",new Vector2(680,40),new Vector2(0,-385),25,true,managementMuted);
+        var title=Copy("Management Notice Title",dashboard,"Shift handover",new Vector2(680,46),new Vector2(0,-430),30,true);
+        var notice=Copy("Management Notice Body",dashboard,"Keep shared passageways clear. Record unresolved faults before signing out and return borrowed keys to the office.",new Vector2(680,110),new Vector2(0,-508),27,false,managementMuted,TextAnchor.UpperLeft);notice.resizeTextForBestFit=true;notice.resizeTextMinSize=23;notice.resizeTextMaxSize=27;
+        var footer=Copy("Staff Portal Footer",dashboard,"Aoba Property Management · Staff portal",new Vector2(680,46),new Vector2(0,-640),23,false,new Color(.42f,.49f,.51f),TextAnchor.MiddleCenter);
+        var bridge=apps.GetComponent<PhoneNarrativeBridge>();if(bridge!=null){bridge.dashboardNight=night;bridge.dashboardStatus=status;bridge.dashboardNoticeTitle=title;bridge.dashboardNoticeBody=notice;bridge.dashboardFooter=footer;}
+    }
+    public static string PolishManagementDashboard()
+    {
+        if(Application.isPlaying)throw new InvalidOperationException("Save phone layout changes in Edit Mode.");phoneTheme=AssetDatabase.LoadAssetAtPath<PhoneUiTheme>("Assets/Phone/Modern UI Theme.asset");var root=PrefabUtility.LoadPrefabContents(PhonePath);
+        try{var apps=root.GetComponent<PhoneApplications>();var pages=apps.pages.ToList();var screen=root.GetComponent<PhonePresentation>().screen.transform;InstallManagementDashboard(apps,screen,pages);apps.pages=pages.ToArray();foreach(string name in new[]{"System Chrome","Flashlight Glance Screen","System Dialog"})screen.Find(name).SetAsLastSibling();foreach(var page in pages)page.root.SetActive(page.page==PhoneApplications.Page.Home);PrefabUtility.SaveAsPrefabAsset(root,PhonePath);AssetDatabase.SaveAssets();return "Dashboard hierarchy, four distinct icons, shift status, story-controlled notice and portal footer updated; section pages preserved.";}finally{PrefabUtility.UnloadPrefabContents(root);}
     }
     public static string RestoreManagementDashboard()
     {

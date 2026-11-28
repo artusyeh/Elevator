@@ -78,6 +78,11 @@ MonoBehaviour:
     outgoing: 0
     read: 0
   management: {fileID: 11400000, guid: e15e562723cc9f2479005f5dfcef3ca8, type: 2}
+  shiftLabel: Overnight security
+  staffPortalName: Aoba Property Management
+  managementNoticeTitle: Shift handover
+  managementNotice: Keep shared passageways clear. Record unresolved faults before
+    signing out and return borrowed keys to the office.
   beats:
   - id: arrival
     title: Get to Aoba Apartments

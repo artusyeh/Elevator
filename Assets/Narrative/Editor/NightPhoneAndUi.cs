@@ -26,6 +26,7 @@ public static partial class ApartmentBuilder
         {
             if(root.GetComponent<PhoneNarrativeBridge>()!=null)return "Narrative phone bridge is already installed.";
             var bridge=root.AddComponent<PhoneNarrativeBridge>();var apps=root.GetComponent<PhoneApplications>();var screen=apps.GetComponent<PhonePresentation>().screen.transform;
+            InstallManagementDashboard(apps,screen,apps.pages.ToList());
             var templates=PhoneRect("Narrative Row Templates",screen,new Vector2(800,1600),Vector2.zero);
             bridge.taskTemplate=StoryRow(templates,"Assignment Template",215,true);bridge.requestTemplate=StoryRow(templates,"Request Template",300);bridge.recordTemplate=StoryRow(templates,"Record Template",270,record:true);
             var tasks=apps.pages.First(p=>p.page==PhoneApplications.Page.Tasks).root.transform;var records=apps.pages.First(p=>p.page==PhoneApplications.Page.Records).root.transform;

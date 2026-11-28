@@ -3,7 +3,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CanvasRenderer))]
 public sealed class PhoneIcon : MaskableGraphic
 {
-    public enum Symbol { RoundedRect,Chat,Building,Phone,Flashlight,Back,Signal,Wifi,Battery,Person,Tasks,Progress,Directory,Wrench,Rules,Report,Send,Plus,Check }
+    public enum Symbol { RoundedRect,Chat,Building,Phone,Flashlight,Back,Signal,Wifi,Battery,Person,Tasks,Progress,Directory,Wrench,Rules,Report,Send,Plus,Check,TaskList,ServiceTool,Rulebook,Archive }
     public Symbol symbol;
     [Range(0,.5f)]public float cornerRadius=.22f;
     [Range(0,1)]public float batteryFill=1;
@@ -18,6 +18,10 @@ public sealed class PhoneIcon : MaskableGraphic
         if(symbol==Symbol.RoundedRect){float radius=Mathf.Min(rect.width,rect.height)*cornerRadius;var points=new System.Collections.Generic.List<Vector3>();foreach(var c in new[]{new Vector3(rect.xMax-radius,rect.yMax-radius,0),new Vector3(rect.xMin+radius,rect.yMax-radius,90),new Vector3(rect.xMin+radius,rect.yMin+radius,180),new Vector3(rect.xMax-radius,rect.yMin+radius,270)})for(int i=0;i<=10;i++){float a=(c.z+i*9)*Mathf.Deg2Rad;points.Add(new Vector3(c.x+Mathf.Cos(a)*radius,c.y+Mathf.Sin(a)*radius));}vh.AddVert(rect.center,color,Vector2.zero);foreach(var pt in points)vh.AddVert(pt,color,Vector2.zero);for(int i=0;i<points.Count;i++)vh.AddTriangle(0,i+1,(i+1)%points.Count+1);return;}
         switch(symbol)
         {
+            case Symbol.TaskList:box(.24f,.14f,.53f,.68f);box(.37f,.76f,.27f,.14f);for(int i=0;i<3;i++){line(new Vector2(.34f,.31f+i*.15f),new Vector2(.38f,.31f+i*.15f),.045f);line(new Vector2(.46f,.31f+i*.15f),new Vector2(.66f,.31f+i*.15f),.04f);}break;
+            case Symbol.ServiceTool:line(new Vector2(.22f,.22f),new Vector2(.62f,.62f),.12f);line(new Vector2(.62f,.62f),new Vector2(.80f,.64f),.07f);line(new Vector2(.80f,.64f),new Vector2(.85f,.83f),.07f);line(new Vector2(.62f,.62f),new Vector2(.56f,.80f),.07f);line(new Vector2(.56f,.80f),new Vector2(.66f,.91f),.07f);circle(new Vector2(.22f,.22f),.09f,false);break;
+            case Symbol.Rulebook:line(new Vector2(.5f,.18f),new Vector2(.5f,.78f),.045f);foreach(float side in new[]{-1f,1f}){var bottom=new Vector2(.5f+side*.32f,.25f);var top=new Vector2(.5f+side*.32f,.85f);line(new Vector2(.5f,.18f),bottom,.045f);line(bottom,top,.045f);line(top,new Vector2(.5f,.78f),.045f);for(int i=0;i<3;i++)line(new Vector2(.5f+side*.08f,.39f+i*.13f),new Vector2(.5f+side*.24f,.42f+i*.13f),.035f);}break;
+            case Symbol.Archive:box(.17f,.18f,.66f,.53f);box(.13f,.71f,.74f,.14f);box(.37f,.45f,.26f,.11f);line(new Vector2(.24f,.31f),new Vector2(.76f,.31f),.035f);break;
             case Symbol.Chat:circle(new Vector2(.50f,.54f),.31f,false);line(new Vector2(.26f,.32f),new Vector2(.18f,.12f),.05f);line(new Vector2(.18f,.12f),new Vector2(.41f,.22f),.05f);line(new Vector2(.39f,.66f),new Vector2(.43f,.45f),.075f);line(new Vector2(.43f,.45f),new Vector2(.61f,.38f),.075f);break;
             case Symbol.Building:case Symbol.Directory:box(.23f,.16f,.54f,.69f);box(.44f,.16f,.12f,.20f);for(int y=0;y<3;y++)for(int x=0;x<2;x++)line(new Vector2(.35f+x*.24f,.47f+y*.13f),new Vector2(.41f+x*.24f,.47f+y*.13f),.055f);break;
             case Symbol.Phone:line(new Vector2(.29f,.79f),new Vector2(.33f,.40f),.12f);line(new Vector2(.33f,.40f),new Vector2(.69f,.22f),.12f);line(new Vector2(.23f,.79f),new Vector2(.40f,.75f),.13f);line(new Vector2(.67f,.18f),new Vector2(.77f,.35f),.13f);break;

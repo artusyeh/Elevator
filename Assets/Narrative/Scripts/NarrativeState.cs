@@ -10,6 +10,8 @@ using UnityEngine;
     public int version=1,night=1,index;
     public float seconds,beatSeconds,battery=100;
     public bool completed,mainPower=true;
+    public bool hasManagementNotice;
+    public string managementNoticeTitle,managementNotice;
     public int elevatorFloor=1;
     public bool playerInElevator;
     public Vector3 playerCabinLocal;

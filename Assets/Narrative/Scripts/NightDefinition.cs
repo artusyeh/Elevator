@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public enum NarrativeActionKind { Message,Subtitle,SetTime,TaskStatus,MaintenanceStatus,Record,SetFlag,SetCircuit,LightingMood,DoorLock,DoorOpen,Elevator,CctvChannel,MoveActor,Sound,SetActive,LightIntensity,Weather,InvokeBinding,Sequence,Battery,AdvanceTime,Animation,RestrictPlayer,Scene,Fade,PhoneCall,CameraFault,LightFault,RingTelephone,SeatLock,ElevatorDoors,CloseFloorDoors }
+public enum NarrativeActionKind { Message,Subtitle,SetTime,TaskStatus,MaintenanceStatus,Record,SetFlag,SetCircuit,LightingMood,DoorLock,DoorOpen,Elevator,CctvChannel,MoveActor,Sound,SetActive,LightIntensity,Weather,InvokeBinding,Sequence,Battery,AdvanceTime,Animation,RestrictPlayer,Scene,Fade,PhoneCall,CameraFault,LightFault,RingTelephone,SeatLock,ElevatorDoors,CloseFloorDoors,ManagementNotice }
 [Serializable]public class NarrativeAction
 {
     public NarrativeActionKind kind;
@@ -49,5 +49,10 @@ public sealed class NightDefinition : ScriptableObject
     public string approachSignal="approach.apartment";
     public PhoneStoryMessage[] approachMessages=new PhoneStoryMessage[0];
     public PhoneManagementData management;
+    [Header("Building Services dashboard")]
+    public string shiftLabel="Overnight security";
+    public string staffPortalName="Aoba Property Management";
+    public string managementNoticeTitle="Shift handover";
+    [TextArea(2,4)]public string managementNotice="Keep shared passageways clear. Record unresolved faults before signing out and return borrowed keys to the office.";
     public NarrativeBeat[] beats;
 }

@@ -13,6 +13,7 @@ public sealed class PhoneNarrativeBridge : MonoBehaviour
     public InputField reportInput;
     public GameObject[] legacyMessages,unreadBadges;
     public Text[] contactNames,contactPreviews,contactTimes,unreadCounts;
+    public Text dashboardNight,dashboardStatus,dashboardNoticeTitle,dashboardNoticeBody,dashboardFooter;
     PhoneApplications apps;
     PhoneManagement manager;
     int taskCount=-1,requestCount=-1,recordCount=-1,messageCount=-1;
@@ -29,6 +30,11 @@ public sealed class PhoneNarrativeBridge : MonoBehaviour
     {
         if(!StoryActive||apps==null)return;
         RefreshManagement();var director=StoryDirector.Active;
+        if(dashboardNight!=null)dashboardNight.text="Night "+director.state.night.ToString("00")+" · "+director.definition.shiftLabel;
+        if(dashboardStatus!=null)dashboardStatus.text=director.ShiftStatus;
+        if(dashboardNoticeTitle!=null)dashboardNoticeTitle.text=director.ManagementNoticeTitle;
+        if(dashboardNoticeBody!=null)dashboardNoticeBody.text=director.ManagementNotice;
+        if(dashboardFooter!=null)dashboardFooter.text=director.definition.staffPortalName+" · Staff portal";
         for(int i=0;i<contactNames.Length;i++)
         {
             string contact=Contact(i);var messages=director.state.messages.Where(m=>m.contact==contact).ToArray();var last=messages.LastOrDefault();int unread=messages.Count(m=>!m.outgoing&&!m.read);
